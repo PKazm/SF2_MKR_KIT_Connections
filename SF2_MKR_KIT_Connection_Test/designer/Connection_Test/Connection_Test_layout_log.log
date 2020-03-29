@@ -1,86 +1,0 @@
-Info: No timing constraint has been associated to the 'Place and Route' tool. 'Place and Route' will be run in non Timing Driven mode.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-***** Place and Route Configurations *****
-Timing-driven            : OFF
-Power-driven             : OFF
-I/O Register Combining   : OFF
-High-effort              : OFF
-Repair min-delay         : OFF
-Incremental              : OFF
-
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_buttons.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_ethernet.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_flash_mem.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_leds.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_light_sens.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_usb_uart.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J8.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J7_vector.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J9.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J10.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J11.pdc. 0 error(s) and 0 warning(s)
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 61 fixed I/O macros, 0 unfixed I/O macros
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 0 seconds
-
-Placer V5.0 - 12.600.0 
-Design: Connection_Test                 Started: Sun Mar 29 01:32:50 2020
-
-Initializing Normal-Effort Standard Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 0 seconds
-Placement                : 0 seconds
-Improvement              : 1 seconds
-
-Placer completed successfully.
-
-Design: Connection_Test                 
-Finished: Sun Mar 29 01:32:56 2020
-Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
-Total Memory Usage: 117.4 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\designer\Connection_Test\Connection_TestStarted: Sun Mar 29 01:33:00 2020
-
-
-Router completed successfully.
-
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\designer\Connection_Test\Connection_Test
-Finished: Sun Mar 29 01:33:07 2020
-Total CPU Time:     00:00:06            Total Elapsed Time: 00:00:07
-Total Memory Usage: 429.8 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\designer\Connection_Test\Connection_TestStarted: Sun Mar 29 01:33:08 2020
-
-
-Router completed successfully.
-
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\designer\Connection_Test\Connection_Test
-Finished: Sun Mar 29 01:33:15 2020
-Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:07
-Total Memory Usage: 429.5 Mbytes
-                        o - o - o - o - o - o
-
-Resource Usage
-+---------------+------+-------+------------+
-| Type          | Used | Total | Percentage |
-+---------------+------+-------+------------+
-| 4LUT          | 801  | 12084 | 6.63       |
-| DFF           | 539  | 12084 | 4.46       |
-| I/O Register  | 0    | 252   | 0.00       |
-| Logic Element | 866  | 12084 | 7.17       |
-+---------------+------+-------+------------+
-

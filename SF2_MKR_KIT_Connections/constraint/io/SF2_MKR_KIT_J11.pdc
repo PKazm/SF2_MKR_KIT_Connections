@@ -1,0 +1,4 @@
+set_io Board_J11       \
+    -pinname 19        \
+    -fixed yes         \
+    -DIRECTION OUTPUT

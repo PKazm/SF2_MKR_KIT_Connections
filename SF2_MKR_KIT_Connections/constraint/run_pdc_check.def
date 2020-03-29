@@ -1,0 +1,8 @@
+DESIGN=Connection_system
+DESDIR=E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system
+TARGET_DIR=E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system
+FAM=SmartFusion2
+DIE=PA4M1000_N
+PACKAGE=tq144
+SPEED=STD
+PDC_FILE=E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_buttons.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_ethernet.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_flash_mem.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J7_vector.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J8.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J9.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J10.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J11.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_leds.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_light_sens.pdc,,E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_usb_uart.pdc,,

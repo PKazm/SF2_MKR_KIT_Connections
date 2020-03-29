@@ -1,0 +1,64 @@
+set_io {ESP32_BT_IO23}  \
+    -pinname 15         \
+    -fixed yes          \
+    -DIRECTION INOUT
+
+
+set_io {ESP32_BT_IO22}  \
+    -pinname 14         \
+    -fixed yes          \
+    -DIRECTION INOUT
+
+
+set_io {ESP32_BT_RX}  \
+    -pinname 4         \
+    -fixed yes          \
+    -DIRECTION INPUT
+
+
+set_io {ESP32_BT_TX}  \
+    -pinname 3         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {ESP32_BT_IO19}  \
+    -pinname 13         \
+    -fixed yes          \
+    -DIRECTION INOUT
+
+
+set_io {ESP32_BT_IO18}  \
+    -pinname 10         \
+    -fixed yes          \
+    -DIRECTION INOUT
+
+
+set_io {ESP32_BT_BOOT}  \
+    -pinname 7         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {ESP32_BT_IO2}  \
+    -pinname 20         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {ESP32_BT_IO35}  \
+    -pinname 9         \
+    -fixed yes          \
+    -DIRECTION INOUT
+
+
+set_io {ESP32_BT_IO34}  \
+    -pinname 8         \
+    -fixed yes          \
+    -DIRECTION INOUT
+
+
+set_io {ESP32_EN}  \
+    -pinname 19         \
+    -fixed yes          \
+    -DIRECTION OUTPUT

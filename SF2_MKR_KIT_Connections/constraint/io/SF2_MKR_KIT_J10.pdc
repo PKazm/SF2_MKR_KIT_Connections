@@ -1,0 +1,4 @@
+set_io Board_J10       \
+    -pinname 7         \
+    -fixed yes         \
+    -DIRECTION OUTPUT

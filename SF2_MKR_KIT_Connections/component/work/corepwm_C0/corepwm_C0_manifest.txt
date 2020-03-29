@@ -1,0 +1,18 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Sun Mar 29 03:23:22 2020
+Project   :  E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections
+Component :  corepwm_C0
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/Actel/DirectCore/corepwm/4.3.101/rtl/vhdl/core/components.vhd
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/Actel/DirectCore/corepwm/4.3.101/rtl/vhdl/core/corepwm.vhd
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/Actel/DirectCore/corepwm/4.3.101/rtl/vhdl/core/pwm_gen.vhd
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/Actel/DirectCore/corepwm/4.3.101/rtl/vhdl/core/reg_if.vhd
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/Actel/DirectCore/corepwm/4.3.101/rtl/vhdl/core/t_corepwm_pkg.vhd
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/Actel/DirectCore/corepwm/4.3.101/rtl/vhdl/core/tach_if.vhd
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/Actel/DirectCore/corepwm/4.3.101/rtl/vhdl/core/timebase.vhd
+    E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/component/work/corepwm_C0/corepwm_C0.vhd
+

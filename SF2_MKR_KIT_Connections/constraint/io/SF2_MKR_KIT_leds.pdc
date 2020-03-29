@@ -1,0 +1,46 @@
+set_io {Board_LEDs[0]}  \
+    -pinname 117        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[1]}  \
+    -pinname 118        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[2]}  \
+    -pinname 122        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[3]}  \
+    -pinname 123        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[4]}  \
+    -pinname 124        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[5]}  \
+    -pinname 125        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[6]}  \
+    -pinname 128        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[7]}  \
+    -pinname 129        \
+    -fixed yes          \
+    -DIRECTION OUTPUT

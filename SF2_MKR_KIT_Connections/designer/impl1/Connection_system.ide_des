@@ -1,0 +1,20 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\impl1\Connection_system.adb"
+LIST SOURCE_FILES
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_buttons.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_usb_uart.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_light_sens.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_leds.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J11.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J10.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J9.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J8.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J7_vector.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_flash_mem.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_ethernet.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\Connection_system_vm.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

@@ -1,0 +1,10 @@
+set_io Light_SCL      \
+    -pinname 89       \
+    -fixed yes        \
+    -DIRECTION INOUT
+
+
+set_io Light_SDA      \
+    -pinname 91       \
+    -fixed yes        \
+    -DIRECTION INOUT

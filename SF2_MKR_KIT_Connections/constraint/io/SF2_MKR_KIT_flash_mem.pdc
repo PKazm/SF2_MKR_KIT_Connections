@@ -1,0 +1,34 @@
+set_io {FLASH_MEM_SSO}  \
+    -pinname 103        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {FLASH_MEM_SDI}  \
+    -pinname 101        \
+    -fixed yes          \
+    -DIRECTION INPUT
+    
+
+set_io {FLASH_MEM_WP_N}  \
+    -pinname 85         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+    
+
+set_io {FLASH_MEM_HOLD_N}  \
+    -pinname 87         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+    
+
+set_io {FLASH_MEM_CLK}  \
+    -pinname 100         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+    
+
+set_io {FLASH_MEM_SDO}  \
+    -pinname 102         \
+    -fixed yes          \
+    -DIRECTION OUTPUT

@@ -1,0 +1,623 @@
+# Sun Mar 29 03:49:52 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":314:27:314:98|Tristate driver un1_psh_enable_reg1_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_psh_enable_reg1_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":314:27:314:98|Tristate driver un1_psh_enable_reg1_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_psh_enable_reg1_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":314:27:314:98|Tristate driver un1_psh_enable_reg1_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_psh_enable_reg1_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":314:27:314:98|Tristate driver un1_psh_enable_reg1_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_psh_enable_reg1_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":314:27:314:98|Tristate driver un1_psh_enable_reg1_tri3 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_psh_enable_reg1_tri3 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":314:27:314:98|Tristate driver un1_psh_enable_reg1_tri2 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_psh_enable_reg1_tri2 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un2_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un2_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un2_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un2_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un2_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un2_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un2_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un2_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_5[1:0] (in view: work.Connection_system(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_5[1:0] (in view: work.Connection_system(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_5[1:0] (in view: work.Connection_system(rtl)) with 16 words by 2 bits.
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\timer.vhd":48:12:48:13|User-specified initial value defined for instance Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\timer.vhd":48:12:48:13|User-specified initial value defined for instance Nokia5110_Driver_0.SPI_timer.counter[5:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\timer.vhd":48:12:48:13|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_timer.counter[18:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\timer.vhd":48:12:48:13|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_timer.timer_indic_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPIDO_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":466:8:466:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_A_ADDR_sig[8:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPIout_byte[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_B_ADDR_sig[8:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.init_step[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.frame_get_bit is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":248:8:248:9|User-specified initial value defined for instance Nokia5110_Driver_0.prdata_sig[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.frame_count[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.screen_finished is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":412:8:412:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_mem_data[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.refresh_indicator is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.data_command_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.frame_start is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.data_command_queue_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.screen_send is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":448:8:448:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_mem_Y[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":432:8:432:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_mem_X[6:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":412:8:412:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_C_DIN_sig[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":412:8:412:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_C_BLK_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":396:8:396:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_Vop_set[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":380:8:380:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_bias_sys[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":364:8:364:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_temp_ctrl[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":345:8:345:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_disp_ctrl[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":328:8:328:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_func_set[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":293:8:293:9|User-specified initial value defined for instance Nokia5110_Driver_0.Driver_reg_ctrl[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.chip_enable_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPICLK_last_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":136:42:136:44|User-specified initial value defined for instance Nokia5110_Driver_0.timer_indicator_last_sig is being ignored due to limitations in architecture. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+
+@N: MO231 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":75:6:75:7|Found counter in view:corepwm_lib.corepwm_timebase(trans) instance period_cnt_int[31:0] 
+@N: MO231 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":58:6:58:7|Found counter in view:corepwm_lib.corepwm_timebase(trans) instance prescale_cnt[31:0] 
+@N: MF179 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":83:19:83:45|Found 32 by 32 bit equality operator ('==') un17_prescale_cnt (in view: corepwm_lib.corepwm_timebase(trans))
+@N: MF179 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 32 by 32 bit equality operator ('==') PWM_output_select\.1\.PWM_output_generation\.un31_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 32 by 32 bit equality operator ('==') PWM_output_select\.2\.PWM_output_generation\.un69_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+Encoding state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver))
+original code -> new code
+   00 -> 0
+   10 -> 1
+@N: MO225 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":502:8:502:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
+@N: FX403 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":155:11:155:13|Property "block_ram" or "no_rw_check" found for RAM mem[7:0] with specified coding style. Inferring block RAM.
+@N: FX403 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":155:11:155:13|Property "block_ram" or "no_rw_check" found for RAM mem[7:0] with specified coding style. Inferring block RAM.
+@N: FX403 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":155:11:155:13|Property "block_ram" or "no_rw_check" found for RAM mem[7:0] with specified coding style. Inferring block RAM.
+@W: FX107 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":155:11:155:13|RAM mem[7:0] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":155:11:155:13|RAM mem_1[7:0] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":345:8:345:9|Register bit LCD_reg_disp_ctrl[1] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":328:8:328:9|Register bit LCD_reg_func_set[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":328:8:328:9|Register bit LCD_reg_func_set[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":396:8:396:9|Register bit LCD_reg_Vop_set[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":380:8:380:9|Register bit LCD_reg_bias_sys[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":380:8:380:9|Register bit LCD_reg_bias_sys[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":380:8:380:9|Register bit LCD_reg_bias_sys[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":380:8:380:9|Register bit LCD_reg_bias_sys[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":380:8:380:9|Register bit LCD_reg_bias_sys[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":364:8:364:9|Register bit LCD_reg_temp_ctrl[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":364:8:364:9|Register bit LCD_reg_temp_ctrl[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":364:8:364:9|Register bit LCD_reg_temp_ctrl[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":364:8:364:9|Register bit LCD_reg_temp_ctrl[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":364:8:364:9|Register bit LCD_reg_temp_ctrl[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":364:8:364:9|Register bit LCD_reg_temp_ctrl[2] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":345:8:345:9|Register bit LCD_reg_disp_ctrl[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":345:8:345:9|Register bit LCD_reg_disp_ctrl[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":345:8:345:9|Register bit LCD_reg_disp_ctrl[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":345:8:345:9|Register bit LCD_reg_disp_ctrl[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":345:8:345:9|Register bit LCD_reg_disp_ctrl[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":328:8:328:9|Register bit LCD_reg_func_set[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":328:8:328:9|Register bit LCD_reg_func_set[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\nokia5110_driver.vhd":328:8:328:9|Register bit LCD_reg_func_set[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 148MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 148MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 148MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 153MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -1.71ns		 670 /       395
+   2		0h:00m:02s		    -1.70ns		 655 /       395
+
+   3		0h:00m:02s		    -1.69ns		 656 /       395
+   4		0h:00m:02s		    -0.38ns		 657 /       395
+   5		0h:00m:02s		    -0.24ns		 658 /       395
+   6		0h:00m:02s		    -0.32ns		 658 /       395
+@N: FX271 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":131:17:131:65|Replicating instance corepwm_C0_0.corepwm_C0_0.xhdl58\.reg_if_inst.psh_prescale_reg_0_sqmuxa (in view: work.Connection_system(rtl)) with 32 loads 2 times to improve timing.
+@N: FX271 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":131:17:131:65|Replicating instance corepwm_C0_0.corepwm_C0_0.xhdl58\.reg_if_inst.psh_period_reg_1_sqmuxa (in view: work.Connection_system(rtl)) with 32 loads 2 times to improve timing.
+Timing driven replication report
+Added 0 Registers via timing driven replication
+Added 4 LUTs via timing driven replication
+
+
+   7		0h:00m:02s		    -0.07ns		 662 /       395
+@N: FP130 |Promoting Net ETH_NRESET_c on CLKINT  I_124 
+@N: FP130 |Promoting Net Nokia5110_Driver_0.rstn_i_i on CLKINT  I_125 
+@N: FP130 |Promoting Net Nokia5110_Driver_0.CLK_SPI_sig on CLKINT  I_126 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 153MB peak: 155MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 154MB peak: 155MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+2 non-gated/non-generated clock tree(s) driving 2 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 405 clock pin(s) of sequential element(s)
+0 instances converted, 405 sequential instances remain driven by gated/generated clocks
+
+==================================================== Non-Gated/Non-Generated Clocks ====================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                                                 
+----------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0004       GMII_RX_CLK         port                   1          Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST
+@K:CKID0005       BIBUF_1             BIBUF                  1          Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST
+========================================================================================================================================
+================================================================================================================================== Gated/Generated Clocks ==================================================================================================================================
+Clock Tree ID     Driving Element                                      Drive Element Type     Fanout     Sample Instance                                                      Explanation                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       Connection_system_sb_0.CCC_0.CCC_INST                CCC                    384        Connection_system_sb_0.CORERESETP_0.RESET_N_M2F_clk_base             Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig     SLE                    20         Nokia5110_Driver_0.LCD_timer.timer_indic_sig                         No generated or derived clock directive on output of sequential instance                                      
+@K:CKID0003       Connection_system_sb_0.CCC_0.CCC_INST                CCC                    1          Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     No gated clock conversion method for cell cell:work.MSS_010                                                   
+============================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 123MB peak: 155MB)
+
+Writing Analyst data base E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\synwork\Connection_system_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 155MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 149MB peak: 155MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 150MB peak: 155MB)
+
+@W: MT246 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\work\connection_system_sb\ccc_0\connection_system_sb_ccc_0_fccc.vhd":110:4:110:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Connection_system_sb_0.CCC_0.GL0_net.
+@W: MT420 |Found inferred clock timerZ1|timer_clock_out_sig_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.
+@W: MT420 |Found inferred clock Connection_system|GMII_RX_CLK with period 10.00ns. Please declare a user-defined clock on port GMII_RX_CLK.
+@W: MT420 |Found inferred clock Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Connection_system_sb_0.CCC_0.GL1_net.
+@W: MT420 |Found inferred clock Connection_system|BIBUF_1_Y_inferred_clock with period 10.00ns. Please declare a user-defined clock on net BIBUF_1_Y.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Mar 29 03:49:56 2020
+#
+
+
+Top view:               Connection_system
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 0.337
+
+                                                           Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                             Frequency     Frequency     Period        Period        Slack     Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     100.0 MHz     103.5 MHz     10.000        9.664         0.337     inferred     Inferred_clkgroup_0
+Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_3
+Connection_system|BIBUF_1_Y_inferred_clock                 100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_4
+Connection_system|GMII_RX_CLK                              100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_2
+timerZ1|timer_clock_out_sig_inferred_clock                 100.0 MHz     290.7 MHz     10.000        3.440         6.560     inferred     Inferred_clkgroup_1
+System                                                     100.0 MHz     895.2 MHz     10.000        1.117         8.883     system       system_clkgroup    
+=============================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                Ending                                                  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                  System                                                  |  10.000      8.883  |  No paths    -      |  No paths    -      |  No paths    -    
+Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock  Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock  |  10.000      0.337  |  No paths    -      |  No paths    -      |  No paths    -    
+timerZ1|timer_clock_out_sig_inferred_clock              Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+timerZ1|timer_clock_out_sig_inferred_clock              timerZ1|timer_clock_out_sig_inferred_clock              |  10.000      6.560  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                     Starting                                                                                                                                         Arrival          
+Instance                                                             Reference                                                  Type        Pin                Net                                                    Time        Slack
+                                                                     Clock                                                                                                                                                             
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[10]     Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR[10]     3.949       0.337
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[4]      CoreAPB3_C0_0_APBmslave0_PADDR[4]                      3.560       0.414
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[8]      Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR[8]      3.945       0.455
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[11]     Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR[11]     3.596       0.494
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_SEL          Connection_system_sb_0_FIC_0_AMBA_MASTER_PSELx         3.488       0.537
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[3]      CoreAPB3_C0_0_APBmslave0_PADDR[3]                      3.576       0.578
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[2]      CoreAPB3_C0_0_APBmslave0_PADDR[2]                      3.576       0.724
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[9]      Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR[9]      3.735       0.768
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[5]      CoreAPB3_C0_0_APBmslave0_PADDR[5]                      3.657       0.888
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[6]      CoreAPB3_C0_0_APBmslave0_PADDR[6]                      3.746       1.004
+=======================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                     Starting                                                                                                                                          Required          
+Instance                                                             Reference                                                  Type        Pin                 Net                                                    Time         Slack
+                                                                     Clock                                                                                                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[23]     N_42_i                                                 9.616        0.337
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[29]     N_54_i                                                 9.642        0.362
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[22]     N_40_i                                                 9.673        0.394
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[24]     N_44_i                                                 9.704        0.424
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[3]      Connection_system_sb_0_FIC_0_AMBA_MASTER_PRDATA[3]     9.475        0.434
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[28]     N_52_i                                                 9.715        0.435
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[19]     N_37_i                                                 9.716        0.436
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[27]     N_50_i                                                 9.722        0.443
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[25]     N_46_i                                                 9.736        0.457
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[18]     N_36_i                                                 9.773        0.493
+=========================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.384
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.616
+
+    - Propagation time:                      9.280
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     0.336
+
+    Number of logic level(s):                4
+    Starting point:                          Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[10]
+    Ending point:                            Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST / F_HM0_RDATA[23]
+    The start point is clocked by            Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK_BASE
+    The end   point is clocked by            Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK_BASE
+
+Instance / Net                                                                   Pin                 Pin               Arrival     No. of    
+Name                                                                 Type        Name                Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_ADDR[10]      Out     3.949     3.949       -         
+Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR[10]                   Net         -                   -       0.497     -           2         
+CoreAPB3_C0_0.CoreAPB3_C0_0.g0                                       CFG4        D                   In      -         4.446       -         
+CoreAPB3_C0_0.CoreAPB3_C0_0.g0                                       CFG4        Y                   Out     0.317     4.763       -         
+g0                                                                   Net         -                   -       1.206     -           23        
+CoreAPB3_C0_0.CoreAPB3_C0_0.u_mux_p_to_b3.PRDATA_i_o2_1[16]          CFG4        D                   In      -         5.969       -         
+CoreAPB3_C0_0.CoreAPB3_C0_0.u_mux_p_to_b3.PRDATA_i_o2_1[16]          CFG4        Y                   Out     0.326     6.295       -         
+PRDATA_i_o2_1[16]                                                    Net         -                   -       0.248     -           1         
+CoreAPB3_C0_0.CoreAPB3_C0_0.u_mux_p_to_b3.PRDATA_i_o2[16]            CFG4        B                   In      -         6.544       -         
+CoreAPB3_C0_0.CoreAPB3_C0_0.u_mux_p_to_b3.PRDATA_i_o2[16]            CFG4        Y                   Out     0.148     6.692       -         
+N_93                                                                 Net         -                   -       1.144     -           16        
+CoreAPB3_C0_0.CoreAPB3_C0_0.u_mux_p_to_b3.N_42_i                     CFG4        D                   In      -         7.836       -         
+CoreAPB3_C0_0.CoreAPB3_C0_0.u_mux_p_to_b3.N_42_i                     CFG4        Y                   Out     0.326     8.162       -         
+N_42_i                                                               Net         -                   -       1.117     -           1         
+Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_RDATA[23]     In      -         9.280       -         
+=============================================================================================================================================
+Total path delay (propagation time + setup) of 9.664 is 5.451(56.4%) logic and 4.212(43.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: timerZ1|timer_clock_out_sig_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                             Starting                                                                        Arrival          
+Instance                                     Reference                                      Type     Pin     Net             Time        Slack
+                                             Clock                                                                                            
+----------------------------------------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_0.LCD_timer.counter[14]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[14]     0.087       6.560
+Nokia5110_Driver_0.LCD_timer.counter[16]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[16]     0.108       6.656
+Nokia5110_Driver_0.LCD_timer.counter[17]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[17]     0.108       6.701
+Nokia5110_Driver_0.LCD_timer.counter[18]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[18]     0.108       6.778
+Nokia5110_Driver_0.LCD_timer.counter[0]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[0]      0.108       6.820
+Nokia5110_Driver_0.LCD_timer.counter[11]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[11]     0.087       6.973
+Nokia5110_Driver_0.LCD_timer.counter[12]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[12]     0.087       7.073
+Nokia5110_Driver_0.LCD_timer.counter[5]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[5]      0.087       7.096
+Nokia5110_Driver_0.LCD_timer.counter[1]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[1]      0.108       7.146
+Nokia5110_Driver_0.LCD_timer.counter[4]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[4]      0.108       7.191
+==============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                 Starting                                                                                  Required          
+Instance                                         Reference                                      Type     Pin     Net                       Time         Slack
+                                                 Clock                                                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_0.LCD_timer.counter[5]          timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[5]              9.745        6.560
+Nokia5110_Driver_0.LCD_timer.counter[8]          timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[8]              9.745        6.560
+Nokia5110_Driver_0.LCD_timer.counter[13]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[13]             9.745        6.560
+Nokia5110_Driver_0.LCD_timer.counter[15]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[15]             9.745        6.560
+Nokia5110_Driver_0.LCD_timer.counter[16]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[16]             9.745        6.560
+Nokia5110_Driver_0.LCD_timer.counter[17]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[17]             9.745        6.560
+Nokia5110_Driver_0.LCD_timer.counter[18]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[18]             9.745        6.560
+Nokia5110_Driver_0.LCD_timer.timer_indic_sig     timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       un2_counter               9.745        6.912
+Nokia5110_Driver_0.LCD_timer.counter[14]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       un10_counter_cry_14_S     9.745        8.157
+Nokia5110_Driver_0.LCD_timer.counter[12]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       un10_counter_cry_12_S     9.745        8.190
+=============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      3.185
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 6.560
+
+    Number of logic level(s):                4
+    Starting point:                          Nokia5110_Driver_0.LCD_timer.counter[14] / Q
+    Ending point:                            Nokia5110_Driver_0.LCD_timer.counter[5] / D
+    The start point is clocked by            timerZ1|timer_clock_out_sig_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            timerZ1|timer_clock_out_sig_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                      Type     Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_0.LCD_timer.counter[14]                  SLE      Q        Out     0.087     0.087       -         
+counter[14]                                               Net      -        -       0.497     -           2         
+Nokia5110_Driver_0.LCD_timer.gen_else\.un2_counter_10     CFG4     D        In      -         0.584       -         
+Nokia5110_Driver_0.LCD_timer.gen_else\.un2_counter_10     CFG4     Y        Out     0.326     0.911       -         
+un2_counter_10                                            Net      -        -       0.248     -           1         
+Nokia5110_Driver_0.LCD_timer.gen_else\.un2_counter_14     CFG4     B        In      -         1.159       -         
+Nokia5110_Driver_0.LCD_timer.gen_else\.un2_counter_14     CFG4     Y        Out     0.164     1.323       -         
+un2_counter_14                                            Net      -        -       0.248     -           1         
+Nokia5110_Driver_0.LCD_timer.gen_else\.un2_counter        CFG4     D        In      -         1.572       -         
+Nokia5110_Driver_0.LCD_timer.gen_else\.un2_counter        CFG4     Y        Out     0.288     1.860       -         
+un2_counter                                               Net      -        -       0.977     -           8         
+Nokia5110_Driver_0.LCD_timer.counter_3[5]                 CFG2     A        In      -         2.836       -         
+Nokia5110_Driver_0.LCD_timer.counter_3[5]                 CFG2     Y        Out     0.100     2.936       -         
+counter_3[5]                                              Net      -        -       0.248     -           1         
+Nokia5110_Driver_0.LCD_timer.counter[5]                   SLE      D        In      -         3.185       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 3.440 is 1.221(35.5%) logic and 2.219(64.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                     Starting                                                                                           Arrival          
+Instance                                             Reference     Type               Pin        Net                                                    Time        Slack
+                                                     Clock                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Connection_system_sb_0.FABOSC_0.I_RCOSC_25_50MHZ     System        RCOSC_25_50MHZ     CLKOUT     FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     0.000       8.883
+=========================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                          Starting                                                                                         Required          
+Instance                                  Reference     Type     Pin                Net                                                    Time         Slack
+                                          Clock                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Connection_system_sb_0.CCC_0.CCC_INST     System        CCC      RCOSC_25_50MHZ     FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     10.000       8.883
+=============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      1.117
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 8.883
+
+    Number of logic level(s):                0
+    Starting point:                          Connection_system_sb_0.FABOSC_0.I_RCOSC_25_50MHZ / CLKOUT
+    Ending point:                            Connection_system_sb_0.CCC_0.CCC_INST / RCOSC_25_50MHZ
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                            Pin                Pin               Arrival     No. of    
+Name                                                   Type               Name               Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------
+Connection_system_sb_0.FABOSC_0.I_RCOSC_25_50MHZ       RCOSC_25_50MHZ     CLKOUT             Out     0.000     0.000       -         
+FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     Net                -                  -       1.117     -           1         
+Connection_system_sb_0.CCC_0.CCC_INST                  CCC                RCOSC_25_50MHZ     In      -         1.117       -         
+=====================================================================================================================================
+Total path delay (propagation time + setup) of 1.117 is 0.000(0.0%) logic and 1.117(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 150MB peak: 155MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 150MB peak: 155MB)
+
+---------------------------------------
+Resource Usage Report for Connection_system 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CCC             1 use
+CLKINT          5 uses
+MSS_010         1 use
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG1           3 uses
+CFG2           65 uses
+CFG3           122 uses
+CFG4           207 uses
+
+Carry cells:
+ARI1            246 uses - used for arithmetic functions
+ARI1            8 uses - used for Wide-Mux implementation
+Total ARI1      254 uses
+
+
+Sequential Cells: 
+SLE            395 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 62
+I/O primitives: 61
+BIBUF          3 uses
+INBUF          19 uses
+OUTBUF         39 uses
+
+
+Global Clock Buffers: 5
+
+RAM/ROM usage summary
+Total Block RAMs (RAM64x18) : 4 of 22 (18%)
+
+Total LUTs:    651
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 144; LUTs = 144;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  395 + 144 + 0 + 0 = 539;
+Total number of LUTs after P&R:  651 + 144 + 0 + 0 = 795;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 155MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Sun Mar 29 03:49:57 2020
+
+###########################################################]

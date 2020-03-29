@@ -1,0 +1,10 @@
+set_io {USB_UART_TXD}  \
+    -pinname 1         \
+    -fixed yes          \
+    -DIRECTION INPUT
+
+
+set_io {USB_UART_RXD}  \
+    -pinname 2         \
+    -fixed yes          \
+    -DIRECTION OUTPUT

@@ -1,0 +1,4 @@
+set_io Board_J9        \
+    -pinname 4         \
+    -fixed yes         \
+    -DIRECTION OUTPUT

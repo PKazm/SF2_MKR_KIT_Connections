@@ -1,4 +1,4 @@
-02:42:11 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+03:48:27 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
 make all 
 Invoking: GNU ARM Cross Print Size
 arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
@@ -7,5 +7,5 @@ arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
 Finished building: SF2_MKR_KIT_Connection_Test.siz
  
 
-02:42:11 Build Finished. 0 errors, 0 warnings. (took 444ms)
+03:48:27 Build Finished. 0 errors, 0 warnings. (took 367ms)
 

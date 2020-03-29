@@ -1,0 +1,4 @@
+set_io Board_J8        \
+    -pinname 3         \
+    -fixed yes         \
+    -DIRECTION OUTPUT

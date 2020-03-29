@@ -1,0 +1,29 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+2 non-gated/non-generated clock tree(s) driving 2 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 405 clock pin(s) of sequential element(s)
+0 instances converted, 405 sequential instances remain driven by gated/generated clocks
+
+==================================================== Non-Gated/Non-Generated Clocks ====================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                                                 
+----------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0004       GMII_RX_CLK         port                   1          Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST
+@K:CKID0005       BIBUF_1             BIBUF                  1          Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST
+========================================================================================================================================
+================================================================================================================================== Gated/Generated Clocks ==================================================================================================================================
+Clock Tree ID     Driving Element                                      Drive Element Type     Fanout     Sample Instance                                                      Explanation                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       Connection_system_sb_0.CCC_0.CCC_INST                CCC                    384        Connection_system_sb_0.CORERESETP_0.RESET_N_M2F_clk_base             Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig     SLE                    20         Nokia5110_Driver_0.LCD_timer.timer_indic_sig                         No generated or derived clock directive on output of sequential instance                                      
+@K:CKID0003       Connection_system_sb_0.CCC_0.CCC_INST                CCC                    1          Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST     No gated clock conversion method for cell cell:work.MSS_010                                                   
+============================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

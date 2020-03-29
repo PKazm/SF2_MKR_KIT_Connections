@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>Connection_Test</design>
-	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\Connection_Test.vm</target_verilog>
-</SynplifyOutput>

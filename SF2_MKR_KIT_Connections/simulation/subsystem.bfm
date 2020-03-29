@@ -1,0 +1,25 @@
+#===========================================================
+# Created by Microsemi SmartDesign Sun Mar 29 03:49:42 2020
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+#-----------------------------------------------------------
+# Memory Map
+# Define name and base address of each resource.
+#-----------------------------------------------------------
+
+memmap corepwm_C0_0 0x50000000;
+memmap Nokia5110_Driver_0 0x50000100;
+#-----------------------------------------------------------
+# Include resource scriptlets
+#-----------------------------------------------------------
+

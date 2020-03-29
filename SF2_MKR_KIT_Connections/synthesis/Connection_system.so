@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>Connection_system</design>
+	<target_verilog>E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\Connection_system.vm</target_verilog>
+</SynplifyOutput>

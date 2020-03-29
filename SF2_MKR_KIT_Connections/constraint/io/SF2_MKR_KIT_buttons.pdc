@@ -1,0 +1,10 @@
+set_io {Board_Buttons[0]}  \
+    -pinname 143           \
+    -fixed yes             \
+    -DIRECTION INPUT
+
+
+set_io {Board_Buttons[1]}  \
+    -pinname 144           \
+    -fixed yes             \
+    -DIRECTION INPUT

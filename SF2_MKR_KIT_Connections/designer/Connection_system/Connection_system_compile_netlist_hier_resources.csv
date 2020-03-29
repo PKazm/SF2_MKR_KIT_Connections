@@ -1,0 +1,17 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Interface 4LUT,Interface DFF,Single-Ended I/O,uSRAM 1K,PLLs and CCCs,Chip Globals,MSS,10/100/1000 Ethernet,RCOSC_50MHZ
+Connection_system_sb_0/CCC_0/Primitives,0,0,0,0,0,0,1,2,0,0,0
+Connection_system_sb_0/CORERESETP_0/Primitives,2,9,0,0,0,0,0,1,0,0,0
+Connection_system_sb_0/Connection_system_sb_MSS_0/Primitives,0,0,0,0,0,0,0,0,1,0,0
+Connection_system_sb_0/FABOSC_0/Primitives,0,0,0,0,0,0,0,0,0,0,1
+CoreAPB3_C0_0/CoreAPB3_C0_0/Primitives,4,0,0,0,0,0,0,0,0,0,0
+CoreAPB3_C0_0/CoreAPB3_C0_0/u_mux_p_to_b3/Primitives,48,0,0,0,0,0,0,0,0,0,0
+LED_inverter_dimmer_0/Primitives,8,0,0,0,0,0,0,0,0,0,0
+Nokia5110_Driver_0/LCD_timer/Primitives,33,20,0,0,0,0,0,0,0,0,0
+Nokia5110_Driver_0/Primitives,195,96,144,144,0,4,0,1,0,0,0
+Nokia5110_Driver_0/SPI_timer/Primitives,11,7,0,0,0,0,0,1,0,0,0
+Primitives/Primitives,0,0,0,0,61,0,0,0,0,0,0
+corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/Primitives,150,64,0,0,0,0,0,0,0,0,0
+corepwm_C0_0/corepwm_C0_0/Primitives,3,2,0,0,0,0,0,0,0,0,0
+corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/Primitives,130,195,0,0,0,0,0,0,0,0,0
+corepwm_C0_0/corepwm_C0_0/xhdl63.pwm_gen_inst/Primitives,73,2,0,0,0,0,0,0,0,0,0

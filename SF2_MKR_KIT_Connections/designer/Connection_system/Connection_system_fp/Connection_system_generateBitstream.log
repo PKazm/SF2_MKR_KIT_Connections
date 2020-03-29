@@ -1,0 +1,20 @@
+Software Version: 12.600.0.14
+Opened 'E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system_fp\Connection_system.pro'
+The 'open_project' command succeeded.
+PDB file 'E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system.pdb' has been loaded successfully.
+DESIGN : Connection_system;  CHECKSUM : 0000;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Sun Mar 29 03:52:07 2020 (Elapsed time 00:00:01)
+The 'load_programming_data' command succeeded.
+File/Folder 'E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system.ppd'; file programs Fabric.
+Fabric component bitstream digest: cd91d056ca12a4ded213b438aa05531c0c45807c719ed34ee270812e0756394c
+Finished: Sun Mar 29 03:52:14 2020 (Elapsed time 00:00:07)
+
+The 'export_single_ppd' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system_fp\Connection_system.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

@@ -1,0 +1,191 @@
+set_io {REFCLK_SEL[0]}   \
+    -pinname 134        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {REFCLK_SEL[1]}   \
+    -pinname 135        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {COMA_MODE}   \
+    -pinname 131        \
+    -fixed yes         \
+    -DIRECTION INOUT
+
+
+set_io {ETH_NRESET}   \
+    -pinname 136        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {MDINT}   \
+    -pinname 46        \
+    -fixed yes         \
+    -DIRECTION INPUT
+
+
+set_io {GMII_MDIO}   \
+    -pinname 27        \
+    -fixed yes         \
+    -DIRECTION INOUT
+    
+
+set_io {GMII_MDC}   \
+    -pinname 28        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[7]}   \
+    -pinname 29        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[6]}   \
+    -pinname 30        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[5]}   \
+    -pinname 32        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[4]}   \
+    -pinname 33        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[3]}   \
+    -pinname 36        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[2]}   \
+    -pinname 37        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[1]}   \
+    -pinname 38        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TXD[0]}   \
+    -pinname 43        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_GTX_CLK}   \
+    -pinname 44        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TX_CLK}   \
+    -pinname 24        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_TX_ER}   \
+    -pinname 47        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_TX_EN}   \
+    -pinname 48        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+    
+
+set_io {GMII_RX_CLK}   \
+    -pinname 52        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RX_ER}   \
+    -pinname 49        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RX_DV}   \
+    -pinname 53        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[0]}   \
+    -pinname 55        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[1]}   \
+    -pinname 56        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[2]}   \
+    -pinname 57        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[3]}   \
+    -pinname 58        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[4]}   \
+    -pinname 60        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[5]}   \
+    -pinname 61        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[6]}   \
+    -pinname 63        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_RXD[7]}   \
+    -pinname 64        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_CRS}   \
+    -pinname 66        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
+
+set_io {GMII_COL}   \
+    -pinname 67        \
+    -fixed yes         \
+    -DIRECTION INPUT
+    
