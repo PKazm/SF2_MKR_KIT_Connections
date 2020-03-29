@@ -15,8 +15,8 @@ https://github.com/tstana/M2S010-MKR-KIT_FirstProj/wiki
 
 # Nokia5110_Driver
 
-This custom FPGA fabric core drives an SPI connection to a Nokia 5110 LCD connected to the J7 set of pins on the board (pin headers soldered on). This core connects to the MSS via an APB3 bus interface. I am using this core as avenue to write ARM firmware as well as provide output from the device. The VDHL could use a rewrite despite working.
+This custom FPGA fabric core drives an SPI connection to a Nokia 5110 LCD connected to the J7 set of pins on the board (pin headers soldered on). This core connects to the MSS via an APB3 bus interface. I am using this core as an avenue to write ARM firmware as well as provide output from the device. The VDHL could use a rewrite but it works perfectly as far as I can tell.
 
 # CorePWM
 
-This is an official FPGA core provided by Microsemi. It provides a way to check APB connections with an official and presumably guaranteed to work Core (spoiler, it does work) as well as provides brightness control for all the LEDs.
+This is an official FPGA core provided by Microsemi. It provides a way to check APB connections with an official and presumably guaranteed to work core (spoiler, it does work) as well as provides brightness control for all the LEDs.
