@@ -1,0 +1,21 @@
+/*
+ * Nokia5110_regs.h
+ *
+ *  Created on: Mar 25, 2020
+ *      Author: Phoenix136
+ */
+
+#ifndef SRC_NOKIA5110_REGS_H_
+#define SRC_NOKIA5110_REGS_H_
+
+
+/*******************************************************************************
+ * CONTROL register:
+ *------------------------------------------------------------------------------
+ * The system clock cycle is multiplied by the PRESCALE value, resulting in the
+ * minimum PERIOD count timebase
+ */
+#define CONTROL_REG_OFFSET 0x00u
+
+
+#endif /* SRC_NOKIA5110_REGS_H_ */

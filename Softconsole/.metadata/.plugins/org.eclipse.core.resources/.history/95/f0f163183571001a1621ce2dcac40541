@@ -1,0 +1,271 @@
+/*
+ * fab_Nokia5110.c
+ *
+ *  Created on: Mar 23, 2020
+ *      Author: Phoenix136
+ */
+
+#include "fab_Nokia5110.h"
+#include "Nokia5110_regs.h"
+#include "hal.h"
+#include "hal_assert.h"
+//#include "hw_reg_access.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void nokia_init
+(
+    nokia_instance_t * nokia_inst,
+    addr_t base_addr,
+    uint32_t func_set,
+    uint32_t disp_ctrl,
+    uint32_t temp_ctrl,
+    uint32_t bias_sys,
+    uint32_t Vop_set
+)
+{
+    nokia_inst->address = base_addr;
+    nokia_set_reg
+        (
+            nokia_inst,
+			func_set_REG_OFFSET,
+            func_set
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			disp_ctrl_REG_OFFSET,
+            disp_ctrl
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			temp_ctrl_REG_OFFSET,
+            temp_ctrl
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			bias_sys_REG_OFFSET,
+            bias_sys
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			Vop_set_REG_OFFSET,
+            Vop_set
+        );
+}
+
+uint32_t nokia_get_reg(
+    nokia_instance_t * nokia_inst,
+    addr_t reg_adr
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + reg_adr);
+}
+
+void nokia_set_reg(
+    nokia_instance_t * nokia_inst,
+    addr_t reg_adr,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg(nokia_inst->address + reg_adr, reg_val);
+}
+
+
+uint32_t nokia_get_x
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + mem_x_REG_OFFSET);
+}
+
+
+void nokia_set_x
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + mem_x_REG_OFFSET, reg_val );
+}
+
+uint32_t nokia_get_y
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + mem_y_REG_OFFSET);
+}
+
+void nokia_set_y
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + mem_y_REG_OFFSET, reg_val );
+}
+
+uint32_t nokia_get_data
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + mem_data_REG_OFFSET);
+}
+
+void nokia_set_data
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + mem_data_REG_OFFSET, reg_val );
+}
+
+
+uint32_t nokia_get_func_set
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + func_set_REG_OFFSET);
+}
+
+void nokia_set_func_set
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + func_set_REG_OFFSET, reg_val );
+}
+
+uint32_t nokia_get_disp_ctrl
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + disp_ctrl_REG_OFFSET);
+}
+
+void nokia_set_disp_ctrl
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + disp_ctrl_REG_OFFSET, reg_val );
+}
+
+uint32_t nokia_get_temp_ctrl
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + temp_ctrl_REG_OFFSET);
+}
+
+void nokia_set_temp_ctrl
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + temp_ctrl_REG_OFFSET, reg_val );
+}
+
+uint32_t nokia_get_bias_sys
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + bias_sys_REG_OFFSET);
+}
+
+void nokia_set_bias_sys
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + bias_sys_REG_OFFSET, reg_val );
+}
+
+uint32_t nokia_get_Vop_set
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + Vop_set_REG_OFFSET);
+}
+
+void nokia_set_Vop_set
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    HW_set_32bit_reg( nokia_inst->address + Vop_set_REG_OFFSET, reg_val );
+}
+
+/*
+uint8_t* nokia_get_pixel_reg_block
+(
+    nokia_instance_t * nokia_inst,
+    uint8_t x_left,
+    uint8_t y_top,
+    uint8_t x_right,
+    uint8_t y_bot
+)
+{
+    uint8_t* pixel_regs;
+    int x_delta, y_delta;
+    int n = 0;
+    x_delta = (x_right - x_left);
+    y_delta = (y_bot - y_top);
+    pixel_regs = malloc(x_delta * y_delta);
+
+    for(int i = x_right; i < x_left + 1; i++){
+        nokia_set_x(nokia_inst, i);
+        for(int k = y_top; k < y_bot + 1; k ++){
+            nokia_set_y(nokia_inst, k);
+            pixel_regs[n++] = nokia_get_data(nokia_inst);
+        }
+    }
+}
+*/
+
+void nokia_set_pixel_reg_block
+(
+    nokia_instance_t * nokia_inst,
+    uint8_t x_left,
+    uint8_t y_top,
+    uint8_t x_right,
+    uint8_t y_bot,
+    uint8_t * pixel_regs
+)
+{
+    int x_delta, y_delta;
+    int n = 0;
+    x_delta = (x_right - x_left);
+    y_delta = (y_bot - y_top);
+
+    for(int i = x_right; i < x_left + 1; i++){
+        nokia_set_x(nokia_inst, i);
+        for(int k = y_top; k < y_bot + 1; k ++){
+            nokia_set_y(nokia_inst, k);
+            nokia_get_data(nokia_inst, pixel_regs[n++]);
+        }
+    }
+}
+
+#ifdef __cplusplus
+}
+#endif

@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.Connection_Test  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\synwork\Connection_Test_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\synwork\Connection_Test_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\synlog\Connection_Test_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.Connection_Test -multisrs ..\synwork\Connection_Test_comp.srs -osyn ..\synwork\Connection_Test_mult.srs -log ..\synlog\Connection_Test_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\Connection_Test_comp.srs|io:i|time:1585459946|size:104555|exec:0|csum:B3C92B9C5B0DFB5FC5C03B9D2440A3E7
+file:..\synwork\Connection_Test_mult.srs|io:o|time:1585459947|size:9364|exec:0|csum:
+file:..\synlog\Connection_Test_multi_srs_gen.srr|io:o|time:1585459947|size:1223|exec:0|csum:
+file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

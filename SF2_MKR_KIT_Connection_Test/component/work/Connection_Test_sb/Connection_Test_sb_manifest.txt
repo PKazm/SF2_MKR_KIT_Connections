@@ -1,0 +1,34 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Thu Mar 26 00:14:21 2020
+Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test
+Component :  Connection_Test_sb
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb/CCC_0/Connection_Test_sb_CCC_0_FCCC.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb/Connection_Test_sb.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb/FABOSC_0/Connection_Test_sb_FABOSC_0_OSC.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb_MSS/Connection_Test_sb_MSS.vhd
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb_MSS/Connection_Test_sb_MSS_syn.vhd
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb_MSS/Connection_Test_sb_MSS_pre.vhd
+
+Stimulus files for all Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/Actel/SmartFusion2MSS/MSS/1.1.500/peripheral_init.bfm
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb/subsystem.bfm
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb_MSS/CM3_compile_bfm.tcl
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb_MSS/test.bfm
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb_MSS/user.bfm
+
+Firmware files for all Software IDE tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/component/work/Connection_Test_sb_MSS/sys_config_mss_clocks.h
+

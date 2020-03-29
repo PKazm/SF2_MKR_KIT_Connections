@@ -1,0 +1,2318 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+                              ./firmware/CMSIS/startup_gcc/newlib_stubs.o (__errno)
+c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o)
+                              c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o (exit)
+c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+                              c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+                              c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o (__libc_init_array)
+c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+                              ./firmware/drivers/mss_sys_services/mss_sys_services.o (memcpy)
+c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+                              c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+g_mss_spi1          0x84              ./firmware/drivers/mss_spi/mss_spi.o
+fab_corepwm_c0_0    0x4               ./src/main.o
+fab_Nokia5110_Driver_0
+                    0x4               ./src/main.o
+g_mss_uart1         0x40              ./firmware/drivers/mss_uart/mss_uart.o
+g_mss_i2c0          0x74              ./firmware/drivers/mss_i2c/mss_i2c.o
+g_mss_uart0         0x40              ./firmware/drivers/mss_uart/mss_uart.o
+LCD_bklt            0x1               ./src/main.o
+LED_row             0x1               ./src/main.o
+g_mss_spi0          0x84              ./firmware/drivers/mss_spi/mss_spi.o
+g_mss_i2c1          0x74              ./firmware/drivers/mss_i2c/mss_i2c.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crti.o
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crti.o
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crti.o
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .data.__dso_handle
+                0x0000000000000000        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .text          0x0000000000000000       0x74 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/fab_Nokia5110.o
+ .text          0x0000000000000000        0x0 ./src/fab_Nokia5110.o
+ .data          0x0000000000000000        0x0 ./src/fab_Nokia5110.o
+ .bss           0x0000000000000000        0x0 ./src/fab_Nokia5110.o
+ .text.nokia_init
+                0x0000000000000000       0x62 ./src/fab_Nokia5110.o
+ .text.nokia_get_reg
+                0x0000000000000000       0x22 ./src/fab_Nokia5110.o
+ .text.nokia_set_reg
+                0x0000000000000000       0x28 ./src/fab_Nokia5110.o
+ .text.nokia_get_x
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_get_y
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_get_data
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_set_data_reg
+                0x0000000000000000       0x52 ./src/fab_Nokia5110.o
+ .text.nokia_get_driver_ctrl
+                0x0000000000000000       0x1c ./src/fab_Nokia5110.o
+ .text.nokia_get_func_set
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_set_func_set
+                0x0000000000000000       0x24 ./src/fab_Nokia5110.o
+ .text.nokia_get_disp_ctrl
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_set_disp_ctrl
+                0x0000000000000000       0x24 ./src/fab_Nokia5110.o
+ .text.nokia_get_temp_ctrl
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_set_temp_ctrl
+                0x0000000000000000       0x24 ./src/fab_Nokia5110.o
+ .text.nokia_get_bias_sys
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_set_bias_sys
+                0x0000000000000000       0x24 ./src/fab_Nokia5110.o
+ .text.nokia_get_Vop_set
+                0x0000000000000000       0x1e ./src/fab_Nokia5110.o
+ .text.nokia_set_Vop_set
+                0x0000000000000000       0x24 ./src/fab_Nokia5110.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .group         0x0000000000000000        0xc ./src/main.o
+ .text          0x0000000000000000        0x0 ./src/main.o
+ .data          0x0000000000000000        0x0 ./src/main.o
+ .bss           0x0000000000000000        0x0 ./src/main.o
+ .rodata.gp_my_uart
+                0x0000000000000000        0x4 ./src/main.o
+ .debug_macro   0x0000000000000000      0xa78 ./src/main.o
+ .debug_macro   0x0000000000000000       0x22 ./src/main.o
+ .debug_macro   0x0000000000000000       0x8e ./src/main.o
+ .debug_macro   0x0000000000000000       0x51 ./src/main.o
+ .debug_macro   0x0000000000000000       0xef ./src/main.o
+ .debug_macro   0x0000000000000000       0x6a ./src/main.o
+ .debug_macro   0x0000000000000000      0x1df ./src/main.o
+ .debug_macro   0x0000000000000000       0x40 ./src/main.o
+ .text          0x0000000000000000        0xe ./firmware/hal/CortexM3/GNU/hal.o
+ .data          0x0000000000000000        0x0 ./firmware/hal/CortexM3/GNU/hal.o
+ .bss           0x0000000000000000        0x0 ./firmware/hal/CortexM3/GNU/hal.o
+ .debug_line    0x0000000000000000       0x56 ./firmware/hal/CortexM3/GNU/hal.o
+ .debug_info    0x0000000000000000       0x26 ./firmware/hal/CortexM3/GNU/hal.o
+ .debug_abbrev  0x0000000000000000       0x14 ./firmware/hal/CortexM3/GNU/hal.o
+ .debug_aranges
+                0x0000000000000000       0x20 ./firmware/hal/CortexM3/GNU/hal.o
+ .debug_str     0x0000000000000000       0xb3 ./firmware/hal/CortexM3/GNU/hal.o
+ .data          0x0000000000000000        0x0 ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+ .bss           0x0000000000000000        0x0 ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/hal/CortexM3/cortex_nvic.o
+ .text          0x0000000000000000        0x0 ./firmware/hal/CortexM3/cortex_nvic.o
+ .data          0x0000000000000000        0x0 ./firmware/hal/CortexM3/cortex_nvic.o
+ .bss           0x0000000000000000        0x0 ./firmware/hal/CortexM3/cortex_nvic.o
+ .text.NVIC_init
+                0x0000000000000000        0xe ./firmware/hal/CortexM3/cortex_nvic.o
+ .text.NVIC_set_handler
+                0x0000000000000000       0x16 ./firmware/hal/CortexM3/cortex_nvic.o
+ .text.NVIC_set_priority
+                0x0000000000000000       0x18 ./firmware/hal/CortexM3/cortex_nvic.o
+ .text.NVIC_enable_interrupt
+                0x0000000000000000       0x14 ./firmware/hal/CortexM3/cortex_nvic.o
+ .text.NVIC_disable_interrupt
+                0x0000000000000000       0x14 ./firmware/hal/CortexM3/cortex_nvic.o
+ .text.NVIC_clear_interrupt
+                0x0000000000000000       0x14 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_info    0x0000000000000000      0x1a1 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_abbrev  0x0000000000000000       0x93 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_aranges
+                0x0000000000000000       0x48 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_ranges  0x0000000000000000       0x38 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0xb6 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_line    0x0000000000000000      0x2fb ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_str     0x0000000000000000     0x41a0 ./firmware/hal/CortexM3/cortex_nvic.o
+ .comment       0x0000000000000000       0x69 ./firmware/hal/CortexM3/cortex_nvic.o
+ .debug_frame   0x0000000000000000       0xf8 ./firmware/hal/CortexM3/cortex_nvic.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers_config/sys_config/sys_config.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers_config/sys_config/sys_config.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers_config/sys_config/sys_config.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_info    0x0000000000000000       0x92 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_abbrev  0x0000000000000000       0x52 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0xc7 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x3a ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_line    0x0000000000000000      0x2e0 ./firmware/drivers_config/sys_config/sys_config.o
+ .debug_str     0x0000000000000000     0x9535 ./firmware/drivers_config/sys_config/sys_config.o
+ .comment       0x0000000000000000       0x69 ./firmware/drivers_config/sys_config/sys_config.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_uart/mss_uart.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_uart/mss_uart.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_uart/mss_uart.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.NVIC_EnableIRQ
+                0x0000000000000000       0x30 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.NVIC_DisableIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_lin_init
+                0x0000000000000000       0x68 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_irda_init
+                0x0000000000000000       0xdc ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_smartcard_init
+                0x0000000000000000       0x80 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_polled_tx
+                0x0000000000000000       0xc4 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_irq_tx
+                0x0000000000000000       0x9c ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_tx_complete
+                0x0000000000000000       0x74 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_get_rx
+                0x0000000000000000       0xbc ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_enable_irq
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_disable_irq
+                0x0000000000000000       0x9c ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_rx_handler
+                0x0000000000000000       0xa8 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_loopback
+                0x0000000000000000       0xd8 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_rxstatus_handler
+                0x0000000000000000       0x78 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_tx_handler
+                0x0000000000000000       0x84 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_modemstatus_handler
+                0x0000000000000000       0x78 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_fill_tx_fifo
+                0x0000000000000000       0xb8 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_get_rx_status
+                0x0000000000000000       0x68 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_get_modem_status
+                0x0000000000000000       0x4c ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_get_tx_status
+                0x0000000000000000       0x60 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_break
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_clear_break
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_pidpei_handler
+                0x0000000000000000       0x78 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_linbreak_handler
+                0x0000000000000000       0x78 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_linsync_handler
+                0x0000000000000000       0x78 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_nack_handler
+                0x0000000000000000       0x78 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_rx_timeout_handler
+                0x0000000000000000       0x78 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_enable_half_duplex
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_disable_half_duplex
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_rx_endian
+                0x0000000000000000       0x70 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_tx_endian
+                0x0000000000000000       0x70 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_filter_length
+                0x0000000000000000       0x58 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_enable_afm
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_disable_afm
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_enable_afclear
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_disable_afclear
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_enable_rx_timeout
+                0x0000000000000000       0x58 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_disable_rx_timeout
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_enable_tx_time_guard
+                0x0000000000000000       0x58 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_disable_tx_time_guard
+                0x0000000000000000       0x48 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_address
+                0x0000000000000000       0x4c ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_ready_mode
+                0x0000000000000000       0x70 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_set_usart_mode
+                0x0000000000000000       0x80 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000      0x174 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000      0x177 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_uart/mss_uart.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.NVIC_EnableIRQ
+                0x0000000000000000       0x30 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.NVIC_DisableIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.NVIC_ClearPendingIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.MSS_COMBLK_init
+                0x0000000000000000       0xd8 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.MSS_COMBLK_send_cmd_with_ptr
+                0x0000000000000000       0xfc ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.MSS_COMBLK_send_cmd
+                0x0000000000000000      0x130 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.MSS_COMBLK_send_paged_cmd
+                0x0000000000000000      0x130 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.send_cmd_opcode
+                0x0000000000000000       0x3c ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_request_in_progress
+                0x0000000000000000        0x1 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_last_response_length
+                0x0000000000000000        0x2 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_event_handler
+                0x0000000000000000        0x4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_response
+                0x0000000000000000        0x2 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_initial_mssddr_facc1_cr
+                0x0000000000000000        0x4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_init
+                0x0000000000000000       0x50 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.asynchronous_event_handler
+                0x0000000000000000       0xe4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_get_serial_number
+                0x0000000000000000       0x24 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_get_user_code
+                0x0000000000000000       0x24 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_get_design_version
+                0x0000000000000000       0x24 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_get_device_certificate
+                0x0000000000000000       0x24 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_get_secondary_device_certificate
+                0x0000000000000000       0x70 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.div1_seq
+                0x0000000000000000        0x4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.div2_seq
+                0x0000000000000000        0x3 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.div4_seq
+                0x0000000000000000        0x5 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.div8_seq
+                0x0000000000000000        0x3 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.div16_seq
+                0x0000000000000000        0x2 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.div32_seq
+                0x0000000000000000        0x2 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.divisor   0x0000000000000000       0x10 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.ind       0x0000000000000000        0x1 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.determine_seq
+                0x0000000000000000       0xac ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.clk_switching_fix
+                0x0000000000000000      0x29c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.revert_clk_config
+                0x0000000000000000      0x1c0 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_flash_freeze
+                0x0000000000000000       0xbc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_128bit_aes
+                0x0000000000000000       0x92 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_256bit_aes
+                0x0000000000000000       0x92 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_sha256
+                0x0000000000000000       0x68 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_hmac
+                0x0000000000000000       0x80 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_key_tree
+                0x0000000000000000       0x6a ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_challenge_response
+                0x0000000000000000       0x62 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_nrbg_reset
+                0x0000000000000000       0x60 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_nrbg_self_test
+                0x0000000000000000       0x54 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_nrbg_instantiate
+                0x0000000000000000       0x5a ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_nrbg_generate
+                0x0000000000000000       0x68 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_nrbg_reseed
+                0x0000000000000000       0x44 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_nrbg_uninstantiate
+                0x0000000000000000       0x60 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_zeroize_device
+                0x0000000000000000       0x80 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_isp_response
+                0x0000000000000000        0x2 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_isp_completion_handler
+                0x0000000000000000        0x4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_isp_page_read_handler
+                0x0000000000000000        0x4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.g_initial_envm_cr
+                0x0000000000000000        0x4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_initial_mssddr_facc2_cr
+                0x0000000000000000        0x4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .bss.g_mode    0x0000000000000000        0x1 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .data.wait_for_clock_switch
+                0x0000000000000000        0x1 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.isp_page_read_handler
+                0x0000000000000000       0x88 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.isp_sys_completion_handler
+                0x0000000000000000       0x58 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_start_isp
+                0x0000000000000000       0xf8 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_initiate_iap
+                0x0000000000000000      0x120 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_check_digest
+                0x0000000000000000       0xd0 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_create_activation_code
+                0x0000000000000000       0x7c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_delete_activation_code
+                0x0000000000000000       0x7c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_get_number_of_keys
+                0x0000000000000000       0x94 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_enroll_key
+                0x0000000000000000       0xc4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_delete_key
+                0x0000000000000000       0x88 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_fetch_key
+                0x0000000000000000       0x9c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_export_keycodes
+                0x0000000000000000       0x84 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_import_keycodes
+                0x0000000000000000       0x84 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_fetch_ecc_public_key
+                0x0000000000000000       0x80 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_puf_get_random_seed
+                0x0000000000000000       0x80 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_ecc_point_multiplication
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_ecc_point_addition
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .rodata        0x0000000000000000       0x60 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_ecc_get_base_point
+                0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_start_clock_monitor
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_stop_clock_monitor
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_enable_puf_power_down
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_disable_puf_power_down
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_clear_lock_parity
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.MSS_SYS_clear_mesh_short
+                0x0000000000000000       0xa4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.execute_service
+                0x0000000000000000       0x60 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.request_completion_handler
+                0x0000000000000000       0x2c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.signal_request_start
+                0x0000000000000000       0x2c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.wait_for_request_completion
+                0x0000000000000000       0x28 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.write_ptr_value_into_array
+                0x0000000000000000       0x52 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .text.write_array_into_ptr_value
+                0x0000000000000000       0x5c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_info    0x0000000000000000     0x2867 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_abbrev  0x0000000000000000      0x367 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_aranges
+                0x0000000000000000      0x1c8 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_ranges  0x0000000000000000      0x1b8 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0x3f4 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0x2f8 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0x174 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x58 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x1f ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x43 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x20 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0x18e ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000      0x339 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_line    0x0000000000000000     0x15a8 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_str     0x0000000000000000     0xf009 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .comment       0x0000000000000000       0x69 ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .debug_frame   0x0000000000000000      0x7dc ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_spi/mss_spi.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_spi/mss_spi.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_spi/mss_spi.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.NVIC_EnableIRQ
+                0x0000000000000000       0x30 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.NVIC_DisableIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_init
+                0x0000000000000000       0xe4 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_configure_slave_mode
+                0x0000000000000000       0xc4 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_configure_master_mode
+                0x0000000000000000      0x130 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_set_slave_select
+                0x0000000000000000       0xec ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_clear_slave_select
+                0x0000000000000000       0x88 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_transfer_frame
+                0x0000000000000000       0xb4 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_transfer_block
+                0x0000000000000000      0x1f4 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_set_frame_rx_handler
+                0x0000000000000000       0xe0 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_set_slave_tx_frame
+                0x0000000000000000       0xfc ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_set_slave_block_buffers
+                0x0000000000000000      0x210 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_set_cmd_handler
+                0x0000000000000000       0xb2 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_set_cmd_response
+                0x0000000000000000       0x32 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_enable
+                0x0000000000000000       0x38 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_disable
+                0x0000000000000000       0x38 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_set_transfer_byte_count
+                0x0000000000000000       0x76 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.MSS_SPI_tx_done
+                0x0000000000000000       0x20 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000      0x174 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x58 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x1f ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x43 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x20 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000      0x18e ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000      0x339 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_spi/mss_spi.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .rodata.g_nvm  0x0000000000000000        0x8 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .rodata.g_nvm32
+                0x0000000000000000        0x8 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .bss.g_do_not_lock_page
+                0x0000000000000000        0x1 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.NVM_write
+                0x0000000000000000      0x1f0 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.get_error_code
+                0x0000000000000000       0x58 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.NVM_unlock
+                0x0000000000000000      0x1bc ./firmware/drivers/mss_nvm/mss_nvm.o
+ .bss.g_envm_ctrl_locks
+                0x0000000000000000        0x1 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.request_nvm_access
+                0x0000000000000000       0x88 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.get_ctrl_access
+                0x0000000000000000       0x5e ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.release_ctrl_access
+                0x0000000000000000       0x68 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.wait_nvm_ready
+                0x0000000000000000       0x48 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.write_nvm
+                0x0000000000000000      0x114 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.get_remaining_page_length
+                0x0000000000000000       0x3c ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.fill_wd_buffer
+                0x0000000000000000      0x10c ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.NVM_read_page_write_count
+                0x0000000000000000      0x100 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.check_protection_reserved_nvm
+                0x0000000000000000      0x4d0 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .text.protection_check
+                0x0000000000000000       0x2c ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_info    0x0000000000000000     0x12e0 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_abbrev  0x0000000000000000      0x1f5 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_aranges
+                0x0000000000000000       0x80 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_ranges  0x0000000000000000       0x70 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000      0x2af ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_macro   0x0000000000000000       0x16 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_line    0x0000000000000000      0xb59 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_str     0x0000000000000000     0xabc9 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .comment       0x0000000000000000       0x69 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .debug_frame   0x0000000000000000      0x208 ./firmware/drivers/mss_nvm/mss_nvm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.NVIC_EnableIRQ
+                0x0000000000000000       0x30 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.NVIC_ClearPendingIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_init
+                0x0000000000000000      0x118 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_write
+                0x0000000000000000       0xe0 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_read
+                0x0000000000000000       0xe0 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_write_read
+                0x0000000000000000      0x11c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_get_status
+                0x0000000000000000       0x38 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_wait_complete
+                0x0000000000000000       0x44 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_system_tick
+                0x0000000000000000       0x50 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_set_slave_tx_buffer
+                0x0000000000000000       0x50 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_set_slave_rx_buffer
+                0x0000000000000000       0x50 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_set_slave_mem_offset_length
+                0x0000000000000000       0x4c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_register_write_handler
+                0x0000000000000000       0x34 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_enable_slave
+                0x0000000000000000       0x54 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_disable_slave
+                0x0000000000000000       0x48 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_smbus_init
+                0x0000000000000000       0x26 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_enable_smbus_irq
+                0x0000000000000000       0xb8 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_disable_smbus_irq
+                0x0000000000000000       0xa0 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_suspend_smbus_slave
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_resume_smbus_slave
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_reset_smbus
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_set_smbus_alert
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_clear_smbus_alert
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_set_gca
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_clear_gca
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_set_user_data
+                0x0000000000000000       0x1a ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.MSS_I2C_get_user_data
+                0x0000000000000000       0x16 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.disable_interrupts
+                0x0000000000000000       0x26 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.restore_interrupts
+                0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x27 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000      0x174 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x58 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x1f ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x43 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x20 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000      0x18e ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000      0x339 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.NVIC_EnableIRQ
+                0x0000000000000000       0x30 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.NVIC_DisableIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.NVIC_ClearPendingIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.MSS_HPDMA_init
+                0x0000000000000000       0xb8 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.MSS_HPDMA_start
+                0x0000000000000000       0xd4 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.MSS_HPDMA_pause
+                0x0000000000000000       0x2c ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.MSS_HPDMA_resume
+                0x0000000000000000       0x2c ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.MSS_HPDMA_abort
+                0x0000000000000000       0x48 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.MSS_HPDMA_get_transfer_status
+                0x0000000000000000       0x18 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.MSS_HPDMA_set_handler
+                0x0000000000000000       0x2c ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.MSS_GPIO_config
+                0x0000000000000000       0x38 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.MSS_GPIO_set_output
+                0x0000000000000000       0x64 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.MSS_GPIO_drive_inout
+                0x0000000000000000       0xf0 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.MSS_GPIO_disable_irq
+                0x0000000000000000       0x48 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.MSS_GPIO_clear_irq
+                0x0000000000000000       0x3c ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000      0x11c ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_gpio/mss_gpio.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .bss.g_phy_addr
+                0x0000000000000000        0x1 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .text.MSS_MAC_phy_init
+                0x0000000000000000       0x6c ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .rodata        0x0000000000000000        0x8 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .text.MSS_MAC_phy_set_link_speed
+                0x0000000000000000       0xd4 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .text.MSS_MAC_phy_autonegotiate
+                0x0000000000000000       0x84 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .text.MSS_MAC_phy_get_link_status
+                0x0000000000000000       0xa0 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_info    0x0000000000000000      0x324 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_abbrev  0x0000000000000000      0x137 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_aranges
+                0x0000000000000000       0x38 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_ranges  0x0000000000000000       0x28 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0x165 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0x3b8 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0x28f ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x3a ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_macro   0x0000000000000000      0x360 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_line    0x0000000000000000      0x483 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_str     0x0000000000000000     0xc928 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .comment       0x0000000000000000       0x69 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .debug_frame   0x0000000000000000       0xa0 ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.NVIC_EnableIRQ
+                0x0000000000000000       0x30 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.NVIC_DisableIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.NVIC_ClearPendingIRQ
+                0x0000000000000000       0x34 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.clear_bit_reg32
+                0x0000000000000000       0x3a ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.read_bit_reg32
+                0x0000000000000000       0x38 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_init
+                0x0000000000000000      0x120 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.update_mac_cfg
+                0x0000000000000000       0xdc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_get_link_status
+                0x0000000000000000      0x148 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_cfg_struct_def_init
+                0x0000000000000000       0xf4 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.mac_reset
+                0x0000000000000000       0x64 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.config_mac_hw
+                0x0000000000000000      0x358 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_write_phy_reg
+                0x0000000000000000       0x64 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_read_phy_reg
+                0x0000000000000000       0xbc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .rodata        0x0000000000000000       0xb0 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_read_stat
+                0x0000000000000000       0x54 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_clear_statistics
+                0x0000000000000000       0x20 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_receive_pkt
+                0x0000000000000000      0x13c ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_send_pkt
+                0x0000000000000000      0x10c ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_set_tx_callback
+                0x0000000000000000       0x1c ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.MSS_MAC_set_rx_callback
+                0x0000000000000000       0x1c ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.tx_desc_ring_init
+                0x0000000000000000       0xa0 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.rx_desc_ring_init
+                0x0000000000000000       0xa8 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.assign_station_addr
+                0x0000000000000000       0x7c ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.probe_phy
+                0x0000000000000000       0x52 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .data.previous_speed.6384
+                0x0000000000000000        0x1 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .data.previous_duplex.6385
+                0x0000000000000000        0x1 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .rodata.g_default_mac_address.6394
+                0x0000000000000000        0x6 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000000000      0x360 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/drivers/CorePWM/core_pwm.o
+ .text          0x0000000000000000        0x0 ./firmware/drivers/CorePWM/core_pwm.o
+ .data          0x0000000000000000        0x0 ./firmware/drivers/CorePWM/core_pwm.o
+ .bss           0x0000000000000000        0x0 ./firmware/drivers/CorePWM/core_pwm.o
+ .rodata.g_pwm_tach_id_mask_lut
+                0x0000000000000000       0x22 ./firmware/drivers/CorePWM/core_pwm.o
+ .rodata.g_tachpulsedur_offset_lut
+                0x0000000000000000       0x44 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_enable_synch_update
+                0x0000000000000000       0x32 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_disable_synch_update
+                0x0000000000000000       0x32 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_set_edges
+                0x0000000000000000       0xdc ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_get_duty_cycle
+                0x0000000000000000       0xe4 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_generate_aligned_wave
+                0x0000000000000000      0x160 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_enable_stretch_pulse
+                0x0000000000000000       0x80 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_disable_stretch_pulse
+                0x0000000000000000       0x84 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_init
+                0x0000000000000000       0x6c ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_set_mode
+                0x0000000000000000       0x98 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_read_value
+                0x0000000000000000       0x54 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_clear_status
+                0x0000000000000000       0x50 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_read_status
+                0x0000000000000000       0x5c ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_get_irq_source
+                0x0000000000000000       0x9e ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_enable_irq
+                0x0000000000000000       0x80 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_disable_irq
+                0x0000000000000000       0x84 ./firmware/drivers/CorePWM/core_pwm.o
+ .text.PWM_tach_clear_irq
+                0x0000000000000000       0x50 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x12 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000      0x191 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x64 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/drivers/CorePWM/core_pwm.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text          0x0000000000000000        0x0 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .data          0x0000000000000000        0x0 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .bss           0x0000000000000000        0x0 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .bss.__env     0x0000000000000000        0x4 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .data.environ  0x0000000000000000        0x4 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._close   0x0000000000000000       0x16 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._execve  0x0000000000000000       0x22 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._exit    0x0000000000000000        0xa ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._fork    0x0000000000000000       0x16 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._fstat   0x0000000000000000       0x1e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._getpid  0x0000000000000000        0xe ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._isatty  0x0000000000000000       0x14 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._kill    0x0000000000000000       0x20 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._link    0x0000000000000000       0x20 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._lseek   0x0000000000000000       0x18 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._open    0x0000000000000000       0x1a ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._read    0x0000000000000000       0x18 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._write_r
+                0x0000000000000000       0x1a ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .bss.heap_end.5467
+                0x0000000000000000        0x4 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .rodata        0x0000000000000000       0x30 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._sbrk    0x0000000000000000       0x9c ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._stat    0x0000000000000000       0x1e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._times   0x0000000000000000       0x16 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._unlink  0x0000000000000000       0x1e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text._wait    0x0000000000000000       0x1e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x0000000000000000     0x1071 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_abbrev  0x0000000000000000      0x333 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_aranges
+                0x0000000000000000       0xa8 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_ranges  0x0000000000000000       0x98 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0x1fa ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x18 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x5e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x94 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x16 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0x10e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x8d ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x57 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x58 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x1f ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x43 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x20 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0x18e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0x339 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x16 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x29 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x16 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x52 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x40 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x40 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0xd7 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x1c ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x3d ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0x51a ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x16 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x35 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0x122 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000       0x10 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macro   0x0000000000000000      0x241 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x0000000000000000      0x54d ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_str     0x0000000000000000     0x8a5e ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .comment       0x0000000000000000       0x69 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_frame   0x0000000000000000      0x2a8 ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .text          0x0000000000000000        0x0 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .data          0x0000000000000000        0x0 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .bss           0x0000000000000000        0x0 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .group         0x0000000000000000        0xc ./firmware/CMSIS/system_m2sxxx.o
+ .text          0x0000000000000000        0x0 ./firmware/CMSIS/system_m2sxxx.o
+ .data          0x0000000000000000        0x0 ./firmware/CMSIS/system_m2sxxx.o
+ .bss           0x0000000000000000        0x0 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000      0xa78 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x26 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x22 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x8e ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x51 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0xef ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x6a ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000      0x1df ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000      0xca6 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000      0x265 ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x3a ./firmware/CMSIS/system_m2sxxx.o
+ .debug_macro   0x0000000000000000       0x34 ./firmware/CMSIS/system_m2sxxx.o
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+ .text.__errno  0x0000000000000000        0xc c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000000       0x20 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x28 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x0000000000000000       0x1c c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000000       0x28 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+ .text.memset   0x0000000000000000       0x10 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000000       0x20 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtend.o
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtend.o
+ .eh_frame      0x0000000000000000        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtend.o
+ .text          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtn.o
+ .data          0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x0000000020000000 0x0000000000010000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crti.o
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+LOAD ./src/fab_Nokia5110.o
+LOAD ./src/main.o
+LOAD ./firmware/hal/CortexM3/GNU/hal.o
+LOAD ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+LOAD ./firmware/hal/CortexM3/cortex_nvic.o
+LOAD ./firmware/drivers_config/sys_config/sys_config.o
+LOAD ./firmware/drivers/mss_uart/mss_uart.o
+LOAD ./firmware/drivers/mss_sys_services/mss_comblk.o
+LOAD ./firmware/drivers/mss_sys_services/mss_sys_services.o
+LOAD ./firmware/drivers/mss_spi/mss_spi.o
+LOAD ./firmware/drivers/mss_nvm/mss_nvm.o
+LOAD ./firmware/drivers/mss_i2c/mss_i2c.o
+LOAD ./firmware/drivers/mss_hpdma/mss_hpdma.o
+LOAD ./firmware/drivers/mss_gpio/mss_gpio.o
+LOAD ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+LOAD ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+LOAD ./firmware/drivers/CorePWM/core_pwm.o
+LOAD ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+LOAD ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+LOAD ./firmware/CMSIS/system_m2sxxx.o
+START GROUP
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a
+END GROUP
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtend.o
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtn.o
+START GROUP
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a
+LOAD c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
+END GROUP
+                0x0000000000000000                __DYNAMIC = 0x0
+                0x0000000020000000                RAM_START_ADDRESS = 0x20000000
+                0x0000000000010000                RAM_SIZE = 0x10000
+                0x0000000000001000                MAIN_STACK_SIZE = 0x1000
+                0x0000000000001000                MIN_SIZE_HEAP = 0x1000
+                0x0000000020010000                PROVIDE (__main_stack_start = (RAM_START_ADDRESS + RAM_SIZE))
+                0x0000000020010000                PROVIDE (_estack = __main_stack_start)
+                0x0000000000000000                PROVIDE (__mirrored_nvm = 0x0)
+                0x0000000000000000                PROVIDE (__smartfusion2_memory_remap = 0x0)
+
+.vector_table   0x0000000020000000      0x190
+                0x0000000020000000                __vector_table_load = LOADADDR (.vector_table)
+                0x0000000020000000                __vector_table_start = .
+                0x0000000020000000                __vector_table_vma_base_address = .
+ *(.isr_vector)
+ .isr_vector    0x0000000020000000      0x190 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+                0x0000000020000000                g_pfnVectors
+                0x0000000020000190                . = ALIGN (0x10)
+                0x0000000020000190                _evector_table = .
+
+.boot_code      0x0000000020000190      0x320
+ *(.boot_code)
+ .boot_code     0x0000000020000190      0x31c ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+                0x0000000020000190                Reset_Handler
+                0x000000002000037e                NMI_Handler
+                0x0000000020000380                HardFault_Handler
+                0x0000000020000382                MemManage_Handler
+                0x0000000020000384                BusFault_Handler
+                0x0000000020000386                UsageFault_Handler
+                0x0000000020000388                SVC_Handler
+                0x000000002000038a                DebugMon_Handler
+                0x000000002000038c                PendSV_Handler
+                0x000000002000038e                SysTick_Handler
+                0x0000000020000390                WdogWakeup_IRQHandler
+                0x0000000020000392                RTC_Wakeup_IRQHandler
+                0x000000002000039a                I2C0_SMBAlert_IRQHandler
+                0x000000002000039c                I2C0_SMBus_IRQHandler
+                0x00000000200003a0                I2C1_SMBAlert_IRQHandler
+                0x00000000200003a2                I2C1_SMBus_IRQHandler
+                0x00000000200003aa                DMA_IRQHandler
+                0x00000000200003ac                Timer1_IRQHandler
+                0x00000000200003ae                Timer2_IRQHandler
+                0x00000000200003b0                CAN_IRQHandler
+                0x00000000200003b2                ENVM0_IRQHandler
+                0x00000000200003b4                ENVM1_IRQHandler
+                0x00000000200003b8                USB_IRQHandler
+                0x00000000200003ba                USB_DMA_IRQHandler
+                0x00000000200003bc                PLL_Lock_IRQHandler
+                0x00000000200003be                PLL_LockLost_IRQHandler
+                0x00000000200003c0                CommSwitchError_IRQHandler
+                0x00000000200003c2                CacheError_IRQHandler
+                0x00000000200003c4                DDR_IRQHandler
+                0x00000000200003ca                ECC_Error_IRQHandler
+                0x00000000200003cc                MDDR_IOCalib_IRQHandler
+                0x00000000200003ce                FAB_PLL_Lock_IRQHandler
+                0x00000000200003d0                FAB_PLL_LockLost_IRQHandler
+                0x00000000200003d2                FIC64_IRQHandler
+                0x00000000200003d4                FabricIrq0_IRQHandler
+                0x00000000200003d6                FabricIrq1_IRQHandler
+                0x00000000200003d8                FabricIrq2_IRQHandler
+                0x00000000200003da                FabricIrq3_IRQHandler
+                0x00000000200003dc                FabricIrq4_IRQHandler
+                0x00000000200003de                FabricIrq5_IRQHandler
+                0x00000000200003e0                FabricIrq6_IRQHandler
+                0x00000000200003e2                FabricIrq7_IRQHandler
+                0x00000000200003e4                FabricIrq8_IRQHandler
+                0x00000000200003e6                FabricIrq9_IRQHandler
+                0x00000000200003e8                FabricIrq10_IRQHandler
+                0x00000000200003ea                FabricIrq11_IRQHandler
+                0x00000000200003ec                FabricIrq12_IRQHandler
+                0x00000000200003ee                FabricIrq13_IRQHandler
+                0x00000000200003f0                FabricIrq14_IRQHandler
+                0x00000000200003f2                FabricIrq15_IRQHandler
+                0x00000000200003f4                GPIO0_IRQHandler
+                0x00000000200003f6                GPIO1_IRQHandler
+                0x00000000200003f8                GPIO2_IRQHandler
+                0x00000000200003fa                GPIO3_IRQHandler
+                0x00000000200003fc                GPIO4_IRQHandler
+                0x00000000200003fe                GPIO5_IRQHandler
+                0x0000000020000400                GPIO6_IRQHandler
+                0x0000000020000402                GPIO7_IRQHandler
+                0x0000000020000404                GPIO8_IRQHandler
+                0x0000000020000406                GPIO9_IRQHandler
+                0x0000000020000408                GPIO10_IRQHandler
+                0x000000002000040a                GPIO11_IRQHandler
+                0x000000002000040c                GPIO12_IRQHandler
+                0x000000002000040e                GPIO13_IRQHandler
+                0x0000000020000410                GPIO14_IRQHandler
+                0x0000000020000412                GPIO15_IRQHandler
+                0x0000000020000414                GPIO16_IRQHandler
+                0x0000000020000416                GPIO17_IRQHandler
+                0x0000000020000418                GPIO18_IRQHandler
+                0x000000002000041a                GPIO19_IRQHandler
+                0x000000002000041c                GPIO20_IRQHandler
+                0x000000002000041e                GPIO21_IRQHandler
+                0x0000000020000420                GPIO22_IRQHandler
+                0x0000000020000422                GPIO23_IRQHandler
+                0x0000000020000424                GPIO24_IRQHandler
+                0x0000000020000426                GPIO25_IRQHandler
+                0x0000000020000428                GPIO26_IRQHandler
+                0x000000002000042a                GPIO27_IRQHandler
+                0x000000002000042c                GPIO28_IRQHandler
+                0x000000002000042e                GPIO29_IRQHandler
+                0x0000000020000430                GPIO30_IRQHandler
+                0x0000000020000432                GPIO31_IRQHandler
+                0x0000000020000434                mscc_post_hw_cfg_init
+                0x00000000200004b0                . = ALIGN (0x10)
+ *fill*         0x00000000200004ac        0x4 
+
+.text           0x00000000200004b0     0x3060
+ CREATE_OBJECT_SYMBOLS
+                0x00000000200004b0                __text_load = LOADADDR (.text)
+                0x00000000200004b0                __text_start = .
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.deregister_tm_clones
+                0x00000000200004b0       0x1c c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .text.register_tm_clones
+                0x00000000200004cc       0x24 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .text.__do_global_dtors_aux
+                0x00000000200004f0       0x28 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .text.frame_dummy
+                0x0000000020000518       0x24 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .text.nokia_set_x
+                0x000000002000053c       0x24 ./src/fab_Nokia5110.o
+                0x000000002000053c                nokia_set_x
+ .text.nokia_set_y
+                0x0000000020000560       0x24 ./src/fab_Nokia5110.o
+                0x0000000020000560                nokia_set_y
+ .text.nokia_set_data
+                0x0000000020000584       0x24 ./src/fab_Nokia5110.o
+                0x0000000020000584                nokia_set_data
+ .text.nokia_get_data_reg
+                0x00000000200005a8       0x46 ./src/fab_Nokia5110.o
+                0x00000000200005a8                nokia_get_data_reg
+ .text.nokia_set_driver_ctrl
+                0x00000000200005ee       0x22 ./src/fab_Nokia5110.o
+                0x00000000200005ee                nokia_set_driver_ctrl
+ .text.nokia_set_pixel_reg_block
+                0x0000000020000610       0x94 ./src/fab_Nokia5110.o
+                0x0000000020000610                nokia_set_pixel_reg_block
+ .text.nokia_get_pixel
+                0x00000000200006a4       0x6a ./src/fab_Nokia5110.o
+                0x00000000200006a4                nokia_get_pixel
+ .text.nokia_set_pixel
+                0x000000002000070e       0xa0 ./src/fab_Nokia5110.o
+                0x000000002000070e                nokia_set_pixel
+ *fill*         0x00000000200007ae        0x2 
+ .text.MSS_GPIO_set_outputs
+                0x00000000200007b0       0x20 ./src/main.o
+ .text.main     0x00000000200007d0       0x34 ./src/main.o
+                0x00000000200007d0                main
+ .text.periph_init
+                0x0000000020000804       0x40 ./src/main.o
+                0x0000000020000804                periph_init
+ .text.mss_uart_init
+                0x0000000020000844       0x20 ./src/main.o
+                0x0000000020000844                mss_uart_init
+ .text.fab_pwm_init
+                0x0000000020000864       0x30 ./src/main.o
+                0x0000000020000864                fab_pwm_init
+ .text.mss_gpio_init
+                0x0000000020000894        0xe ./src/main.o
+                0x0000000020000894                mss_gpio_init
+ *fill*         0x00000000200008a2        0x2 
+ .text.fab_nokia_init
+                0x00000000200008a4       0x68 ./src/main.o
+                0x00000000200008a4                fab_nokia_init
+ .text.fab_nokia_test
+                0x000000002000090c      0x110 ./src/main.o
+                0x000000002000090c                fab_nokia_test
+ .text          0x0000000020000a1c       0x90 ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+                0x0000000020000a1c                HW_set_32bit_reg
+                0x0000000020000a20                HW_get_32bit_reg
+                0x0000000020000a24                HW_set_32bit_reg_field
+                0x0000000020000a40                HW_get_32bit_reg_field
+                0x0000000020000a4c                HW_set_16bit_reg
+                0x0000000020000a50                HW_get_16bit_reg
+                0x0000000020000a54                HW_set_16bit_reg_field
+                0x0000000020000a70                HW_get_16bit_reg_field
+                0x0000000020000a7c                HW_set_8bit_reg
+                0x0000000020000a80                HW_get_8bit_reg
+                0x0000000020000a84                HW_set_8bit_reg_field
+                0x0000000020000aa0                HW_get_8bit_reg_field
+ .text.NVIC_ClearPendingIRQ
+                0x0000000020000aac       0x34 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.set_bit_reg8
+                0x0000000020000ae0       0x3a ./firmware/drivers/mss_uart/mss_uart.o
+ .text.clear_bit_reg8
+                0x0000000020000b1a       0x3a ./firmware/drivers/mss_uart/mss_uart.o
+ .text.read_bit_reg8
+                0x0000000020000b54       0x38 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_init
+                0x0000000020000b8c       0x70 ./firmware/drivers/mss_uart/mss_uart.o
+                0x0000000020000b8c                MSS_UART_init
+ .text.MSS_UART_polled_tx_string
+                0x0000000020000bfc       0xb4 ./firmware/drivers/mss_uart/mss_uart.o
+                0x0000000020000bfc                MSS_UART_polled_tx_string
+ .text.UART0_IRQHandler
+                0x0000000020000cb0       0x24 ./firmware/drivers/mss_uart/mss_uart.o
+                0x0000000020000cb0                UART0_IRQHandler
+ .text.UART1_IRQHandler
+                0x0000000020000cd4       0x24 ./firmware/drivers/mss_uart/mss_uart.o
+                0x0000000020000cd4                UART1_IRQHandler
+ .text.config_baud_divisors
+                0x0000000020000cf8      0x14c ./firmware/drivers/mss_uart/mss_uart.o
+ .text.global_init
+                0x0000000020000e44      0x1d8 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.MSS_UART_isr
+                0x000000002000101c      0x208 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.default_tx_handler
+                0x0000000020001224       0xe8 ./firmware/drivers/mss_uart/mss_uart.o
+ .text.ComBlk_IRQHandler
+                0x000000002000130c       0x48 ./firmware/drivers/mss_sys_services/mss_comblk.o
+                0x000000002000130c                ComBlk_IRQHandler
+ .text.handle_tx_okay_irq
+                0x0000000020001354      0x1ac ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.handle_rx_okay_irq
+                0x0000000020001500      0x210 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.complete_request
+                0x0000000020001710       0x40 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.abort_current_cmd
+                0x0000000020001750       0x4c ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.fill_tx_fifo
+                0x000000002000179c       0x60 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.process_sys_ctrl_command
+                0x00000000200017fc       0x28 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .text.NVIC_ClearPendingIRQ
+                0x0000000020001824       0x34 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.recover_from_rx_overflow
+                0x0000000020001858      0x128 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.fill_slave_tx_fifo
+                0x0000000020001980       0xd6 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.read_slave_rx_fifo
+                0x0000000020001a56       0xa6 ./firmware/drivers/mss_spi/mss_spi.o
+ .text.mss_spi_isr
+                0x0000000020001afc      0x27c ./firmware/drivers/mss_spi/mss_spi.o
+ .text.SPI0_IRQHandler
+                0x0000000020001d78       0x24 ./firmware/drivers/mss_spi/mss_spi.o
+                0x0000000020001d78                SPI0_IRQHandler
+ .text.SPI1_IRQHandler
+                0x0000000020001d9c       0x24 ./firmware/drivers/mss_spi/mss_spi.o
+                0x0000000020001d9c                SPI1_IRQHandler
+ .text.NVIC_DisableIRQ
+                0x0000000020001dc0       0x34 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.enable_slave_if_required
+                0x0000000020001df4       0x24 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.mss_i2c_isr
+                0x0000000020001e18      0x854 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .text.I2C0_IRQHandler
+                0x000000002000266c       0x24 ./firmware/drivers/mss_i2c/mss_i2c.o
+                0x000000002000266c                I2C0_IRQHandler
+ .text.I2C1_IRQHandler
+                0x0000000020002690       0x24 ./firmware/drivers/mss_i2c/mss_i2c.o
+                0x0000000020002690                I2C1_IRQHandler
+ .text.start_transfer
+                0x00000000200026b4      0x154 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .text.HPDMA_Complete_IRQHandler
+                0x0000000020002808       0xf8 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+                0x0000000020002808                HPDMA_Complete_IRQHandler
+ .text.HPDMA_Error_IRQHandler
+                0x0000000020002900      0x100 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+                0x0000000020002900                HPDMA_Error_IRQHandler
+ .text.NVIC_EnableIRQ
+                0x0000000020002a00       0x30 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.NVIC_DisableIRQ
+                0x0000000020002a30       0x34 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.NVIC_ClearPendingIRQ
+                0x0000000020002a64       0x34 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .text.MSS_GPIO_init
+                0x0000000020002a98       0x78 ./firmware/drivers/mss_gpio/mss_gpio.o
+                0x0000000020002a98                MSS_GPIO_init
+ .text.MSS_GPIO_enable_irq
+                0x0000000020002b10       0x58 ./firmware/drivers/mss_gpio/mss_gpio.o
+                0x0000000020002b10                MSS_GPIO_enable_irq
+ .text.set_bit_reg32
+                0x0000000020002b68       0x3a ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ *fill*         0x0000000020002ba2        0x2 
+ .text.EthernetMAC_IRQHandler
+                0x0000000020002ba4       0x40 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+                0x0000000020002ba4                EthernetMAC_IRQHandler
+ .text.rxpkt_handler
+                0x0000000020002be4       0xbc ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.txpkt_handler
+                0x0000000020002ca0       0xec ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .text.PWM_init
+                0x0000000020002d8c      0x13a ./firmware/drivers/CorePWM/core_pwm.o
+                0x0000000020002d8c                PWM_init
+ *fill*         0x0000000020002ec6        0x2 
+ .text.PWM_enable
+                0x0000000020002ec8       0x94 ./firmware/drivers/CorePWM/core_pwm.o
+                0x0000000020002ec8                PWM_enable
+ .text.PWM_disable
+                0x0000000020002f5c       0x9c ./firmware/drivers/CorePWM/core_pwm.o
+                0x0000000020002f5c                PWM_disable
+ .text.PWM_set_duty_cycle
+                0x0000000020002ff8       0xac ./firmware/drivers/CorePWM/core_pwm.o
+                0x0000000020002ff8                PWM_set_duty_cycle
+ .text.SystemInit
+                0x00000000200030a4       0x20 ./firmware/CMSIS/system_m2sxxx.o
+                0x00000000200030a4                SystemInit
+ .text.SystemCoreClockUpdate
+                0x00000000200030c4       0xfc ./firmware/CMSIS/system_m2sxxx.o
+                0x00000000200030c4                SystemCoreClockUpdate
+ .text.get_rcosc_25_50mhz_frequency
+                0x00000000200031c0       0x3c ./firmware/CMSIS/system_m2sxxx.o
+ .text.set_clock_frequency_globals
+                0x00000000200031fc       0x5c ./firmware/CMSIS/system_m2sxxx.o
+ .text.get_silicon_revision
+                0x0000000020003258       0x48 ./firmware/CMSIS/system_m2sxxx.o
+ .text.silicon_workarounds
+                0x00000000200032a0       0x22 ./firmware/CMSIS/system_m2sxxx.o
+ *fill*         0x00000000200032c2        0x2 
+ .text.m2s050_rev_a_workarounds
+                0x00000000200032c4       0x30 ./firmware/CMSIS/system_m2sxxx.o
+ .text.__libc_init_array
+                0x00000000200032f4       0x48 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+                0x00000000200032f4                __libc_init_array
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x000000002000333c        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x000000002000333c        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x000000002000333c        0x0 linker stubs
+                0x000000002000333c                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000002000333c       0x64 ./src/main.o
+ .rodata.g_config_reg_lut
+                0x00000000200033a0       0x80 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .rodata.g_gpio_irqn_lut
+                0x0000000020003420       0x20 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .rodata.g_pwm_id_mask_lut
+                0x0000000020003440       0x11 ./firmware/drivers/CorePWM/core_pwm.o
+ *fill*         0x0000000020003451        0x3 
+ .rodata.g_pwm_posedge_offset_lut
+                0x0000000020003454       0x44 ./firmware/drivers/CorePWM/core_pwm.o
+ .rodata.g_pwm_negedge_offset_lut
+                0x0000000020003498       0x44 ./firmware/drivers/CorePWM/core_pwm.o
+ .rodata        0x00000000200034dc        0x8 ./firmware/CMSIS/system_m2sxxx.o
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ .eh_frame      0x00000000200034e4        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ *(.vector_table)
+ *(.init)
+ .init          0x00000000200034e4        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crti.o
+                0x00000000200034e4                _init
+ .init          0x00000000200034e8        0x8 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x00000000200034f0        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crti.o
+                0x00000000200034f0                _fini
+ .fini          0x00000000200034f4        0x8 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtn.o
+                0x00000000200034fc                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000200034fc                PROVIDE (__preinit_array_end = .)
+                0x00000000200034fc                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x00000000200034fc        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+                0x0000000020003500                PROVIDE (__init_array_end = .)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(.fini_array)
+ .fini_array    0x0000000020003500        0x4 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ *(SORT_BY_NAME(.fini_array.*))
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x0000000020003510                . = ALIGN (0x10)
+ *fill*         0x0000000020003504        0xc 
+                0x0000000020003510                __exidx_start = .
+
+.v4_bx          0x0000000020003510        0x0
+ .v4_bx         0x0000000020003510        0x0 linker stubs
+
+.iplt           0x0000000020003510        0x0
+ .iplt          0x0000000020003510        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+
+.rel.dyn        0x0000000020003510        0x0
+ .rel.iplt      0x0000000020003510        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000000020003510                __exidx_end = .
+                0x0000000020003510                _etext = .
+                [!provide]                        PROVIDE (__text_end = .)
+
+.data           0x0000000020003510       0x20
+                0x0000000020003510                __data_load = LOADADDR (.data)
+                0x0000000020003510                _sidata = LOADADDR (.data)
+                0x0000000020003510                __data_start = .
+                0x0000000020003510                _sdata = .
+ *(.jcr)
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.SystemCoreClock
+                0x0000000020003510        0x4 ./firmware/CMSIS/system_m2sxxx.o
+                0x0000000020003510                SystemCoreClock
+ .data.g_FrequencyPCLK0
+                0x0000000020003514        0x4 ./firmware/CMSIS/system_m2sxxx.o
+                0x0000000020003514                g_FrequencyPCLK0
+ .data.g_FrequencyPCLK1
+                0x0000000020003518        0x4 ./firmware/CMSIS/system_m2sxxx.o
+                0x0000000020003518                g_FrequencyPCLK1
+ .data.g_FrequencyPCLK2
+                0x000000002000351c        0x4 ./firmware/CMSIS/system_m2sxxx.o
+                0x000000002000351c                g_FrequencyPCLK2
+ .data.g_FrequencyFIC0
+                0x0000000020003520        0x4 ./firmware/CMSIS/system_m2sxxx.o
+                0x0000000020003520                g_FrequencyFIC0
+ .data.g_FrequencyFIC1
+                0x0000000020003524        0x4 ./firmware/CMSIS/system_m2sxxx.o
+                0x0000000020003524                g_FrequencyFIC1
+ .data.g_FrequencyFIC64
+                0x0000000020003528        0x4 ./firmware/CMSIS/system_m2sxxx.o
+                0x0000000020003528                g_FrequencyFIC64
+                0x0000000020003530                . = ALIGN (0x10)
+ *fill*         0x000000002000352c        0x4 
+                0x0000000020003530                _edata = .
+
+.tm_clone_table
+                0x0000000020003530        0x0
+ .tm_clone_table
+                0x0000000020003530        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .tm_clone_table
+                0x0000000020003530        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtend.o
+
+.igot.plt       0x0000000020003530        0x0
+ .igot.plt      0x0000000020003530        0x0 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+
+.bss            0x0000000020003530      0x350
+                0x0000000020003530                __bss_start__ = .
+                0x0000000020003530                _sbss = .
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.completed.6707
+                0x0000000020003530        0x1 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ *fill*         0x0000000020003531        0x3 
+ .bss.object.6712
+                0x0000000020003534       0x18 c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .bss.g_comblk_cmd_opcode
+                0x000000002000354c        0x1 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ *fill*         0x000000002000354d        0x3 
+ .bss.g_comblk_p_cmd
+                0x0000000020003550        0x4 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_cmd_size
+                0x0000000020003554        0x2 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ *fill*         0x0000000020003556        0x2 
+ .bss.g_comblk_p_data
+                0x0000000020003558        0x4 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_data_size
+                0x000000002000355c        0x4 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_p_response
+                0x0000000020003560        0x4 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_response_size
+                0x0000000020003564        0x2 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_response_idx
+                0x0000000020003566        0x2 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_completion_handler
+                0x0000000020003568        0x4 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_page_handler
+                0x000000002000356c        0x4 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_request_in_progress
+                0x0000000020003570        0x1 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_comblk_state
+                0x0000000020003571        0x1 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ *fill*         0x0000000020003572        0x2 
+ .bss.g_async_event_handler
+                0x0000000020003574        0x4 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .bss.g_transfer
+                0x0000000020003578       0x18 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .bss.g_hpdma_end_desc
+                0x0000000020003590        0x4 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .bss.g_hpdma_current_desc
+                0x0000000020003594        0x4 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .bss.g_mac     0x0000000020003598       0x68 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ *(COMMON)
+ COMMON         0x0000000020003600        0xa ./src/main.o
+                0x0000000020003600                fab_corepwm_c0_0
+                0x0000000020003604                fab_Nokia5110_Driver_0
+                0x0000000020003608                LCD_bklt
+                0x0000000020003609                LED_row
+ *fill*         0x000000002000360a        0x2 
+ COMMON         0x000000002000360c       0x80 ./firmware/drivers/mss_uart/mss_uart.o
+                0x000000002000360c                g_mss_uart1
+                0x000000002000364c                g_mss_uart0
+ COMMON         0x000000002000368c      0x108 ./firmware/drivers/mss_spi/mss_spi.o
+                0x000000002000368c                g_mss_spi1
+                0x0000000020003710                g_mss_spi0
+ COMMON         0x0000000020003794       0xe8 ./firmware/drivers/mss_i2c/mss_i2c.o
+                0x0000000020003794                g_mss_i2c0
+                0x0000000020003808                g_mss_i2c1
+                0x0000000020003880                . = ALIGN (0x10)
+ *fill*         0x000000002000387c        0x4 
+                0x0000000020003880                __bss_end__ = .
+                0x0000000020003880                _end = .
+                0x0000000020003880                __end = _end
+                0x0000000020003880                _ebss = .
+                [!provide]                        PROVIDE (end = .)
+
+.heap           0x0000000020003880     0xb780
+                0x0000000020003880                __heap_start__ = .
+                0x0000000020004880                . = (. + MIN_SIZE_HEAP)
+ *fill*         0x0000000020003880     0x1000 
+                0x000000002000f000                . = (. + (((ABSOLUTE (RAM_START_ADDRESS) + RAM_SIZE) - MAIN_STACK_SIZE) - .))
+ *fill*         0x0000000020004880     0xa780 
+                0x000000002000f000                _eheap = .
+
+.stack          0x000000002000f000     0x1000
+                0x000000002000f000                __stack_start__ = .
+                0x0000000020010000                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x000000002000f000     0x1000 
+                0x0000000020010000                _estack = .
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x8c8
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0xe8 ./src/fab_Nokia5110.o
+ .debug_aranges
+                0x00000000000000e8       0x58 ./src/main.o
+ .debug_aranges
+                0x0000000000000140       0x20 ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+ .debug_aranges
+                0x0000000000000160      0x1d0 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_aranges
+                0x0000000000000330       0x90 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_aranges
+                0x00000000000003c0       0xe0 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_aranges
+                0x00000000000004a0      0x128 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_aranges
+                0x00000000000005c8       0x80 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_aranges
+                0x0000000000000648       0x68 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_aranges
+                0x00000000000006b0       0xf0 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_aranges
+                0x00000000000007a0       0xb8 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_aranges
+                0x0000000000000858       0x20 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .debug_aranges
+                0x0000000000000878       0x50 ./firmware/CMSIS/system_m2sxxx.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xdccd
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x7a1 ./src/fab_Nokia5110.o
+ .debug_info    0x00000000000007a1     0x124b ./src/main.o
+ .debug_info    0x00000000000019ec       0x26 ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+ .debug_info    0x0000000000001a12     0x1ea8 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_info    0x00000000000038ba      0xb4b ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_info    0x0000000000004405     0x1f5b ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_info    0x0000000000006360     0x2295 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_info    0x00000000000085f5     0x1231 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_info    0x0000000000009826     0x10dc ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_info    0x000000000000a902     0x1cde ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_info    0x000000000000c5e0      0xb66 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_info    0x000000000000d146       0x26 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .debug_info    0x000000000000d16c      0xb61 ./firmware/CMSIS/system_m2sxxx.o
+
+.debug_abbrev   0x0000000000000000     0x1c1e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x162 ./src/fab_Nokia5110.o
+ .debug_abbrev  0x0000000000000162      0x2be ./src/main.o
+ .debug_abbrev  0x0000000000000420       0x14 ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+ .debug_abbrev  0x0000000000000434      0x356 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_abbrev  0x000000000000078a      0x224 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_abbrev  0x00000000000009ae      0x35d ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_abbrev  0x0000000000000d0b      0x3e3 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_abbrev  0x00000000000010ee      0x2a3 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_abbrev  0x0000000000001391      0x1e3 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_abbrev  0x0000000000001574      0x338 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_abbrev  0x00000000000018ac      0x1ac ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_abbrev  0x0000000000001a58       0x14 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .debug_abbrev  0x0000000000001a6c      0x1b2 ./firmware/CMSIS/system_m2sxxx.o
+
+.debug_line     0x0000000000000000     0x7506
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x7a1 ./src/fab_Nokia5110.o
+ .debug_line    0x00000000000007a1      0x6cf ./src/main.o
+ .debug_line    0x0000000000000e70       0x94 ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+ .debug_line    0x0000000000000f04     0x159d ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_line    0x00000000000024a1      0x89e ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_line    0x0000000000002d3f     0x1064 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_line    0x0000000000003da3      0xdff ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_line    0x0000000000004ba2      0x657 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_line    0x00000000000051f9      0x53c ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_line    0x0000000000005735      0xd62 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_line    0x0000000000006497      0xab6 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_line    0x0000000000006f4d      0x197 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .debug_line    0x00000000000070e4      0x422 ./firmware/CMSIS/system_m2sxxx.o
+
+.debug_frame    0x0000000000000000     0x23f0
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x3b8 ./src/fab_Nokia5110.o
+ .debug_frame   0x00000000000003b8      0x118 ./src/main.o
+ .debug_frame   0x00000000000004d0      0x820 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_frame   0x0000000000000cf0      0x240 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_frame   0x0000000000000f30      0x3c0 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_frame   0x00000000000012f0      0x540 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_frame   0x0000000000001830      0x208 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_frame   0x0000000000001a38      0x198 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_frame   0x0000000000001bd0      0x408 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_frame   0x0000000000001fd8      0x2e0 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_frame   0x00000000000022b8      0x10c ./firmware/CMSIS/system_m2sxxx.o
+ .debug_frame   0x00000000000023c4       0x2c c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+
+.debug_str      0x0000000000000000    0x1725b
+ *(.debug_str)
+ .debug_str     0x0000000000000000     0x4a25 ./src/fab_Nokia5110.o
+                                       0x4bdb (size before relaxing)
+ .debug_str     0x0000000000004a25     0x7c36 ./src/main.o
+                                       0xbbc6 (size before relaxing)
+ .debug_str     0x000000000000c65b       0x3c ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+                                         0xbd (size before relaxing)
+ .debug_str     0x000000000000c697     0x159d ./firmware/drivers/mss_uart/mss_uart.o
+                                       0xbe1d (size before relaxing)
+ .debug_str     0x000000000000dc34      0x4e9 ./firmware/drivers/mss_sys_services/mss_comblk.o
+                                       0xa1f5 (size before relaxing)
+ .debug_str     0x000000000000e11d     0x32cf ./firmware/drivers/mss_spi/mss_spi.o
+                                       0xdb74 (size before relaxing)
+ .debug_str     0x00000000000113ec      0x7d8 ./firmware/drivers/mss_i2c/mss_i2c.o
+                                       0xdcd9 (size before relaxing)
+ .debug_str     0x0000000000011bc4      0x770 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+                                       0xab0f (size before relaxing)
+ .debug_str     0x0000000000012334      0x1d3 ./firmware/drivers/mss_gpio/mss_gpio.o
+                                       0xad63 (size before relaxing)
+ .debug_str     0x0000000000012507     0x3f7a ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+                                       0xe463 (size before relaxing)
+ .debug_str     0x0000000000016481      0x60c ./firmware/drivers/CorePWM/core_pwm.o
+                                       0x56d7 (size before relaxing)
+ .debug_str     0x0000000000016a8d       0x2f ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+                                         0xbf (size before relaxing)
+ .debug_str     0x0000000000016abc      0x79f ./firmware/CMSIS/system_m2sxxx.o
+                                       0xa1e4 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x0000000000000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001d       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x1b c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000065       0x2d ./src/fab_Nokia5110.o
+ .ARM.attributes
+                0x0000000000000092       0x2d ./src/main.o
+ .ARM.attributes
+                0x00000000000000bf       0x1b ./firmware/hal/CortexM3/GNU/hal.o
+ .ARM.attributes
+                0x00000000000000da       0x1b ./firmware/hal/CortexM3/GNU/hw_reg_access.o
+ .ARM.attributes
+                0x00000000000000f5       0x2d ./firmware/hal/CortexM3/cortex_nvic.o
+ .ARM.attributes
+                0x0000000000000122       0x33 ./firmware/drivers_config/sys_config/sys_config.o
+ .ARM.attributes
+                0x0000000000000155       0x2d ./firmware/drivers/mss_uart/mss_uart.o
+ .ARM.attributes
+                0x0000000000000182       0x2d ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .ARM.attributes
+                0x00000000000001af       0x2d ./firmware/drivers/mss_sys_services/mss_sys_services.o
+ .ARM.attributes
+                0x00000000000001dc       0x2d ./firmware/drivers/mss_spi/mss_spi.o
+ .ARM.attributes
+                0x0000000000000209       0x2d ./firmware/drivers/mss_nvm/mss_nvm.o
+ .ARM.attributes
+                0x0000000000000236       0x2d ./firmware/drivers/mss_i2c/mss_i2c.o
+ .ARM.attributes
+                0x0000000000000263       0x2d ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .ARM.attributes
+                0x0000000000000290       0x2d ./firmware/drivers/mss_gpio/mss_gpio.o
+ .ARM.attributes
+                0x00000000000002bd       0x2d ./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o
+ .ARM.attributes
+                0x00000000000002ea       0x2d ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .ARM.attributes
+                0x0000000000000317       0x2d ./firmware/drivers/CorePWM/core_pwm.o
+ .ARM.attributes
+                0x0000000000000344       0x2d ./firmware/CMSIS/startup_gcc/newlib_stubs.o
+ .ARM.attributes
+                0x0000000000000371       0x21 ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o
+ .ARM.attributes
+                0x0000000000000392       0x2d ./firmware/CMSIS/system_m2sxxx.o
+ .ARM.attributes
+                0x00000000000003bf       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000000000003ec       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000419       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000446       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000473       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000000004a0       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000000004cd       0x2d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtend.o
+ .ARM.attributes
+                0x00000000000004fa       0x1d c:/microsemi/softconsole_v6.2/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.isr_vector)
+OUTPUT(SF2_MKR_KIT_Connection_Test.elf elf32-littlearm)
+
+.debug_ranges   0x0000000000000000      0x858
+ .debug_ranges  0x0000000000000000       0xd8 ./src/fab_Nokia5110.o
+ .debug_ranges  0x00000000000000d8       0x48 ./src/main.o
+ .debug_ranges  0x0000000000000120      0x1d8 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_ranges  0x00000000000002f8       0xd0 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_ranges  0x00000000000003c8       0xd0 ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_ranges  0x0000000000000498      0x118 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_ranges  0x00000000000005b0       0x70 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_ranges  0x0000000000000620       0x58 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_ranges  0x0000000000000678       0xe0 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_ranges  0x0000000000000758       0xa8 ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_ranges  0x0000000000000800       0x58 ./firmware/CMSIS/system_m2sxxx.o
+
+.debug_macro    0x0000000000000000     0x3f78
+ .debug_macro   0x0000000000000000       0xf7 ./src/fab_Nokia5110.o
+ .debug_macro   0x00000000000000f7      0xa78 ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000b6f       0x22 ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000b91       0x8e ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000c1f       0x51 ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000c70       0xef ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000d5f       0x6a ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000dc9      0x1df ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000fa8       0x10 ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000fb8       0x40 ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000000ff8       0x64 ./src/fab_Nokia5110.o
+ .debug_macro   0x000000000000105c       0x64 ./src/fab_Nokia5110.o
+ .debug_macro   0x00000000000010c0       0x18 ./src/fab_Nokia5110.o
+ .debug_macro   0x00000000000010d8       0x35 ./src/fab_Nokia5110.o
+ .debug_macro   0x000000000000110d       0x34 ./src/fab_Nokia5110.o
+ .debug_macro   0x0000000000001141       0x1c ./src/fab_Nokia5110.o
+ .debug_macro   0x000000000000115d      0x141 ./src/main.o
+ .debug_macro   0x000000000000129e       0x26 ./src/main.o
+ .debug_macro   0x00000000000012c4       0x34 ./src/main.o
+ .debug_macro   0x00000000000012f8       0x34 ./src/main.o
+ .debug_macro   0x000000000000132c      0xca6 ./src/main.o
+ .debug_macro   0x0000000000001fd2      0x265 ./src/main.o
+ .debug_macro   0x0000000000002237      0x174 ./src/main.o
+ .debug_macro   0x00000000000023ab      0x177 ./src/main.o
+ .debug_macro   0x0000000000002522      0x11c ./src/main.o
+ .debug_macro   0x000000000000263e       0x27 ./src/main.o
+ .debug_macro   0x0000000000002665       0x12 ./src/main.o
+ .debug_macro   0x0000000000002677       0x16 ./src/main.o
+ .debug_macro   0x000000000000268d       0x16 ./src/main.o
+ .debug_macro   0x00000000000026a3      0x191 ./src/main.o
+ .debug_macro   0x0000000000002834      0x185 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x00000000000029b9       0xe2 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000002a9b       0x22 ./firmware/drivers/mss_uart/mss_uart.o
+ .debug_macro   0x0000000000002abd      0x168 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .debug_macro   0x0000000000002c25      0x26a ./firmware/drivers/mss_spi/mss_spi.o
+ .debug_macro   0x0000000000002e8f      0x299 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .debug_macro   0x0000000000003128      0x151 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x0000000000003279       0x5e ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x00000000000032d7       0x94 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x000000000000336b       0x57 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x00000000000033c2       0x10 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .debug_macro   0x00000000000033d2      0x10f ./firmware/drivers/mss_gpio/mss_gpio.o
+ .debug_macro   0x00000000000034e1      0x1ab ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x000000000000368c      0x288 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000003914      0x3be ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000003cd2       0x28 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .debug_macro   0x0000000000003cfa      0x10b ./firmware/drivers/CorePWM/core_pwm.o
+ .debug_macro   0x0000000000003e05      0x173 ./firmware/CMSIS/system_m2sxxx.o
+
+.comment        0x0000000000000000       0x68
+ .comment       0x0000000000000000       0x68 ./src/fab_Nokia5110.o
+                                         0x69 (size before relaxing)
+ .comment       0x0000000000000068       0x69 ./src/main.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/mss_uart/mss_uart.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/mss_sys_services/mss_comblk.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/mss_spi/mss_spi.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/mss_i2c/mss_i2c.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/mss_hpdma/mss_hpdma.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/mss_gpio/mss_gpio.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o
+ .comment       0x0000000000000068       0x69 ./firmware/drivers/CorePWM/core_pwm.o
+ .comment       0x0000000000000068       0x69 ./firmware/CMSIS/system_m2sxxx.o

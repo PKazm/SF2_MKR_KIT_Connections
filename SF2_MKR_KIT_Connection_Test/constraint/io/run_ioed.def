@@ -1,0 +1,45 @@
+data HELP_TYPE_DES 2
+data DESIGN Connection_Test
+data HPATH 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/designer/Connection_Test'
+data CPATH 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/constraint/io'
+data CDIR 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/constraint'
+data NLV_HIDE_OPTION_DLG 1
+data REGION_DEFCOLOR_EMPTY 2143322112
+data REGION_DEFCOLOR_INCLUSIVE 2147442270
+data REGION_DEFCOLOR_EXCLUSIVE 2143338688
+data REGION_DEFCOLOR_CLOCK 16735838
+data ETYPE IO
+data FAM SmartFusion2
+data DIE PA4M1000_N
+data PACKAGE tq144
+data SPEED STD
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data FLOW_TYPE NEW
+data PLANNER_IOMODE 1
+data AFL 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/designer/Connection_Test/COMPILE/Connection_Test.afl'
+data ADL 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/designer/Connection_Test/Connection_Test.adl'
+data LOC 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/designer/Connection_Test/COMPILE/Connection_Test.loc'
+data SEG 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/designer/Connection_Test/COMPILE/Connection_Test.seg'
+
+data IO_PDC_0 'C:/Users/Phoenix136/Dropbox/FPGA/My_Stuff/IO Constraints/SF2_MKR_KIT_buttons.pdc'
+data IO_PDC_1 'C:/Users/Phoenix136/Dropbox/FPGA/My_Stuff/IO Constraints/SF2_MKR_KIT_ethernet.pdc'
+data IO_PDC_2 'C:/Users/Phoenix136/Dropbox/FPGA/My_Stuff/IO Constraints/SF2_MKR_KIT_flash_mem.pdc'
+data IO_PDC_3 'C:/Users/Phoenix136/Dropbox/FPGA/My_Stuff/IO Constraints/SF2_MKR_KIT_J7.pdc'
+data IO_PDC_4 'C:/Users/Phoenix136/Dropbox/FPGA/My_Stuff/IO Constraints/SF2_MKR_KIT_leds.pdc'
+data IO_PDC_5 'C:/Users/Phoenix136/Dropbox/FPGA/My_Stuff/IO Constraints/SF2_MKR_KIT_light_sens.pdc'
+data IO_PDC_6 'C:/Users/Phoenix136/Dropbox/FPGA/My_Stuff/IO Constraints/SF2_MKR_KIT_usb_uart.pdc'
+data TARGET_IOPDC  'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/constraint/io/user.pdc'
+data TARGET_FPPDC  'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/SF2_MKR_KIT_Connection_Test/constraint/fp/user.pdc'
+data TARGET_DEVICES_FOR_MIGRATION 'PA4M1000_N '
+data RESTRICTPROBEPINS 1
+data RESTRICTSPIPINS 0
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+data HIDE_MIGRATION_PINS_MENU        1 
+data IO_DEFT_STD LVCMOS25
+

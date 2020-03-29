@@ -1,0 +1,70 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\mbin\synplify.exe
+Install:     C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+Hostname:    PHOENIX136DESKY
+Date:        Wed Mar 25 03:39:46 2020
+Version:     N-2018.03M-SP1-1
+
+Arguments:   -product synplify_pro Connection_Test_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+auto_infer_blackbox is not supported in current product.
+TCL script complete: "Connection_Test_syn.tcl"
+log file: "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\Connection_Test.srr"
+Running: synthesis in foreground
+
+Running Connection_Test_syn|synthesis
+
+Running Flow: compile (Compile) on Connection_Test_syn|synthesis
+# Wed Mar 25 03:40:25 2020
+
+Running Flow: compile_flow (Compile Process) on Connection_Test_syn|synthesis
+# Wed Mar 25 03:40:25 2020
+
+Running: compiler (Compile Input) on Connection_Test_syn|synthesis
+# Wed Mar 25 03:40:25 2020
+
+compiler completed
+# Wed Mar 25 03:40:26 2020
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Running: multi_srs_gen (Multi-srs Generator) on Connection_Test_syn|synthesis
+# Wed Mar 25 03:40:26 2020
+Up-To-Date: multi_srs_gen. No run necessary
+Complete: Compile Process on Connection_Test_syn|synthesis
+
+Running: premap (Premap) on Connection_Test_syn|synthesis
+# Wed Mar 25 03:40:26 2020
+
+premap completed with warnings
+# Wed Mar 25 03:40:27 2020
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on Connection_Test_syn|synthesis
+
+Running Flow: map (Map) on Connection_Test_syn|synthesis
+# Wed Mar 25 03:40:27 2020
+
+Running: fpga_mapper (Map & Optimize) on Connection_Test_syn|synthesis
+# Wed Mar 25 03:40:27 2020
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\synwork\Connection_Test_m.srm to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\Connection_Test.srm
+
+fpga_mapper completed with warnings
+# Wed Mar 25 03:40:35 2020
+
+Return Code: 1
+Run Time:00h:00m:08s
+Complete: Map on Connection_Test_syn|synthesis
+Complete: Logic Synthesis on Connection_Test_syn|synthesis
+0exit status=0
+License checkin: synplifypro_actel

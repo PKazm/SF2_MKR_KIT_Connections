@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.googlecode.cppcheclipse.feature:1.1.1.v20180105-1603"/>
+		<item value="ilg.gnumcueclipse.debug.gdbjtag.openocd.feature:4.4.1.201909231407"/>
+		<item value="ilg.gnumcueclipse.managedbuild.cross.arm.feature:2.7.1.201909231407"/>
+		<item value="ilg.gnumcueclipse.managedbuild.cross.riscv.feature:2.9.1.201909231407"/>
+		<item value="org.eclipse.cdt.gdb:9.8.1.201906192008"/>
+		<item value="org.eclipse.cdt:9.8.1.201907021957"/>
+		<item value="org.eclipse.egit:5.4.0.201906121030-r"/>
+		<item value="org.eclipse.emf.common:2.16.0.v20190528-0845"/>
+		<item value="org.eclipse.emf.ecore:2.18.0.v20190528-0845"/>
+		<item value="org.eclipse.help:2.2.600.v20190605-1800"/>
+		<item value="org.eclipse.jgit.lfs:5.4.0.201906121030-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:5.4.0.201906121030-r"/>
+		<item value="org.eclipse.jgit:5.4.0.201906121030-r"/>
+		<item value="org.eclipse.platform:4.12.0.v20190605-1801"/>
+		<item value="org.eclipse.rcp:4.12.0.v20190605-1801"/>
+		<item value="org.eclipse.tm.terminal.control.feature:4.5.100.201904091701"/>
+		<item value="org.eclipse.tm.terminal.feature:4.5.100.201904091701"/>
+		<item value="org.eclipse.tm.terminal.view.feature:4.5.100.201904091701"/>
+		<item value="org.robotframework.ide.eclipse.main.feature:0.9.1.201911141123"/>
+	</list>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.cdt.ui.wizards.NewCWizard2"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+		</list>
+	</section>
+</section>

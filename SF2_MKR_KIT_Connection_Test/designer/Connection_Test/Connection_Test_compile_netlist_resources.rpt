@@ -1,0 +1,206 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+Date: Sun Mar 29 01:32:42 2020
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S010         |
+| Package                        | 144 TQ         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 2.5V    |
+| Restrict Probe Pins            | No             |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+-----------------------------------------------------------------------------------------------------+
+| Topcell | Connection_Test                                                                                     |
+| Format  | Verilog                                                                                             |
+| Source  | C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\synthesis\Connection_Test.vm |
++---------+-----------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 801  | 12084 | 6.63       |
+| DFF                       | 539  | 12084 | 4.46       |
+| I/O Register              | 0    | 252   | 0.00       |
+| User I/O                  | 61   | 84    | 72.62      |
+| -- Single-ended I/O       | 61   | 84    | 72.62      |
+| -- Differential I/O Pairs | 0    | 37    | 0.00       |
+| RAM64x18                  | 4    | 22    | 18.18      |
+| RAM1K18                   | 0    | 21    | 0.00       |
+| MACC                      | 0    | 22    | 0.00       |
+| Chip Globals              | 5    | 8     | 62.50      |
+| CCC                       | 1    | 2     | 50.00      |
+| RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| MSS                       | 1    | 1     | 100.00     |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+-----+
+| Type                     | 4LUT | DFF |
++--------------------------+------+-----+
+| Fabric Logic             | 657  | 395 |
+| RAM64x18 Interface Logic | 144  | 144 |
+| RAM1K18 Interface Logic  | 0    | 0   |
+| MACC Interface Logic     | 0    | 0   |
+| Total Used               | 801  | 539 |
++--------------------------+------+-----+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 0    | 1     |
+| SPI           | 1    | 2     |
+| I2C           | 1    | 2     |
+| UART          | 1    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 1    | 1     |
+| MDDR          | 0    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 4    |
+| 7      | 1    |
+| 10     | 1    |
+| 17     | 3    |
+| 19     | 1    |
+| 33     | 5    |
+| Total  | 15   |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 19           | 0           | 0               |
+| Output I/O                    | 39           | 0           | 0               |
+| Bidirectional I/O             | 3            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS25     |  2.50v |  N/A |  19   |  39    |  3            |
++--------------+--------+------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  0    | 0.00%      |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  61   | 100.00%    |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+-----------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                    |
++--------+---------+-----------------------------------------------------------------------------------------+
+| 384    | INT_NET | Net   : Connection_Test_sb_0_FIC_0_CLK                                                  |
+|        |         | Driver: Connection_Test_sb_0/CCC_0/GL0_INST/U0_RGB1                                     |
+|        |         | Source: NETLIST                                                                         |
+| 359    | INT_NET | Net   : ETH_NRESET_c                                                                    |
+|        |         | Driver: Connection_Test_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNI11NC/U0_RGB1            |
+|        |         | Source: NETLIST                                                                         |
+| 27     | INT_NET | Net   : Nokia5110_Driver_0/rstn_i_i                                                     |
+|        |         | Driver: Nokia5110_Driver_0/Driver_reg_ctrl_RNI7D4R_0[0]/U0_RGB1                         |
+|        |         | Source: NETLIST                                                                         |
+| 20     | INT_NET | Net   : Nokia5110_Driver_0/CLK_SPI_sig                                                  |
+|        |         | Driver: Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1 |
+|        |         | Source: NETLIST                                                                         |
+| 2      | INT_NET | Net   : GMII_GTX_CLK_c                                                                  |
+|        |         | Driver: Connection_Test_sb_0/CCC_0/GL1_INST/U0_RGB1                                     |
+|        |         | Source: NETLIST                                                                         |
++--------+---------+-----------------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+--------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                 |
++--------+---------+--------------------------------------------------------------------------------------+
+| 74     | INT_NET | Net   : CoreAPB3_C0_0_APBmslave0_PADDR[4]                                            |
+|        |         | Driver: Connection_Test_sb_0/Connection_Test_sb_MSS_0/MSS_ADLIB_INST                 |
+| 66     | INT_NET | Net   : CoreAPB3_C0_0_APBmslave0_PADDR[3]                                            |
+|        |         | Driver: Connection_Test_sb_0/Connection_Test_sb_MSS_0/MSS_ADLIB_INST                 |
+| 64     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/prescale_reg7                   |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/G2.1.prescale_reg7              |
+| 59     | INT_NET | Net   : CoreAPB3_C0_0_APBmslave0_PADDR[2]                                            |
+|        |         | Driver: Connection_Test_sb_0/Connection_Test_sb_MSS_0/MSS_ADLIB_INST                 |
+| 39     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/sync_pulse_1_cry_31_FCO                            |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/sync_pulse_1_cry_0               |
+| 32     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa_1_Z    |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa_1      |
+| 32     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa_Z      |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa        |
+| 32     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/period_cnt_inte                  |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/un17_prescale_cnt_0_I_45_RNIHMNN |
+| 31     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/period_cnt_int_cry_cy_Y[0]       |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/period_cnt_int_cry_cy[0]         |
+| 25     | INT_NET | Net   : Nokia5110_Driver_0/frame_start_Z                                             |
+|        |         | Driver: Nokia5110_Driver_0/frame_start                                               |
++--------+---------+--------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+--------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                 |
++--------+---------+--------------------------------------------------------------------------------------+
+| 74     | INT_NET | Net   : CoreAPB3_C0_0_APBmslave0_PADDR[4]                                            |
+|        |         | Driver: Connection_Test_sb_0/Connection_Test_sb_MSS_0/MSS_ADLIB_INST                 |
+| 66     | INT_NET | Net   : CoreAPB3_C0_0_APBmslave0_PADDR[3]                                            |
+|        |         | Driver: Connection_Test_sb_0/Connection_Test_sb_MSS_0/MSS_ADLIB_INST                 |
+| 64     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/prescale_reg7                   |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/G2.1.prescale_reg7              |
+| 59     | INT_NET | Net   : CoreAPB3_C0_0_APBmslave0_PADDR[2]                                            |
+|        |         | Driver: Connection_Test_sb_0/Connection_Test_sb_MSS_0/MSS_ADLIB_INST                 |
+| 39     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/sync_pulse_1_cry_31_FCO                            |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/sync_pulse_1_cry_0               |
+| 32     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa_1_Z    |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa_1      |
+| 32     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa_Z      |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/xhdl58.reg_if_inst/psh_negedge_reg_1_sqmuxa        |
+| 32     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/period_cnt_inte                  |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/un17_prescale_cnt_0_I_45_RNIHMNN |
+| 31     | INT_NET | Net   : corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/period_cnt_int_cry_cy_Y[0]       |
+|        |         | Driver: corepwm_C0_0/corepwm_C0_0/G0b.timebase_inst/period_cnt_int_cry_cy[0]         |
+| 25     | INT_NET | Net   : Nokia5110_Driver_0/frame_start_Z                                             |
+|        |         | Driver: Nokia5110_Driver_0/frame_start                                               |
++--------+---------+--------------------------------------------------------------------------------------+
+

@@ -1,0 +1,14 @@
+Path 1
+  From: CoreAPB3_C0_0/CoreAPB3_C0_0/iPSELS_raw[0]:Y
+  To:   Probe_Insert0
+  Delay (ns):              5.617
+  Arrival (ns):            5.617
+
+
+Path 1
+  From: CoreAPB3_C0_0/CoreAPB3_C0_0/iPSELS_raw_RNO[0]:Y
+  To:   Probe_Insert1
+  Delay (ns):              6.577
+  Arrival (ns):            6.577
+
+

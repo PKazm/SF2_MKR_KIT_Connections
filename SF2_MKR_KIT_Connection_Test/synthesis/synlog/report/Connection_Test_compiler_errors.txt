@@ -1,0 +1,3 @@
+@E: CD213 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\hdl\Nokia5110_Driver.vhd":290:4:290:12|Undefined identifier
+@E: Parse errors encountered - exiting
+

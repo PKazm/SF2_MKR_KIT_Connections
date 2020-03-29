@@ -1,0 +1,6 @@
+"Connection_Test_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0",,"Connection_Test_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0","Connection_Test_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0"
+"Connection_Test_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL1",,"Connection_Test_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL1","Connection_Test_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL1"
+"Connection_Test_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT",,"Connection_Test_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT","Connection_Test_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT"
+"GMII_RX_CLK",,"GMII_RX_CLK","GMII_RX_CLK"
+"Light_SCL",,"Light_SCL","Light_SCL"
+"Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q",,"Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q","Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q"

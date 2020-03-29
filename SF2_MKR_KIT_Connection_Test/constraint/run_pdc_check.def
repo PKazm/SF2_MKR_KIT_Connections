@@ -1,0 +1,8 @@
+DESIGN=Connection_Test
+DESDIR=C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\designer\Connection_Test
+TARGET_DIR=C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\SF2_MKR_KIT_Connection_Test\designer\Connection_Test
+FAM=SmartFusion2
+DIE=PA4M1000_N
+PACKAGE=tq144
+SPEED=STD
+PDC_FILE=C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_buttons.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_ethernet.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_flash_mem.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_leds.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_light_sens.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_usb_uart.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J8.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J7_vector.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J9.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J10.pdc,,C:\Users\Phoenix136\Dropbox\FPGA\My_Stuff\IO Constraints\SF2_MKR_KIT_J11.pdc,,

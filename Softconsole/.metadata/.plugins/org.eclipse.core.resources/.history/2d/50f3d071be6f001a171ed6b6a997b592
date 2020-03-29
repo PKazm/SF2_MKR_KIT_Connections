@@ -1,0 +1,102 @@
+/*
+ * fab_Nokia5110.c
+ *
+ *  Created on: Mar 23, 2020
+ *      Author: Phoenix136
+ */
+
+#include "fab_Nokia5110.h"
+#include "Nokia5110_regs.h"
+#include "hal.h"
+#include "hal_assert.h"
+//#include "hw_reg_access.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void nokia_init
+(
+    nokia_instance_t * nokia_inst,
+    addr_t base_addr,
+    uint32_t func_set,
+    uint32_t disp_ctrl,
+    uint32_t temp_ctrl,
+    uint32_t bias_sys,
+    uint32_t Vop_set
+)
+{
+    nokia_inst->address = base_addr;
+    nokia_set_reg
+        (
+            nokia_inst,
+			func_set_REG_OFFSET,
+            func_set
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			disp_ctrl_REG_OFFSET,
+            disp_ctrl
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			temp_ctrl_REG_OFFSET,
+            temp_ctrl
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			bias_sys_REG_OFFSET,
+            bias_sys
+        );
+    nokia_set_reg
+        (
+            nokia_inst,
+			Vop_set_REG_OFFSET,
+            Vop_set
+        );
+}
+
+uint32_t nokia_get_reg(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_adr
+)
+{
+    return HW_get_32bit_reg(nokia_inst->address + reg_adr);
+}
+
+void nokia_set_x
+(
+    nokia_instance_t * nokia_inst,
+    uint32_t reg_val
+)
+{
+    //HAL_set_32bit_reg( nokia_inst->address, mem_X, reg_val );
+    HW_set_32bit_reg
+    (
+        (addr_t)0x50000011U,
+        (uint32_t)0xFFU
+    );
+}
+
+void nokia_set_reg(
+    nokia_instance_t * nokia_inst,
+    addr_t reg_adr,
+    uint32_t reg_val
+)
+{
+    //HW_set_32bit_reg
+    //    (
+    //    	nokia_inst->address + reg_adr,
+    //        (uint_fast32_t)reg_val
+    //    );
+	*(nokia_inst->address + reg_adr) = (uint_fast32_t)reg_val;
+
+}
+
+
+#ifdef __cplusplus
+}
+#endif
