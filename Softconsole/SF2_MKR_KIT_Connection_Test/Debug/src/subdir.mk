@@ -5,15 +5,21 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/fab_Nokia5110.c \
-../src/main.c 
+../src/lcd_characters.c \
+../src/main.c \
+../src/pixel_arrays.c 
 
 OBJS += \
 ./src/fab_Nokia5110.o \
-./src/main.o 
+./src/lcd_characters.o \
+./src/main.o \
+./src/pixel_arrays.o 
 
 C_DEPS += \
 ./src/fab_Nokia5110.d \
-./src/main.d 
+./src/lcd_characters.d \
+./src/main.d \
+./src/pixel_arrays.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

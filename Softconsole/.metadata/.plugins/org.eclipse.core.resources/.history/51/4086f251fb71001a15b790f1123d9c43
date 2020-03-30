@@ -1,0 +1,54 @@
+/*
+ * pixel_arrays.c
+ *
+ *  Created on: Mar 29, 2020
+ *      Author: Phoenix136
+ */
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+unsigned int * pix_ar_create
+(
+    unsigned int num_pixels
+)
+{
+    return calloc(num_pixels, sizeof(int));
+}
+
+void pix_ar_destroy
+(
+    unsigned int * pixel_array
+)
+{
+    free(pixel_array);
+}
+
+void pix_ar_set_pix
+(
+    unsigned int * pixel_array,
+    unsigned int pix_pos,
+    unsigned int pix_val
+)
+{
+    unsigned int pixel_mask;
+    unsigned int array_sub_int;
+    array_sub_int = pix_pos / (sizeof(unsigned int) * 8);
+    pixel_mask = 1u << pix_pos;
+
+    if(pix_val == 0){
+        pixel_array[array_sub_int] &= ~pixel_mask;
+    }
+    else{
+        pixel_array[array_sub_int] |= pixel_mask;
+    }
+}
+
+
+
+#ifdef __cplusplus
+}
+#endif

@@ -215,6 +215,16 @@ void nokia_set_Vop_set
     uint8_t reg_val
 );
 
+void nokia_set_disp_0
+(
+    nokia_instance_t * nokia_inst
+);
+
+void nokia_set_disp_1
+(
+    nokia_instance_t * nokia_inst
+);
+
 uint8_t* nokia_get_pixel_reg_block
 (
     nokia_instance_t * nokia_inst,
@@ -247,6 +257,75 @@ void nokia_set_pixel
     uint8_t x,
     uint8_t y,
     uint8_t val
+);
+
+uint8_t* nokia_get_pixel_block
+(
+    nokia_instance_t * nokia_inst,
+    uint8_t x_left,
+    uint8_t y_top,
+    uint8_t x_len,
+    uint8_t y_len,
+);
+
+/***************************************************************************//**
+  The nokia_set_pixel_block() function is used to initialize the MSS UART instance 
+  referenced by the parameter this_uart  for IrDA mode of operation. This 
+  function must be called before calling any other IrDA functionality specific 
+  functions.
+
+  @param nokia_inst
+
+  @param x_left
+
+  @param y_top
+
+  @param x_len
+
+  @param y_len
+
+  @param pixel_array
+    
+
+  @return
+    This function does not return a value.
+
+  Example:
+  @code
+
+    #define NOKIA5110_DRIVER_0              0x50000100U
+
+    nokia_instance_t fab_Nokia5110_Driver_0;
+
+    // pixel_array will store 90 bits representing pixels
+    uint pixel_array[] = 
+
+    nokia_init(&fab_Nokia5110_Driver_0,
+                NOKIA5110_DRIVER_0,
+                5, 10,
+                10, 9,
+                pixel_array);
+  @endcode
+ */
+void nokia_set_pixel_block
+(
+    nokia_instance_t * nokia_inst,
+    uint8_t x_left,
+    uint8_t y_top,
+    uint8_t x_len,
+    uint8_t y_len,
+    uint8_t * pixel_array
+);
+
+void nokia_set_pixel_block_alpha
+(
+    nokia_instance_t * nokia_inst,
+    uint8_t x_left,
+    uint8_t y_top,
+    uint8_t x_len,
+    uint8_t y_len,
+    uint8_t * pixel_array,
+    uint8_t * pixel_array_alpha
 );
 
 #ifdef __cplusplus

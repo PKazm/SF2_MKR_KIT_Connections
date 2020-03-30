@@ -5,10 +5,13 @@
  *      Author: Phoenix136
  */
 
+#include <stdlib.h>
+
 #include "fab_Nokia5110.h"
 #include "Nokia5110_regs.h"
 #include "hal.h"
 #include "hal_assert.h"
+
 //#include "hw_reg_access.h"
 
 #ifdef __cplusplus
@@ -256,32 +259,57 @@ void nokia_set_Vop_set
     HW_set_8bit_reg( nokia_inst->address + Vop_set_REG_OFFSET, reg_val );
 }
 
-/*
+
+void nokia_set_disp_0
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    for(int i = 0; i < LCD_MAX_Y; i++){
+        nokia_set_y(nokia_inst, i);
+        for(int k = 0; k < LCD_MAX_X; k++){
+            nokia_set_x(nokia_inst, k);
+            nokia_set_data(nokia_inst, 0x00);
+        }
+    }
+}
+
+void nokia_set_disp_1
+(
+    nokia_instance_t * nokia_inst
+)
+{
+    for(int i = 0; i < LCD_MAX_Y; i++){
+        nokia_set_y(nokia_inst, i);
+        for(int k = 0; k < LCD_MAX_X; k++){
+            nokia_set_x(nokia_inst, k);
+            nokia_set_data(nokia_inst, 0xFF);
+        }
+    }
+}
+
 uint8_t* nokia_get_pixel_reg_block
 (
     nokia_instance_t * nokia_inst,
     uint8_t x_left,
     uint8_t y_top,
-    uint8_t x_right,
-    uint8_t y_bot
+    uint8_t x_len,
+    uint8_t y_len
 )
 {
     uint8_t* pixel_regs;
-    int x_delta, y_delta;
     int n = 0;
-    x_delta = (x_right - x_left);
-    y_delta = (y_bot - y_top);
-    pixel_regs = malloc(x_delta * y_delta);
+    pixel_regs = malloc(x_len * y_len);
 
-    for(int i = x_right; i < x_left + 1; i++){
-        nokia_set_x(nokia_inst, i);
-        for(int k = y_top; k < y_bot + 1; k ++){
-            nokia_set_y(nokia_inst, k);
+
+    for(int k = y_top; k < y_top + y_len; k ++){
+        nokia_set_y(nokia_inst, k);
+        for(int i = x_left; i < x_left + x_len; i++){
+            nokia_set_x(nokia_inst, i);
             pixel_regs[n++] = nokia_get_data(nokia_inst);
         }
     }
 }
-*/
 
 void nokia_set_pixel_reg_block
 (
@@ -338,20 +366,70 @@ void nokia_set_pixel
     y_reg = y / 8;
     y_pos = y % 8;
 
-    pixel_mask = 1 << y_pos;
+    pixel_mask = 1u << y_pos;
 
 
     HW_set_8bit_reg( nokia_inst->address + mem_x_REG_OFFSET, x_reg );
     HW_set_8bit_reg( nokia_inst->address + mem_y_REG_OFFSET, y_reg );
     pixel_data = HW_get_8bit_reg( nokia_inst->address + mem_data_REG_OFFSET );
-    if(val == 0){
-        pixel_data = pixel_data & ~pixel_mask;
-    }
-    else{
-        pixel_data |= pixel_mask;
-    }
+    pixel_data &= ~pixel_mask;
+    pixel_data |= val << y_pos;
     HW_set_8bit_reg( nokia_inst->address + mem_data_REG_OFFSET, pixel_data );
 
+}
+
+/*-------------------------------------------------------------------------*//**
+ * Nothing like a little brute force
+ */
+void nokia_set_pixel_block
+(
+    nokia_instance_t * nokia_inst,
+    uint8_t x_left,
+    uint8_t y_top,
+    uint8_t x_len,
+    uint8_t y_len,
+    uint8_t * pixel_array
+)
+{
+    unsigned int x, y, pix_byte_cnt;
+
+    pix_byte_cnt = 0;
+
+    for(int i = y_top; i < y_top + y_len; i++){
+        for(int k = x_left; k < x_left + x_len; k++){
+            for(int j = 0; j < 8; j++){
+                nokia_set_pixel(nokia_inst, k, i + j, (pixel_array[pix_byte_cnt] >> j) & 1u);
+            }
+            pix_byte_cnt++;
+        }
+    }
+}
+
+void nokia_set_pixel_block_alpha
+(
+    nokia_instance_t * nokia_inst,
+    uint8_t x_left,
+    uint8_t y_top,
+    uint8_t x_len,
+    uint8_t y_len,
+    uint8_t * pixel_array,
+    uint8_t * pixel_array_alpha
+)
+{
+    unsigned int x, y, pix_byte_cnt;
+
+    pix_byte_cnt = 0;
+
+    for(int i = y_top; i < y_top + y_len; i++){
+        for(int k = x_left; k < x_left + x_len; k++){
+            for(int j = 0; j < 8; j++){
+                if((pixel_array_alpha[pix_byte_cnt] >> j) & 1u == 1){
+                    nokia_set_pixel(nokia_inst, k, i + j, (pixel_array[pix_byte_cnt] >> j) & 1u);
+                }
+            }
+            pix_byte_cnt++;
+        }
+    }
 }
 
 #ifdef __cplusplus

@@ -18,6 +18,7 @@
 
 #include "fab_Nokia5110.h"
 #include "Nokia5110_regs.h"
+#include "lcd_characters.h"
 
 
 #include "hw_reg_access.h"
@@ -126,19 +127,16 @@ void fab_nokia_init(void){
 
 	fab_Nokia5110_Driver_0.address = NOKIA5110_DRIVER_0;
 
-	for(int k = 0; k < LCD_MAX_Y; k++){
-		nokia_set_y(&fab_Nokia5110_Driver_0, k);
-		for(int i = 0; i < LCD_MAX_X; i++){
-			nokia_set_x(&fab_Nokia5110_Driver_0, i);
-			nokia_set_data(&fab_Nokia5110_Driver_0, 0xFF);
-		}
-	}
+
+	nokia_set_disp_1(&fab_Nokia5110_Driver_0);
 
 	nokia_set_driver_ctrl
 		(
 			&fab_Nokia5110_Driver_0,
 			0b00000011
 		);
+
+
 }
 
 void fab_nokia_test(void){
@@ -148,6 +146,13 @@ void fab_nokia_test(void){
 			0x00, 0x88, 0x04, 0xfa, 0xfa, 0x04, 0x88, 0x00,
 			0x00, 0x60, 0x11, 0x4a, 0x4a, 0x11, 0x60, 0x00
 	};
+	uint8_t pixel_b_alpha[] = {0xf0, 0xf0, 0xf0, 0xf0, 0xf0, 0xf0};
+
+	uint8_t small_letter_alpha[] = {0b1111111, 0b1111111, 0b1111111, 0b1111111};
+	uint8_t small_a[] = {0b011100, 0b001010, 0b011100};
+	uint8_t small_b[] = {0b111110, 0b101010, 0b010100};
+
+
 	uint8_t temp;
 
 
@@ -173,7 +178,7 @@ void fab_nokia_test(void){
 	nokia_set_pixel_reg_block
 		(
 			&fab_Nokia5110_Driver_0,
-			28, 2,
+			70, 2,
 			8, 2,
 			pixel_test
 		);
@@ -227,6 +232,73 @@ void fab_nokia_test(void){
 			&fab_Nokia5110_Driver_0,
 			1, 0
 		);
+
+	nokia_set_pixel_block
+		(
+			&fab_Nokia5110_Driver_0,
+			26, 10,
+			6, 1,
+			pixel_regs
+		);
+
+	nokia_set_pixel_block_alpha
+		(
+			&fab_Nokia5110_Driver_0,
+			29, 14,
+			6, 1,
+			pixel_b_regs,
+			pixel_b_alpha
+		);
+
+	nokia_set_pixel_block_alpha
+		(
+			&fab_Nokia5110_Driver_0,
+			40, 14,
+			3, 1,
+			small_a,
+			small_letter_alpha
+		);
+	nokia_set_pixel_block_alpha
+		(
+			&fab_Nokia5110_Driver_0,
+			44, 14,
+			3, 1,
+			small_b,
+			small_letter_alpha
+		);
+
+	int x_3x5 = 1, y_3x5 = 47-14;
+	for(int i = 0; i < ascii_3x5_size; i++){
+		nokia_set_pixel_block_alpha
+		(
+			&fab_Nokia5110_Driver_0,
+			x_3x5 - 1, y_3x5,
+			1, 1,
+			spacer,
+			spacer_mask
+		);
+		nokia_set_pixel_block_alpha
+		(
+			&fab_Nokia5110_Driver_0,
+			x_3x5, y_3x5,
+			3, 1,
+			ascii_3x5[i],
+			ascii_3x5_alpha
+		);
+		nokia_set_pixel_block_alpha
+		(
+			&fab_Nokia5110_Driver_0,
+			x_3x5 + 3, y_3x5,
+			1, 1,
+			spacer,
+			spacer_mask
+		);
+		x_3x5 += 4;
+		if(x_3x5 + 4 > LCD_MAX_X){
+			x_3x5 = 1;
+			y_3x5 += 6;
+		}
+	}
 
 	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"Nokia test finished!\n\r");
 }
