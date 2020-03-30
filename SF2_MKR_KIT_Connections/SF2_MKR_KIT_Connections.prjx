@@ -544,6 +544,11 @@ SIZE="9649"
 PARENT="<project>\component\work\corepwm_C0\corepwm_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1585468405"
+SIZE="2501"
+ENDFILE
 VALUE "<project>\constraint\io\SF2_MKR_KIT_buttons.pdc,io_pdc"
 STATE="utd"
 TIME="1585466467"
@@ -616,8 +621,8 @@ SIZE="205"
 ENDFILE
 VALUE "<project>\designer\impl1\Connection_system.ide_des,ide_des"
 STATE="utd"
-TIME="1585467017"
-SIZE="232"
+TIME="1585467836"
+SIZE="1601"
 ENDFILE
 VALUE "<project>\hdl\LED_inverter_dimmer.vhd,hdl"
 STATE="utd"
@@ -660,8 +665,8 @@ PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1585466465"
-SIZE="602"
+TIME="1585468182"
+SIZE="831"
 PARENT="<project>\component\work\Connection_system\Connection_system.cxf"
 PARENT="<project>\component\work\Connection_system_sb\Connection_system_sb.cxf"
 ENDFILE
@@ -679,22 +684,22 @@ PARENT="<project>\component\work\Connection_system_sb_MSS\Connection_system_sb_M
 ENDFILE
 VALUE "<project>\synthesis\Connection_system.so,so"
 STATE="utd"
-TIME="1585467808"
+TIME="1585468197"
 SIZE="272"
 ENDFILE
 VALUE "<project>\synthesis\Connection_system.vm,syn_vm"
 STATE="utd"
-TIME="1585467807"
-SIZE="415428"
+TIME="1585468196"
+SIZE="418829"
 ENDFILE
 VALUE "<project>\synthesis\Connection_system_syn.prj,prj"
 STATE="utd"
-TIME="1585467808"
+TIME="1585468197"
 SIZE="5969"
 ENDFILE
 VALUE "<project>\synthesis\Connection_system_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1585467808"
+TIME="1585468196"
 SIZE="2245"
 ENDFILE
 ENDLIST
@@ -923,13 +928,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Memory Map:Connection_system_DataSheet.xml
 StartPage;StartPage;0
-SmartDesign;Connection_system;0
-Constraint Manager;Constraint Manager;0
-SmartDesign;DESIGN_FIRMWARE;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "Connection_system::work","component\work\Connection_system\Connection_system.vhd","TRUE","FALSE"
