@@ -29,4 +29,6 @@
 		<item key="DIALOG_X_ORIGIN" value="324"/>
 		<item key="DIALOG_Y_ORIGIN" value="193"/>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 </section>

@@ -29,6 +29,8 @@ extern "C" {
 
 #define LCD_MAX_X 84
 #define LCD_MAX_Y 6
+#define LCD_MAX_REGS LCD_MAX_X * LCD_MAX_Y
+#define LCD_MAX_PIXELS LCD_MAX_REGS * 8
 
 
 
@@ -265,7 +267,7 @@ uint8_t* nokia_get_pixel_block
     uint8_t x_left,
     uint8_t y_top,
     uint8_t x_len,
-    uint8_t y_len,
+    uint8_t y_len
 );
 
 /***************************************************************************//**

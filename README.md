@@ -8,7 +8,7 @@ https://github.com/tstana/M2S010-MKR-KIT_FirstProj/wiki
 
 # Connections implemented
 
-* MSS_UART -> USB
+* MSS_UART <-> USB <-> Desktop (Python)
 * MSS_GPIO -> Board_LEDs
 * FIC_0 -> fab_CorePWM -> Board_LEDs/Board_J8
 * FIC_0 -> fab_Nokia5110_Driver -> Board_J7

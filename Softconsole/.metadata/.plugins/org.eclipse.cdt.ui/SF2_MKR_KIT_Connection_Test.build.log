@@ -1,10 +1,5 @@
-00:43:54 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+23:42:42 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
 make all 
-Building file: ../src/lcd_characters.c
-Invoking: GNU ARM Cross C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/lcd_characters.d" -MT"src/lcd_characters.o" -c -o "src/lcd_characters.o" "../src/lcd_characters.c"
-Finished building: ../src/lcd_characters.c
- 
 Building file: ../src/main.c
 Invoking: GNU ARM Cross C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
@@ -22,9 +17,9 @@ Finished building: SF2_MKR_KIT_Connection_Test.hex
 Invoking: GNU ARM Cross Print Size
 arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
    text	   data	    bss	    dec	    hex	filename
-  14320	    320	  50896	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+  15936	    176	  49424	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
 Finished building: SF2_MKR_KIT_Connection_Test.siz
  
 
-00:43:55 Build Finished. 0 errors, 0 warnings. (took 967ms)
+23:42:43 Build Finished. 0 errors, 0 warnings. (took 1s.48ms)
 

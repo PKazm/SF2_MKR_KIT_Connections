@@ -928,8 +928,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Memory Map:Connection_system_DataSheet.xml
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;Connection_system;0
+Constraint Manager;Constraint Manager;0
+SmartDesign;DESIGN_FIRMWARE;0
+ACTIVEVIEW;Connection_system
 ENDLIST
 LIST ModuleSubBlockList
 LIST "Connection_system::work","component\work\Connection_system\Connection_system.vhd","TRUE","FALSE"
