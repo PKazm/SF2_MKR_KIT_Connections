@@ -933,7 +933,6 @@ ReportsCurrentItem;Generate Memory Map:Connection_system_DataSheet.xml
 StartPage;StartPage;0
 SmartDesign;Connection_system;0
 Constraint Manager;Constraint Manager;0
-SmartDesign;DESIGN_FIRMWARE;0
 ACTIVEVIEW;Connection_system
 ENDLIST
 LIST ModuleSubBlockList

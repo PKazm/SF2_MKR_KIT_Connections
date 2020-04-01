@@ -260,30 +260,26 @@ void nokia_set_Vop_set
 }
 
 
-void nokia_set_disp_0
+void nokia_clear_disp
 (
-    nokia_instance_t * nokia_inst
+    nokia_instance_t * nokia_inst,
+    uint8_t clear_display
 )
 {
-    for(int i = 0; i < LCD_MAX_Y; i++){
-        nokia_set_y(nokia_inst, i);
-        for(int k = 0; k < LCD_MAX_X; k++){
-            nokia_set_x(nokia_inst, k);
-            nokia_set_data(nokia_inst, 0x00);
-        }
-    }
-}
+    uint8_t clear_data;
 
-void nokia_set_disp_1
-(
-    nokia_instance_t * nokia_inst
-)
-{
+    if(clear_display == 0){
+        clear_data = 0x00;
+    }
+    else{
+        clear_data = 0xFF;
+    }
+
     for(int i = 0; i < LCD_MAX_Y; i++){
         nokia_set_y(nokia_inst, i);
         for(int k = 0; k < LCD_MAX_X; k++){
             nokia_set_x(nokia_inst, k);
-            nokia_set_data(nokia_inst, 0xFF);
+            nokia_set_data(nokia_inst, clear_data);
         }
     }
 }

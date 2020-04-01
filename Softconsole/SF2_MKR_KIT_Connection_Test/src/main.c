@@ -9,12 +9,15 @@
  * main includes
  */
 
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "../firmware/drivers/mss_uart/mss_uart.h"
 #include "../firmware/drivers/mss_gpio/mss_gpio.h"
 #include "../firmware/drivers/mss_i2c/mss_i2c.h"
 #include "../firmware/drivers/CorePWM/core_pwm.h"
+#include "../firmware/drivers/mss_spi/mss_spi.h"
 #include "../firmware/CMSIS/system_m2sxxx.h"
 
 #include "../firmware/Connection_Test_hw_platform.h"
@@ -39,7 +42,9 @@ void fab_nokia_init(void);
 void fab_nokia_test(void);
 
 void uart0_rx_int_handler(mss_uart_instance_t *);
-void process_rx_data(uint8_t *, size_t);
+void uart_rx_to_nokia_raw(uint8_t *, size_t);
+void uart_rx_to_nokia_char(uint8_t *, size_t);
+void uart_rx_to_spi_mem(uint8_t *, size_t);
 
 void GPIO8_IRQHandler(void);
 void GPIO9_IRQHandler(void);
@@ -87,22 +92,9 @@ nokia_instance_t fab_Nokia5110_Driver_0;
 int main(void){
 
 	periph_init();
-	mss_uart_init(MSS_UART_921600_BAUD);
-	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"uart initialized!\n\r");
-	fab_pwm_init();
-	mss_gpio_init();
-
-	fab_nokia_init();
-
+	
 	fab_nokia_test();
 
-
-
-
-
-	//for(;;){
-
-	//}
 	while(1);
 }
 
@@ -111,10 +103,26 @@ int main(void){
  */
 void periph_init(void){
 
-	MSS_GPIO_init();
-	MSS_GPIO_enable_irq(MSS_GPIO_8);
-	MSS_GPIO_enable_irq(MSS_GPIO_9);
+	/*-------------------------------------------------------------------------*//**
+	* MSS_UART
+	*/
+	mss_uart_init(MSS_UART_921600_BAUD);
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"uart initialized!\n\r");
 
+	/*-------------------------------------------------------------------------*//**
+	* MSS_GPIO
+	*/
+	MSS_GPIO_init();
+	MSS_GPIO_config(BUTTON_0_GPIO, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE);
+	MSS_GPIO_config(BUTTON_1_GPIO, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE);
+	MSS_GPIO_enable_irq(BUTTON_0_GPIO);
+	MSS_GPIO_enable_irq(BUTTON_1_GPIO);
+	//MSS_GPIO_enable_irq(NOKIA_BUSY_GPIO);
+	mss_gpio_init();
+
+	/*-------------------------------------------------------------------------*//**
+	* FAB_PWM
+	*/
 	PWM_init
 		(
 			&fab_corepwm_c0_0,
@@ -124,7 +132,24 @@ void periph_init(void){
 		);
 	LED_row = PWM_1;
 	LCD_bklt = PWM_2;
+	fab_pwm_init();
 
+	/*-------------------------------------------------------------------------*//**
+	* FAB_Nokia5110
+	*/
+	fab_nokia_init();
+
+	/*-------------------------------------------------------------------------*//**
+	* MSS_SPI
+	*/
+	MSS_SPI_init(&g_mss_spi1);
+	MSS_SPI_configure_master_mode(
+			&g_mss_spi1,
+			MSS_SPI_SLAVE_0,
+			MSS_SPI_MODE0,
+			2u,
+			MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
+		);
 
 }
 
@@ -156,9 +181,6 @@ void fab_pwm_init(void){
 void mss_gpio_init(void){
 
 	MSS_GPIO_set_outputs(0x5F);
-	MSS_GPIO_enable_irq(BUTTON_0_GPIO);
-	MSS_GPIO_enable_irq(BUTTON_1_GPIO);
-	//MSS_GPIO_enable_irq(NOKIA_BUSY_GPIO);
 }
 
 void fab_nokia_init(void){
@@ -167,7 +189,7 @@ void fab_nokia_init(void){
 	fab_Nokia5110_Driver_0.address = NOKIA5110_DRIVER_0;
 
 
-	nokia_set_disp_1(&fab_Nokia5110_Driver_0);
+	nokia_clear_disp(&fab_Nokia5110_Driver_0, 0x01);
 
 	nokia_set_driver_ctrl
 		(
@@ -344,11 +366,34 @@ void uart0_rx_int_handler(mss_uart_instance_t * this_uart){
 	uint32_t rx_idx  = 0;
 	size_t rx_size;
 	rx_size = MSS_UART_get_rx(this_uart, rx_buff, sizeof(rx_buff));
-	process_rx_data(rx_buff, rx_size);
+	//uart_rx_to_nokia_raw(rx_buff, rx_size);
+	//uart_rx_to_nokia_char(rx_buff, rx_size);
+	uart_rx_to_spi_mem(rx_buff, rx_size);
 }
 
-void process_rx_data(uint8_t * rx_buff, size_t rx_size){
+void uart_rx_to_nokia_raw(uint8_t * rx_buff, size_t rx_size){
 
+	int x, y;
+
+	nokia_set_driver_ctrl
+		(
+			&fab_Nokia5110_Driver_0,
+			0b00000001
+		);
+
+	for(int i = 0; i < rx_size; i++){
+		while(sample_pos >= LCD_MAX_PIXELS){
+			sample_pos -= LCD_MAX_PIXELS;
+		}
+		y = sample_pos / LCD_MAX_X;
+		x = sample_pos % LCD_MAX_X;
+		nokia_set_data_reg(&fab_Nokia5110_Driver_0, x, y, rx_buff[i]);
+		sample_pos++;
+	}
+	
+}
+
+void uart_rx_to_nokia_char(uint8_t * rx_buff, size_t rx_size){
 	int x, y, char_index;
 	char char_buf[3];
 	uint8_t * alpha_num;
@@ -363,17 +408,6 @@ void process_rx_data(uint8_t * rx_buff, size_t rx_size){
 			0b00000001
 		);
 
-	/*
-	for(int i = 0; i < rx_size; i++){
-		while(sample_pos >= LCD_MAX_PIXELS){
-			sample_pos -= LCD_MAX_PIXELS;
-		}
-		y = sample_pos / LCD_MAX_X;
-		x = sample_pos % LCD_MAX_X;
-		//nokia_set_data_reg(&fab_Nokia5110_Driver_0, x, y, rx_buff[i]);
-		sample_pos++;
-	}
-	*/
 	for(int i = 0; i < rx_size; i++){
 		
 		itoa(rx_buff[i], char_buf, 10);
@@ -402,12 +436,51 @@ void process_rx_data(uint8_t * rx_buff, size_t rx_size){
 	}
 }
 
+void uart_rx_to_spi_mem(uint8_t * rx_buff, size_t rx_size){
+	static uint32_t mem_adr = 0;
+	int buf_size = rx_size + 6;
+
+	uint8_t spi_tx_buffer[buf_size];
+	spi_tx_buffer[0] = 0x06;			// cmd flash mem write enable
+	spi_tx_buffer[1] = 0x02;			// cmd byte/page program
+	spi_tx_buffer[2] = (mem_adr >> 8) & 0xFF;	// upper byte of address24 in flash mem
+	spi_tx_buffer[3] = (mem_adr >> 8) & 0xFF;	// middle byte of address24 in flash mem
+	spi_tx_buffer[4] = mem_adr & 0xFF;			// lower byte of address24 in flash mem
+	for(int i = 0; i < rx_size; i++){
+		spi_tx_buffer[i + 5] = rx_buff[i];
+	}
+	spi_tx_buffer[buf_size - 1] = 0x04;	// cmd flash mem write disable
+
+	MSS_SPI_set_slave_select( &g_mss_spi1, MSS_SPI_SLAVE_0 );
+	
+	MSS_SPI_transfer_block(
+				&g_mss_spi1,
+				spi_tx_buffer,
+				sizeof(spi_tx_buffer),
+				0, 0
+			);
+
+	mem_adr += rx_size;
+	MSS_SPI_clear_slave_select( &g_mss_spi1, MSS_SPI_SLAVE_0 );
+}
+
 /*-------------------------------------------------------------------------*//**
- * GPIO8_IRQHandler() clears the Nokia 5110 Screen to all 0
+ * GPIO8_IRQHandler() clears the Nokia 5110 Screen
+ * toggles between setting display all 0 or all 1
  */
 void GPIO8_IRQHandler(void){
-	nokia_set_disp_0(&fab_Nokia5110_Driver_0);
-	sample_pos = 0;
+	static char disp_value = 0;
+
+	// MSS_GPIO_IRQ_EDGE_POSITIVE DOES NOTHING! check if input is high (button currently down)
+	uint32_t gpio_inputs;
+	gpio_inputs = MSS_GPIO_get_inputs();
+	gpio_inputs &= MSS_GPIO_8_MASK;
+
+	if(gpio_inputs != 0){
+		nokia_clear_disp(&fab_Nokia5110_Driver_0, disp_value);
+		disp_value = ~disp_value;
+		sample_pos = 0;
+	}
 	MSS_GPIO_clear_irq(MSS_GPIO_8);
 }
 
@@ -417,8 +490,51 @@ void GPIO8_IRQHandler(void){
  * (send memory block to computer over UART?)
  */
 void GPIO9_IRQHandler(void){
-	nokia_set_disp_1(&fab_Nokia5110_Driver_0);
-	sample_pos = 0;
+	uint32_t gpio_inputs;
+	static uint8_t count = 0;
+	char count_str[3];
+
+	uint8_t spi_tx_buffer[5];
+	spi_tx_buffer[0] = 0x0B;		// cmd flash mem read array
+	spi_tx_buffer[1] = 0x00;	// cmd dummy byte required by 0x0B
+	spi_tx_buffer[2] = 0x00;	// upper byte of address24 in flash mem
+	spi_tx_buffer[3] = 0x00;	// middle byte of address24 in flash mem
+	spi_tx_buffer[4] = 0x00;	// lower byte of address24 in flash mem
+
+	uint8_t spi_rx_buffer[256];
+
+
+	itoa(count++, count_str, 10);
+
+	MSS_UART_polled_tx_string(gp_my_uart, count_str);
+
+	gpio_inputs = MSS_GPIO_get_inputs();
+	gpio_inputs &= MSS_GPIO_9_MASK;
+
+	if(gpio_inputs == 0){
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)" Pin 9 is low\n\r");
+	}
+	else{
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)" Pin 9 is high\n\r");
+
+		MSS_SPI_transfer_block(
+				&g_mss_spi1,
+				spi_tx_buffer,
+				sizeof(spi_tx_buffer),
+				spi_rx_buffer,
+				256
+			);
+
+		for(int i = 0; i < 256; i++){
+			MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"adr: ");
+			itoa(i, count_str, 10);
+			MSS_UART_polled_tx_string(gp_my_uart, count_str);
+			MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)" = ");
+			itoa(spi_rx_buffer[i], count_str, 10);
+			MSS_UART_polled_tx_string(gp_my_uart, count_str);
+			MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"\n\r");
+		}
+	}
 	MSS_GPIO_clear_irq(MSS_GPIO_9);
 }
 

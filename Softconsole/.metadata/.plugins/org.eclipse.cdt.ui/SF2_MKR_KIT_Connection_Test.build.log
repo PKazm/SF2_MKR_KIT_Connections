@@ -1,4 +1,4 @@
-23:42:42 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+02:39:31 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
 make all 
 Building file: ../src/main.c
 Invoking: GNU ARM Cross C Compiler
@@ -17,9 +17,9 @@ Finished building: SF2_MKR_KIT_Connection_Test.hex
 Invoking: GNU ARM Cross Print Size
 arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
    text	   data	    bss	    dec	    hex	filename
-  15936	    176	  49424	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+  17792	    176	  47568	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
 Finished building: SF2_MKR_KIT_Connection_Test.siz
  
 
-23:42:43 Build Finished. 0 errors, 0 warnings. (took 1s.48ms)
+02:39:32 Build Finished. 0 errors, 0 warnings. (took 873ms)
 

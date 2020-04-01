@@ -217,14 +217,10 @@ void nokia_set_Vop_set
     uint8_t reg_val
 );
 
-void nokia_set_disp_0
+void nokia_clear_disp
 (
-    nokia_instance_t * nokia_inst
-);
-
-void nokia_set_disp_1
-(
-    nokia_instance_t * nokia_inst
+    nokia_instance_t * nokia_inst,
+    uint8_t clear_display
 );
 
 uint8_t* nokia_get_pixel_reg_block

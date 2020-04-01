@@ -1,3 +1,4 @@
+import sys
 import pdb
 import math
 import serial
@@ -41,8 +42,7 @@ def uart_init():
     try:
         baud = int(input('baudrate (921600): '))
     except:
-        print('invalid baudrate, closing')
-        quit()
+        sys.exit('invalid baudrate, closing')
 
     if(baud == 0):
         ser.baudrate = 921600
