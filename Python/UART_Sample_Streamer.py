@@ -1,10 +1,13 @@
 import sys
+import os
 import pdb
+import datetime
 import math
 import serial
 
 
 log_file = open('python_uart_log.txt', 'w')
+print(os.path.realpath(log_file.name))
 
 ser = serial.Serial()
 
@@ -23,7 +26,7 @@ def main():
         go_again = 0
 
     while(go_again != 0):
-        samples = get_sin_data(8, 8, 50)
+        samples = get_sin_data(3, 8, 1)
         print(ser.write(samples))
         #for i in samples:
         #    print(ser.write(i))
@@ -46,8 +49,10 @@ def uart_init():
 
     if(baud == 0):
         ser.baudrate = 921600
+        print('using 921600 as baudrate')
     else:
         ser.baudrate = baud
+        print('using ' + str(baud) + ' as baudrate')
 
     com = input('COM port? (COM11): ')
     if(com == '0'):
@@ -57,6 +62,8 @@ def uart_init():
 
 
 def get_sin_data(N_exp, data_width, cycles):
+    log_file.write('=========================================\n')
+    log_file.write(str(datetime.datetime.now().time()) + '\n')
     log_file.write('=========================================\n')
     log_file.write('get_sin_data: ' + str(N_exp) + ', ' + str(data_width) + ', ' + str(cycles) + '\n')
     sin_samples = []

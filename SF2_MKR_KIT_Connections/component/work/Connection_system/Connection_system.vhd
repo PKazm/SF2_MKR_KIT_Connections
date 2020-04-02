@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sun Mar 29 03:49:42 2020
+-- Created by SmartDesign Wed Apr  1 23:27:25 2020
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -37,6 +37,7 @@ entity Connection_system is
         Board_J8         : out   std_logic;
         Board_J9         : out   std_logic;
         Board_LEDs       : out   std_logic_vector(7 downto 0);
+        Board_MOD1       : out   std_logic_vector(5 downto 0);
         COMA_MODE        : out   std_logic;
         ETH_NRESET       : out   std_logic;
         FLASH_MEM_CLK    : out   std_logic;
@@ -221,6 +222,7 @@ signal Board_J7_1                                       : std_logic;
 signal Board_J7_2                                       : std_logic;
 signal Board_J7_3                                       : std_logic;
 signal Board_J8_net_0                                   : std_logic_vector(1 to 1);
+signal Board_J10_net_0                                  : std_logic;
 signal Board_LEDs_net_0                                 : std_logic_vector(7 downto 0);
 signal Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR   : std_logic_vector(31 downto 0);
 signal Connection_system_sb_0_FIC_0_AMBA_MASTER_PENABLE : std_logic;
@@ -257,7 +259,6 @@ signal CoreAPB3_C0_0_APBmslave1_PSLVERR                 : std_logic;
 signal corepwm_C0_0_PWM0to0                             : std_logic_vector(0 to 0);
 signal ETH_NRESET_net_0                                 : std_logic;
 signal FLASH_MEM_CLK_net_0                              : std_logic;
-signal FLASH_MEM_SDO_net_0                              : std_logic;
 signal FLASH_MEM_SSO_net_0                              : std_logic;
 signal GMII_GTX_CLK_net_0                               : std_logic;
 signal GMII_MDC_net_0                                   : std_logic;
@@ -267,31 +268,35 @@ signal GMII_TXD_net_0                                   : std_logic_vector(7 dow
 signal Nokia5110_Driver_0_driver_busy                   : std_logic;
 signal USB_UART_RXD_net_0                               : std_logic;
 signal Board_J8_net_1                                   : std_logic;
+signal GMII_GTX_CLK_net_1                               : std_logic;
+signal FLASH_MEM_SSO_net_1                              : std_logic;
+signal Board_J10_net_1                                  : std_logic;
+signal FLASH_MEM_CLK_net_1                              : std_logic;
+signal FLASH_MEM_CLK_net_2                              : std_logic;
+signal Board_J10_net_2                                  : std_logic;
+signal USB_UART_RXD_net_1                               : std_logic;
+signal GMII_MDC_net_1                                   : std_logic;
+signal FLASH_MEM_SSO_net_2                              : std_logic;
+signal GMII_TX_ER_net_1                                 : std_logic;
+signal GMII_TX_EN_net_1                                 : std_logic;
+signal ETH_NRESET_net_1                                 : std_logic;
 signal Board_LEDs_net_1                                 : std_logic_vector(7 downto 0);
 signal GMII_TXD_net_1                                   : std_logic_vector(7 downto 0);
-signal GMII_GTX_CLK_net_1                               : std_logic;
 signal Board_J7_3_net_0                                 : std_logic_vector(0 to 0);
 signal Board_J7_2_net_0                                 : std_logic_vector(1 to 1);
 signal Board_J7_1_net_0                                 : std_logic_vector(2 to 2);
 signal Board_J7_net_1                                   : std_logic_vector(3 to 3);
 signal Board_J7_0_net_0                                 : std_logic_vector(4 to 4);
-signal FLASH_MEM_CLK_net_1                              : std_logic;
-signal FLASH_MEM_SDO_net_1                              : std_logic;
-signal USB_UART_RXD_net_1                               : std_logic;
-signal GMII_MDC_net_1                                   : std_logic;
-signal FLASH_MEM_SSO_net_1                              : std_logic;
-signal GMII_TX_ER_net_1                                 : std_logic;
-signal GMII_TX_EN_net_1                                 : std_logic;
-signal ETH_NRESET_net_1                                 : std_logic;
+signal FLASH_MEM_SDI_net_0                              : std_logic_vector(0 to 0);
 signal MSS_INT_F2M_net_0                                : std_logic_vector(15 downto 0);
 signal PWM_net_0                                        : std_logic_vector(1 downto 0);
 signal LED_toggles_net_0                                : std_logic_vector(7 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
-signal REFCLK_SEL_const_net_0                           : std_logic_vector(1 downto 0);
 signal VCC_net                                          : std_logic;
 signal GND_net                                          : std_logic;
+signal REFCLK_SEL_const_net_0                           : std_logic_vector(1 downto 0);
 signal MSS_INT_F2M_const_net_0                          : std_logic_vector(15 downto 1);
 ----------------------------------------------------------------------
 -- Bus Interface Nets Declarations - Unequal Pin Widths
@@ -316,31 +321,55 @@ begin
 ----------------------------------------------------------------------
 -- Constant assignments
 ----------------------------------------------------------------------
- REFCLK_SEL_const_net_0  <= B"10";
  VCC_net                 <= '1';
  GND_net                 <= '0';
+ REFCLK_SEL_const_net_0  <= B"10";
  MSS_INT_F2M_const_net_0 <= B"000000000000000";
 ----------------------------------------------------------------------
 -- TieOff assignments
 ----------------------------------------------------------------------
- REFCLK_SEL(1 downto 0) <= B"10";
  FLASH_MEM_WP_N         <= '1';
  FLASH_MEM_HOLD_N       <= '1';
  COMA_MODE              <= '0';
- Board_J9               <= '0';
- Board_J10              <= '0';
- Board_J11              <= '0';
+ REFCLK_SEL(1 downto 0) <= B"10";
+ Board_MOD1(1)          <= '0';
+ Board_MOD1(2)          <= '0';
+ Board_MOD1(3)          <= '0';
+ Board_MOD1(4)          <= '0';
+ Board_MOD1(5)          <= '0';
 ----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
  Board_J8_net_1         <= Board_J8_net_0(1);
  Board_J8               <= Board_J8_net_1;
+ GMII_GTX_CLK_net_1     <= GMII_GTX_CLK_net_0;
+ GMII_GTX_CLK           <= GMII_GTX_CLK_net_1;
+ FLASH_MEM_SSO_net_1    <= FLASH_MEM_SSO_net_0;
+ Board_J9               <= FLASH_MEM_SSO_net_1;
+ Board_J10_net_1        <= Board_J10_net_0;
+ Board_J10              <= Board_J10_net_1;
+ FLASH_MEM_CLK_net_1    <= FLASH_MEM_CLK_net_0;
+ Board_J11              <= FLASH_MEM_CLK_net_1;
+ FLASH_MEM_CLK_net_2    <= FLASH_MEM_CLK_net_0;
+ FLASH_MEM_CLK          <= FLASH_MEM_CLK_net_2;
+ Board_J10_net_2        <= Board_J10_net_0;
+ FLASH_MEM_SDO          <= Board_J10_net_2;
+ USB_UART_RXD_net_1     <= USB_UART_RXD_net_0;
+ USB_UART_RXD           <= USB_UART_RXD_net_1;
+ GMII_MDC_net_1         <= GMII_MDC_net_0;
+ GMII_MDC               <= GMII_MDC_net_1;
+ FLASH_MEM_SSO_net_2    <= FLASH_MEM_SSO_net_0;
+ FLASH_MEM_SSO          <= FLASH_MEM_SSO_net_2;
+ GMII_TX_ER_net_1       <= GMII_TX_ER_net_0;
+ GMII_TX_ER             <= GMII_TX_ER_net_1;
+ GMII_TX_EN_net_1       <= GMII_TX_EN_net_0;
+ GMII_TX_EN             <= GMII_TX_EN_net_1;
+ ETH_NRESET_net_1       <= ETH_NRESET_net_0;
+ ETH_NRESET             <= ETH_NRESET_net_1;
  Board_LEDs_net_1       <= Board_LEDs_net_0;
  Board_LEDs(7 downto 0) <= Board_LEDs_net_1;
  GMII_TXD_net_1         <= GMII_TXD_net_0;
  GMII_TXD(7 downto 0)   <= GMII_TXD_net_1;
- GMII_GTX_CLK_net_1     <= GMII_GTX_CLK_net_0;
- GMII_GTX_CLK           <= GMII_GTX_CLK_net_1;
  Board_J7_3_net_0(0)    <= Board_J7_3;
  Board_J7(0)            <= Board_J7_3_net_0(0);
  Board_J7_2_net_0(1)    <= Board_J7_2;
@@ -351,22 +380,8 @@ begin
  Board_J7(3)            <= Board_J7_net_1(3);
  Board_J7_0_net_0(4)    <= Board_J7_0;
  Board_J7(4)            <= Board_J7_0_net_0(4);
- FLASH_MEM_CLK_net_1    <= FLASH_MEM_CLK_net_0;
- FLASH_MEM_CLK          <= FLASH_MEM_CLK_net_1;
- FLASH_MEM_SDO_net_1    <= FLASH_MEM_SDO_net_0;
- FLASH_MEM_SDO          <= FLASH_MEM_SDO_net_1;
- USB_UART_RXD_net_1     <= USB_UART_RXD_net_0;
- USB_UART_RXD           <= USB_UART_RXD_net_1;
- GMII_MDC_net_1         <= GMII_MDC_net_0;
- GMII_MDC               <= GMII_MDC_net_1;
- FLASH_MEM_SSO_net_1    <= FLASH_MEM_SSO_net_0;
- FLASH_MEM_SSO          <= FLASH_MEM_SSO_net_1;
- GMII_TX_ER_net_1       <= GMII_TX_ER_net_0;
- GMII_TX_ER             <= GMII_TX_ER_net_1;
- GMII_TX_EN_net_1       <= GMII_TX_EN_net_0;
- GMII_TX_EN             <= GMII_TX_EN_net_1;
- ETH_NRESET_net_1       <= ETH_NRESET_net_0;
- ETH_NRESET             <= ETH_NRESET_net_1;
+ FLASH_MEM_SDI_net_0(0) <= FLASH_MEM_SDI;
+ Board_MOD1(0)          <= FLASH_MEM_SDI_net_0(0);
 ----------------------------------------------------------------------
 -- Slices assignments
 ----------------------------------------------------------------------
@@ -469,7 +484,7 @@ Connection_system_sb_0 : Connection_system_sb
         FIC_0_APB_M_PSEL    => Connection_system_sb_0_FIC_0_AMBA_MASTER_PSELx,
         FIC_0_APB_M_PENABLE => Connection_system_sb_0_FIC_0_AMBA_MASTER_PENABLE,
         FIC_0_APB_M_PWRITE  => Connection_system_sb_0_FIC_0_AMBA_MASTER_PWRITE,
-        SPI_1_DO_M2F        => FLASH_MEM_SDO_net_0,
+        SPI_1_DO_M2F        => Board_J10_net_0,
         SPI_1_CLK_M2F       => FLASH_MEM_CLK_net_0,
         SPI_1_SS0_M2F       => FLASH_MEM_SSO_net_0,
         SPI_1_SS0_M2F_OE    => OPEN,

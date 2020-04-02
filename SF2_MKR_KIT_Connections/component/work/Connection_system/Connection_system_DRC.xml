@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>Connection_system</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected top level output port Connection_system:Board_MOD1[5:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Connection_system/pins/Connection_system:Board_MOD1</crossprobe>
+  </drc>
+</drcreport>

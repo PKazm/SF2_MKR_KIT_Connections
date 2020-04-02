@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "N-2018.03M-SP1-1"
 // Program "Synplify Pro", Mapper "mapact, Build 2461R"
-// Sun Mar 29 03:49:56 2020
+// Wed Apr  1 23:27:40 2020
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -193,9 +193,9 @@ module Connection_system_sb_MSS (
   GMII_COL_c,
   GMII_TX_ER_c,
   GMII_TX_EN_c,
-  FLASH_MEM_SSO_c,
-  FLASH_MEM_SDO_c,
-  FLASH_MEM_CLK_c,
+  Board_J9_c,
+  Board_J10_c,
+  Board_J11_c,
   Connection_system_sb_0_GPIO_7_M2F,
   Connection_system_sb_0_GPIO_6_M2F,
   Connection_system_sb_0_GPIO_5_M2F,
@@ -266,9 +266,9 @@ input GMII_CRS_c ;
 input GMII_COL_c ;
 output GMII_TX_ER_c ;
 output GMII_TX_EN_c ;
-output FLASH_MEM_SSO_c ;
-output FLASH_MEM_SDO_c ;
-output FLASH_MEM_CLK_c ;
+output Board_J9_c ;
+output Board_J10_c ;
+output Board_J11_c ;
 output Connection_system_sb_0_GPIO_7_M2F ;
 output Connection_system_sb_0_GPIO_6_M2F ;
 output Connection_system_sb_0_GPIO_5_M2F ;
@@ -330,9 +330,9 @@ wire GMII_CRS_c ;
 wire GMII_COL_c ;
 wire GMII_TX_ER_c ;
 wire GMII_TX_EN_c ;
-wire FLASH_MEM_SSO_c ;
-wire FLASH_MEM_SDO_c ;
-wire FLASH_MEM_CLK_c ;
+wire Board_J9_c ;
+wire Board_J10_c ;
+wire Board_J11_c ;
 wire Connection_system_sb_0_GPIO_7_M2F ;
 wire Connection_system_sb_0_GPIO_6_M2F ;
 wire Connection_system_sb_0_GPIO_5_M2F ;
@@ -717,12 +717,12 @@ wire USBC_XCLK_OE ;
 	.SPI0_SS5_MGPIO20A_H2F_A(SPI0_SS5_MGPIO20A_H2F_A),
 	.SPI0_SS6_MGPIO21A_H2F_A(SPI0_SS6_MGPIO21A_H2F_A),
 	.SPI0_SS7_MGPIO22A_H2F_A(SPI0_SS7_MGPIO22A_H2F_A),
-	.SPI1_CLK_OUT(FLASH_MEM_CLK_c),
+	.SPI1_CLK_OUT(Board_J11_c),
 	.SPI1_SDI_MGPIO11A_H2F_A(SPI1_SDI_MGPIO11A_H2F_A),
 	.SPI1_SDI_MGPIO11A_H2F_B(SPI1_SDI_MGPIO11A_H2F_B),
-	.SPI1_SDO_MGPIO12A_H2F_A(FLASH_MEM_SDO_c),
+	.SPI1_SDO_MGPIO12A_H2F_A(Board_J10_c),
 	.SPI1_SDO_MGPIO12A_H2F_B(SPI1_SDO_MGPIO12A_H2F_B),
-	.SPI1_SS0_MGPIO13A_H2F_A(FLASH_MEM_SSO_c),
+	.SPI1_SS0_MGPIO13A_H2F_A(Board_J9_c),
 	.SPI1_SS0_MGPIO13A_H2F_B(SPI_1_SS0_M2F_OE),
 	.SPI1_SS1_MGPIO14A_H2F_A(SPI1_SS1_MGPIO14A_H2F_A),
 	.SPI1_SS1_MGPIO14A_H2F_B(SPI1_SS1_MGPIO14A_H2F_B),
@@ -1416,9 +1416,9 @@ module Connection_system_sb (
   Connection_system_sb_0_GPIO_5_M2F,
   Connection_system_sb_0_GPIO_6_M2F,
   Connection_system_sb_0_GPIO_7_M2F,
-  FLASH_MEM_CLK_c,
-  FLASH_MEM_SDO_c,
-  FLASH_MEM_SSO_c,
+  Board_J11_c,
+  Board_J10_c,
+  Board_J9_c,
   GMII_TX_EN_c,
   GMII_TX_ER_c,
   GMII_COL_c,
@@ -1488,9 +1488,9 @@ output USB_UART_RXD_c ;
 output Connection_system_sb_0_GPIO_5_M2F ;
 output Connection_system_sb_0_GPIO_6_M2F ;
 output Connection_system_sb_0_GPIO_7_M2F ;
-output FLASH_MEM_CLK_c ;
-output FLASH_MEM_SDO_c ;
-output FLASH_MEM_SSO_c ;
+output Board_J11_c ;
+output Board_J10_c ;
+output Board_J9_c ;
 output GMII_TX_EN_c ;
 output GMII_TX_ER_c ;
 input GMII_COL_c ;
@@ -1551,9 +1551,9 @@ wire USB_UART_RXD_c ;
 wire Connection_system_sb_0_GPIO_5_M2F ;
 wire Connection_system_sb_0_GPIO_6_M2F ;
 wire Connection_system_sb_0_GPIO_7_M2F ;
-wire FLASH_MEM_CLK_c ;
-wire FLASH_MEM_SDO_c ;
-wire FLASH_MEM_SSO_c ;
+wire Board_J11_c ;
+wire Board_J10_c ;
+wire Board_J9_c ;
 wire GMII_TX_EN_c ;
 wire GMII_TX_ER_c ;
 wire GMII_COL_c ;
@@ -1662,9 +1662,9 @@ wire VCC ;
 	.GMII_COL_c(GMII_COL_c),
 	.GMII_TX_ER_c(GMII_TX_ER_c),
 	.GMII_TX_EN_c(GMII_TX_EN_c),
-	.FLASH_MEM_SSO_c(FLASH_MEM_SSO_c),
-	.FLASH_MEM_SDO_c(FLASH_MEM_SDO_c),
-	.FLASH_MEM_CLK_c(FLASH_MEM_CLK_c),
+	.Board_J9_c(Board_J9_c),
+	.Board_J10_c(Board_J10_c),
+	.Board_J11_c(Board_J11_c),
 	.Connection_system_sb_0_GPIO_7_M2F(Connection_system_sb_0_GPIO_7_M2F),
 	.Connection_system_sb_0_GPIO_6_M2F(Connection_system_sb_0_GPIO_6_M2F),
 	.Connection_system_sb_0_GPIO_5_M2F(Connection_system_sb_0_GPIO_5_M2F),
@@ -15832,6 +15832,7 @@ module Connection_system (
   Board_J8,
   Board_J9,
   Board_LEDs,
+  Board_MOD1,
   COMA_MODE,
   ETH_NRESET,
   FLASH_MEM_CLK,
@@ -15869,6 +15870,7 @@ output [4:0] Board_J7 ;
 output Board_J8 ;
 output Board_J9 ;
 output [7:0] Board_LEDs ;
+output [5:0] Board_MOD1 ;
 output COMA_MODE ;
 output ETH_NRESET ;
 output FLASH_MEM_CLK ;
@@ -15962,11 +15964,11 @@ wire GMII_RX_ER_c ;
 wire GMII_TX_CLK_c ;
 wire MDINT_c ;
 wire USB_UART_TXD_c ;
+wire Board_J10_c ;
+wire Board_J11_c ;
 wire Board_J8_c ;
+wire Board_J9_c ;
 wire ETH_NRESET_c ;
-wire FLASH_MEM_CLK_c ;
-wire FLASH_MEM_SDO_c ;
-wire FLASH_MEM_SSO_c ;
 wire GMII_GTX_CLK_c ;
 wire GMII_MDC_c ;
 wire GMII_TX_EN_c ;
@@ -16047,21 +16049,21 @@ wire N_58_i ;
 wire Connection_system_sb_0_I2C_0_SDA_M2F_OE ;
 wire Connection_system_sb_0_I2C_0_SCL_M2F_OE ;
 wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
-// @34:423
+// @34:438
   BIBUF BIBUF_2 (
 	.Y(BIBUF_2_Y),
 	.PAD(GMII_MDIO),
 	.D(Connection_system_sb_0_MAC_GMII_MDO),
 	.E(Connection_system_sb_0_MAC_GMII_MDO_EN)
 );
-// @34:412
+// @34:427
   BIBUF BIBUF_1 (
 	.Y(BIBUF_1_Y),
 	.PAD(Light_SCL),
 	.D(Connection_system_sb_0_I2C_0_SCL_M2F),
 	.E(Connection_system_sb_0_I2C_0_SCL_M2F_OE)
 );
-// @34:401
+// @34:416
   BIBUF BIBUF_0 (
 	.Y(BIBUF_0_Y),
 	.PAD(Light_SDA),
@@ -16166,12 +16168,12 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 // @34:34
   OUTBUF Board_J10_obuf (
 	.PAD(Board_J10),
-	.D(GND)
+	.D(Board_J10_c)
 );
 // @34:35
   OUTBUF Board_J11_obuf (
 	.PAD(Board_J11),
-	.D(GND)
+	.D(Board_J11_c)
 );
 // @34:36
   OUTBUF \Board_J7_obuf[0]  (
@@ -16206,7 +16208,7 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 // @34:38
   OUTBUF Board_J9_obuf (
 	.PAD(Board_J9),
-	.D(GND)
+	.D(Board_J9_c)
 );
 // @34:39
   OUTBUF \Board_LEDs_obuf[0]  (
@@ -16249,116 +16251,146 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 	.D(Board_LEDs_c[7])
 );
 // @34:40
+  OUTBUF \Board_MOD1_obuf[0]  (
+	.PAD(Board_MOD1[0]),
+	.D(FLASH_MEM_SDI_c)
+);
+// @34:40
+  OUTBUF \Board_MOD1_obuf[1]  (
+	.PAD(Board_MOD1[1]),
+	.D(GND)
+);
+// @34:40
+  OUTBUF \Board_MOD1_obuf[2]  (
+	.PAD(Board_MOD1[2]),
+	.D(GND)
+);
+// @34:40
+  OUTBUF \Board_MOD1_obuf[3]  (
+	.PAD(Board_MOD1[3]),
+	.D(GND)
+);
+// @34:40
+  OUTBUF \Board_MOD1_obuf[4]  (
+	.PAD(Board_MOD1[4]),
+	.D(GND)
+);
+// @34:40
+  OUTBUF \Board_MOD1_obuf[5]  (
+	.PAD(Board_MOD1[5]),
+	.D(GND)
+);
+// @34:41
   OUTBUF COMA_MODE_obuf (
 	.PAD(COMA_MODE),
 	.D(GND)
 );
-// @34:41
+// @34:42
   OUTBUF ETH_NRESET_obuf (
 	.PAD(ETH_NRESET),
 	.D(ETH_NRESET_c)
 );
-// @34:42
+// @34:43
   OUTBUF FLASH_MEM_CLK_obuf (
 	.PAD(FLASH_MEM_CLK),
-	.D(FLASH_MEM_CLK_c)
+	.D(Board_J11_c)
 );
-// @34:43
+// @34:44
   OUTBUF FLASH_MEM_HOLD_N_obuf (
 	.PAD(FLASH_MEM_HOLD_N),
 	.D(VCC)
 );
-// @34:44
+// @34:45
   OUTBUF FLASH_MEM_SDO_obuf (
 	.PAD(FLASH_MEM_SDO),
-	.D(FLASH_MEM_SDO_c)
-);
-// @34:45
-  OUTBUF FLASH_MEM_SSO_obuf (
-	.PAD(FLASH_MEM_SSO),
-	.D(FLASH_MEM_SSO_c)
+	.D(Board_J10_c)
 );
 // @34:46
+  OUTBUF FLASH_MEM_SSO_obuf (
+	.PAD(FLASH_MEM_SSO),
+	.D(Board_J9_c)
+);
+// @34:47
   OUTBUF FLASH_MEM_WP_N_obuf (
 	.PAD(FLASH_MEM_WP_N),
 	.D(VCC)
 );
-// @34:47
+// @34:48
   OUTBUF GMII_GTX_CLK_obuf (
 	.PAD(GMII_GTX_CLK),
 	.D(GMII_GTX_CLK_c)
 );
-// @34:48
+// @34:49
   OUTBUF GMII_MDC_obuf (
 	.PAD(GMII_MDC),
 	.D(GMII_MDC_c)
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[0]  (
 	.PAD(GMII_TXD[0]),
 	.D(GMII_TXD_c[0])
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[1]  (
 	.PAD(GMII_TXD[1]),
 	.D(GMII_TXD_c[1])
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[2]  (
 	.PAD(GMII_TXD[2]),
 	.D(GMII_TXD_c[2])
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[3]  (
 	.PAD(GMII_TXD[3]),
 	.D(GMII_TXD_c[3])
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[4]  (
 	.PAD(GMII_TXD[4]),
 	.D(GMII_TXD_c[4])
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[5]  (
 	.PAD(GMII_TXD[5]),
 	.D(GMII_TXD_c[5])
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[6]  (
 	.PAD(GMII_TXD[6]),
 	.D(GMII_TXD_c[6])
 );
-// @34:49
+// @34:50
   OUTBUF \GMII_TXD_obuf[7]  (
 	.PAD(GMII_TXD[7]),
 	.D(GMII_TXD_c[7])
 );
-// @34:50
+// @34:51
   OUTBUF GMII_TX_EN_obuf (
 	.PAD(GMII_TX_EN),
 	.D(GMII_TX_EN_c)
 );
-// @34:51
+// @34:52
   OUTBUF GMII_TX_ER_obuf (
 	.PAD(GMII_TX_ER),
 	.D(GMII_TX_ER_c)
 );
-// @34:52
+// @34:53
   OUTBUF \REFCLK_SEL_obuf[0]  (
 	.PAD(REFCLK_SEL[0]),
 	.D(GND)
 );
-// @34:52
+// @34:53
   OUTBUF \REFCLK_SEL_obuf[1]  (
 	.PAD(REFCLK_SEL[1]),
 	.D(VCC)
 );
-// @34:53
+// @34:54
   OUTBUF USB_UART_RXD_obuf (
 	.PAD(USB_UART_RXD),
 	.D(USB_UART_RXD_c)
 );
-// @34:434
+// @34:449
   Connection_system_sb Connection_system_sb_0 (
 	.CoreAPB3_C0_0_APBmslave0_PADDR(CoreAPB3_C0_0_APBmslave0_PADDR[7:0]),
 	.Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR(Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR[11:8]),
@@ -16387,9 +16419,9 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 	.Connection_system_sb_0_GPIO_5_M2F(Connection_system_sb_0_GPIO_5_M2F),
 	.Connection_system_sb_0_GPIO_6_M2F(Connection_system_sb_0_GPIO_6_M2F),
 	.Connection_system_sb_0_GPIO_7_M2F(Connection_system_sb_0_GPIO_7_M2F),
-	.FLASH_MEM_CLK_c(FLASH_MEM_CLK_c),
-	.FLASH_MEM_SDO_c(FLASH_MEM_SDO_c),
-	.FLASH_MEM_SSO_c(FLASH_MEM_SSO_c),
+	.Board_J11_c(Board_J11_c),
+	.Board_J10_c(Board_J10_c),
+	.Board_J9_c(Board_J9_c),
 	.GMII_TX_EN_c(GMII_TX_EN_c),
 	.GMII_TX_ER_c(GMII_TX_ER_c),
 	.GMII_COL_c(GMII_COL_c),
@@ -16431,7 +16463,7 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 	.GMII_GTX_CLK_c(GMII_GTX_CLK_c),
 	.DEVRST_N(DEVRST_N)
 );
-// @34:499
+// @34:514
   CoreAPB3_C0 CoreAPB3_C0_0 (
 	.Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR(Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR[11:8]),
 	.period_reg_15(\corepwm_C0_0.corepwm_C0_0.period_reg [31]),
@@ -16526,7 +16558,7 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 	.N_83(N_83),
 	.psh_negedge_reg_1_sqmuxa_2_0_0(\corepwm_C0_0.corepwm_C0_0.xhdl58.reg_if_inst.psh_negedge_reg_1_sqmuxa_2_0_0 )
 );
-// @34:525
+// @34:540
   corepwm_C0 corepwm_C0_0 (
 	.CoreAPB3_C0_0_APBmslave0_PADDR(CoreAPB3_C0_0_APBmslave0_PADDR[7:2]),
 	.PRDATA_regif_d_0(PRDATA_regif_d[1]),
@@ -16601,7 +16633,7 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 	.N_66(N_66),
 	.Board_J8_c(Board_J8_c)
 );
-// @34:542
+// @34:557
   LED_inverter_dimmer LED_inverter_dimmer_0 (
 	.Board_LEDs_c(Board_LEDs_c[7:0]),
 	.PWM_net_0_0(PWM_net_0[0]),
@@ -16614,7 +16646,7 @@ wire Connection_system_sb_0_MAC_GMII_MDO_EN ;
 	.Connection_system_sb_0_GPIO_6_M2F(Connection_system_sb_0_GPIO_6_M2F),
 	.Connection_system_sb_0_GPIO_7_M2F(Connection_system_sb_0_GPIO_7_M2F)
 );
-// @34:551
+// @34:566
   Nokia5110_Driver Nokia5110_Driver_0 (
 	.Board_J7_c(Board_J7_c[2:0]),
 	.CoreAPB3_C0_0_APBmslave0_PADDR(CoreAPB3_C0_0_APBmslave0_PADDR[7:0]),

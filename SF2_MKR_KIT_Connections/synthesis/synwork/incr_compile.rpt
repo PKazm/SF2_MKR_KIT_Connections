@@ -16,65 +16,65 @@ Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-25       E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42)
+25       E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 27
 MID:  lib.cell.view
 0        coreapb3_lib.coreapb3.coreapb3_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 2        coreapb3_lib.coreapb3_iaddr_reg.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 4        coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 6        corepwm_lib.corepwm.trans may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 8        corepwm_lib.corepwm_pwm_gen.trans may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 10       corepwm_lib.corepwm_reg_if.trans may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 12       corepwm_lib.corepwm_tach_if.trans may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 14       corepwm_lib.corepwm_timebase.trans may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 16       work.connection_system.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (architecture and entity definition)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (architecture and entity definition)
 18       work.connection_system_sb.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 20       work.connection_system_sb_ccc_0_fccc.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 22       work.connection_system_sb_fabosc_0_osc.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 24       work.connection_system_sb_mss.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 26       work.coreapb3_c0.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 28       work.corepwm_c0.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 30       work.coreresetp.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 32       work.coreresetp_pcie_hotreset.rtl may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 34       work.led_inverter_dimmer.architecture_led_inverter_dimmer may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 36       work.mss_010.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 38       work.nokia5110_driver.architecture_nokia5110_driver may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 40       work.rcosc_1mhz.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 42       work.rcosc_1mhz_fab.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 44       work.rcosc_25_50mhz.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 46       work.rcosc_25_50mhz_fab.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 48       work.timer.architecture_timer may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 50       work.xtlosc.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 52       work.xtlosc_fab.def_arch may have changed because the following files changed:
-                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-03-29 03:45:44, 2020-03-29 03:49:42) <-- (may instantiate this module)
+                        E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd (2020-04-01 23:14:52, 2020-04-01 23:27:26) <-- (may instantiate this module)
 
 *******************************************************************
 Unmodified files: 35

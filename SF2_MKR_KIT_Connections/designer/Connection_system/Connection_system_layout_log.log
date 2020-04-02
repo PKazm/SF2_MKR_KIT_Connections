@@ -18,16 +18,17 @@ INFO: Reading User PDC file E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_
 INFO: Reading User PDC file E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J11.pdc. 0 error(s) and 0 warning(s)
 INFO: Reading User PDC file E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_leds.pdc. 0 error(s) and 0 warning(s)
 INFO: Reading User PDC file E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_light_sens.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_mod1_vector.pdc. 0 error(s) and 0 warning(s)
 INFO: Reading User PDC file E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_usb_uart.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 61 fixed I/O macros, 0 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified 67 fixed I/O macros, 0 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 12.600.0 
-Design: Connection_system               Started: Sun Mar 29 03:50:06 2020
+Design: Connection_system               Started: Wed Apr  1 23:27:51 2020
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -43,35 +44,35 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: Connection_system               
-Finished: Sun Mar 29 03:50:11 2020
+Finished: Wed Apr  1 23:27:56 2020
 Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
 Total Memory Usage: 117.6 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Sun Mar 29 03:50:14 2020
+Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Wed Apr  1 23:27:59 2020
 
 
 Router completed successfully.
 
 Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system
-Finished: Sun Mar 29 03:50:19 2020
+Finished: Wed Apr  1 23:28:04 2020
 Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:05
-Total Memory Usage: 429.7 Mbytes
+Total Memory Usage: 429.5 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Sun Mar 29 03:50:21 2020
+Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Wed Apr  1 23:28:06 2020
 
 
 Router completed successfully.
 
 Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system
-Finished: Sun Mar 29 03:50:26 2020
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 429.2 Mbytes
+Finished: Wed Apr  1 23:28:12 2020
+Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
+Total Memory Usage: 429.1 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
@@ -81,6 +82,6 @@ Resource Usage
 | 4LUT          | 801  | 12084 | 6.63       |
 | DFF           | 539  | 12084 | 4.46       |
 | I/O Register  | 0    | 252   | 0.00       |
-| Logic Element | 849  | 12084 | 7.03       |
+| Logic Element | 866  | 12084 | 7.17       |
 +---------------+------+-------+------------+
 

@@ -23,11 +23,11 @@ SLE            395 uses
 
 DSP Blocks:    0 of 22 (0%)
 
-I/O ports: 62
-I/O primitives: 61
+I/O ports: 68
+I/O primitives: 67
 BIBUF          3 uses
 INBUF          19 uses
-OUTBUF         39 uses
+OUTBUF         45 uses
 
 
 Global Clock Buffers: 5

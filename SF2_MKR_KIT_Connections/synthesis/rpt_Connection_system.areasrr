@@ -26,7 +26,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      395                100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Connection_system:	395 (34.05 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Connection_system:	395 (33.88 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -36,7 +36,7 @@ CFG           397                100 %
 ARI1          254                100 %                
 BLACK BOX     4                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block Connection_system:	655 (56.47 % Utilization)
+Total COMBINATIONAL LOGIC in the block Connection_system:	655 (56.17 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -58,9 +58,9 @@ Total GLOBAL BUFFERS in the block Connection_system:	5 (0.43 % Utilization)
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-IO       61                 100 %                
+IO       67                 100 %                
 =================================================
-Total IO PADS in the block Connection_system:	61 (5.26 % Utilization)
+Total IO PADS in the block Connection_system:	67 (5.75 % Utilization)
 
 --------------------------------------------------------------------------
 ########   Utilization report for  cell:   Connection_system_sb   ########
@@ -72,7 +72,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      9                  2.28 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Connection_system.Connection_system_sb:	9 (0.78 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Connection_system.Connection_system_sb:	9 (0.77 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -81,7 +81,7 @@ Name          Total elements     Utilization     Notes
 CFG           2                  0.5040 %             
 BLACK BOX     4                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block Connection_system.Connection_system_sb:	6 (0.52 % Utilization)
+Total COMBINATIONAL LOGIC in the block Connection_system.Connection_system_sb:	6 (0.51 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -145,7 +145,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      9                  2.28 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Connection_system_sb.CoreResetP:	9 (0.78 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Connection_system_sb.CoreResetP:	9 (0.77 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -173,7 +173,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 CFG      52                 13.1 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Connection_system.CoreAPB3_C0:	52 (4.48 % Utilization)
+Total COMBINATIONAL LOGIC in the block Connection_system.CoreAPB3_C0:	52 (4.46 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   CoreAPB3   ########
@@ -185,7 +185,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 CFG      52                 13.1 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block CoreAPB3_C0.CoreAPB3:	52 (4.48 % Utilization)
+Total COMBINATIONAL LOGIC in the block CoreAPB3_C0.CoreAPB3:	52 (4.46 % Utilization)
 
 -----------------------------------------------------------------------
 ########   Utilization report for  cell:   COREAPB3_MUXPTOB3   ########
@@ -197,7 +197,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 CFG      48                 12.1 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block CoreAPB3.COREAPB3_MUXPTOB3:	48 (4.14 % Utilization)
+Total COMBINATIONAL LOGIC in the block CoreAPB3.COREAPB3_MUXPTOB3:	48 (4.12 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   LED_inverter_dimmer   ########
@@ -221,7 +221,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      123                31.1 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Connection_system.Nokia5110_Driver:	123 (10.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Connection_system.Nokia5110_Driver:	123 (10.55 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -230,7 +230,7 @@ Name     Total elements     Utilization     Notes
 CFG      195                49.1 %               
 ARI1     44                 17.3 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Connection_system.Nokia5110_Driver:	239 (20.60 % Utilization)
+Total COMBINATIONAL LOGIC in the block Connection_system.Nokia5110_Driver:	239 (20.50 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -267,7 +267,7 @@ Name     Total elements     Utilization     Notes
 CFG      14                 3.53 %               
 ARI1     19                 7.48 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ0:	33 (2.84 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ0:	33 (2.83 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   timerZ1   ########
@@ -287,7 +287,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 CFG      11                 2.77 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ1:	11 (0.95 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ1:	11 (0.94 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -307,7 +307,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      263                66.6 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Connection_system.corepwm_C0:	263 (22.67 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Connection_system.corepwm_C0:	263 (22.56 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -316,7 +316,7 @@ Name     Total elements     Utilization     Notes
 CFG      140                35.3 %               
 ARI1     210                82.7 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Connection_system.corepwm_C0:	350 (30.17 % Utilization)
+Total COMBINATIONAL LOGIC in the block Connection_system.corepwm_C0:	350 (30.02 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm   ########
@@ -328,7 +328,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      263                66.6 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block corepwm_C0.corepwm:	263 (22.67 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block corepwm_C0.corepwm:	263 (22.56 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -337,7 +337,7 @@ Name     Total elements     Utilization     Notes
 CFG      140                35.3 %               
 ARI1     210                82.7 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block corepwm_C0.corepwm:	350 (30.17 % Utilization)
+Total COMBINATIONAL LOGIC in the block corepwm_C0.corepwm:	350 (30.02 % Utilization)
 
 ---------------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm_pwm_gen   ########
@@ -358,7 +358,7 @@ Name     Total elements     Utilization     Notes
 CFG      39                 9.82 %               
 ARI1     32                 12.6 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block corepwm.corepwm_pwm_gen:	71 (6.12 % Utilization)
+Total COMBINATIONAL LOGIC in the block corepwm.corepwm_pwm_gen:	71 (6.09 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm_reg_if   ########
@@ -370,7 +370,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      195                49.4 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_reg_if:	195 (16.81 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_reg_if:	195 (16.72 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -379,7 +379,7 @@ Name     Total elements     Utilization     Notes
 CFG      97                 24.4 %               
 ARI1     32                 12.6 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block corepwm.corepwm_reg_if:	129 (11.12 % Utilization)
+Total COMBINATIONAL LOGIC in the block corepwm.corepwm_reg_if:	129 (11.06 % Utilization)
 
 ----------------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm_timebase   ########
@@ -391,7 +391,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      64                 16.2 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_timebase:	64 (5.52 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_timebase:	64 (5.49 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -400,7 +400,7 @@ Name     Total elements     Utilization     Notes
 CFG      1                  0.2520 %             
 ARI1     146                57.5 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block corepwm.corepwm_timebase:	147 (12.67 % Utilization)
+Total COMBINATIONAL LOGIC in the block corepwm.corepwm_timebase:	147 (12.61 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

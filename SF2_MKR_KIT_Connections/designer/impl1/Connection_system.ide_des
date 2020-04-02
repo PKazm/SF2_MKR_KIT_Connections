@@ -12,6 +12,7 @@ VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constrain
 VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_J7_vector.pdc;pdc"
 VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_flash_mem.pdc;pdc"
 VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_ethernet.pdc;pdc"
+VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\constraint\io\SF2_MKR_KIT_mod1_vector.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 VALUE "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\Connection_system_vm.sdc;Skipped"

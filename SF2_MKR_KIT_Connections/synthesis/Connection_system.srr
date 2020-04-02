@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: PHOENIX136DESKY
 
-# Sun Mar 29 03:49:48 2020
+# Wed Apr  1 23:27:32 2020
 
 #Implementation: synthesis
 
@@ -42,9 +42,32 @@ Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:1
 
 @N|Running in 64-bit mode
 @N:"E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd":17:7:17:23|Top entity is set to Connection_system.
-Options changed - recompiling
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\hdl\LED_inverter_dimmer.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\tach_if.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\t_corepwm_pkg.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\components.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\hdl\timer.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system_sb\FABOSC_0\Connection_system_sb_FABOSC_0_OSC.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system_sb_MSS\Connection_system_sb_MSS.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system_sb\Connection_system_sb.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\corepwm_C0\corepwm_C0.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\hdl\Nokia5110_Driver.vhd changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd changed - recompiling
 VHDL syntax check successful!
-Options changed - recompiling
+File E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\component\work\Connection_system\Connection_system.vhd":17:7:17:23|Synthesizing work.connection_system.rtl.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":434:10:434:14|Synthesizing smartfusion2.bibuf.syn_black_box.
@@ -438,7 +461,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 03:49:49 2020
+# Wed Apr  1 23:27:33 2020
 
 ###########################################################]
 
@@ -465,7 +488,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 03:49:49 2020
+# Wed Apr  1 23:27:33 2020
 
 ###########################################################]
 @END
@@ -475,7 +498,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 03:49:49 2020
+# Wed Apr  1 23:27:33 2020
 
 ###########################################################]
 
@@ -502,12 +525,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 03:49:50 2020
+# Wed Apr  1 23:27:35 2020
 
 ###########################################################]
 Premap Report
 
-# Sun Mar 29 03:49:51 2020
+# Wed Apr  1 23:27:35 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -713,12 +736,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 53MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Mar 29 03:49:52 2020
+# Wed Apr  1 23:27:36 2020
 
 ###########################################################]
 Map & Optimize Report
 
-# Sun Mar 29 03:49:52 2020
+# Wed Apr  1 23:27:36 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -863,7 +886,7 @@ Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 148MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 148MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
@@ -882,8 +905,8 @@ Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    -1.71ns		 670 /       395
-   2		0h:00m:02s		    -1.70ns		 655 /       395
+   1		0h:00m:01s		    -1.71ns		 670 /       395
+   2		0h:00m:01s		    -1.70ns		 655 /       395
 
    3		0h:00m:02s		    -1.69ns		 656 /       395
    4		0h:00m:02s		    -0.38ns		 657 /       395
@@ -906,7 +929,7 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 153MB peak: 155MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 154MB peak: 155MB)
@@ -965,7 +988,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Mar 29 03:49:56 2020
+# Timing Report written on Wed Apr  1 23:27:41 2020
 #
 
 
@@ -1310,11 +1333,11 @@ SLE            395 uses
 
 DSP Blocks:    0 of 22 (0%)
 
-I/O ports: 62
-I/O primitives: 61
+I/O ports: 68
+I/O primitives: 67
 BIBUF          3 uses
 INBUF          19 uses
-OUTBUF         39 uses
+OUTBUF         45 uses
 
 
 Global Clock Buffers: 5
@@ -1335,9 +1358,9 @@ Total number of LUTs after P&R:  651 + 144 + 0 + 0 = 795;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 155MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 155MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Sun Mar 29 03:49:57 2020
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+# Wed Apr  1 23:27:41 2020
 
 ###########################################################]

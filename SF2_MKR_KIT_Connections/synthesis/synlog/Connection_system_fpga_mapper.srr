@@ -1,4 +1,4 @@
-# Sun Mar 29 03:49:52 2020
+# Wed Apr  1 23:27:36 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -143,7 +143,7 @@ Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 148MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 148MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
@@ -162,8 +162,8 @@ Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    -1.71ns		 670 /       395
-   2		0h:00m:02s		    -1.70ns		 655 /       395
+   1		0h:00m:01s		    -1.71ns		 670 /       395
+   2		0h:00m:01s		    -1.70ns		 655 /       395
 
    3		0h:00m:02s		    -1.69ns		 656 /       395
    4		0h:00m:02s		    -0.38ns		 657 /       395
@@ -186,7 +186,7 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 153MB peak: 155MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 154MB peak: 155MB)
@@ -245,7 +245,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Mar 29 03:49:56 2020
+# Timing Report written on Wed Apr  1 23:27:41 2020
 #
 
 
@@ -590,11 +590,11 @@ SLE            395 uses
 
 DSP Blocks:    0 of 22 (0%)
 
-I/O ports: 62
-I/O primitives: 61
+I/O ports: 68
+I/O primitives: 67
 BIBUF          3 uses
 INBUF          19 uses
-OUTBUF         39 uses
+OUTBUF         45 uses
 
 
 Global Clock Buffers: 5
@@ -615,9 +615,9 @@ Total number of LUTs after P&R:  651 + 144 + 0 + 0 = 795;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 155MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 155MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Sun Mar 29 03:49:57 2020
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+# Wed Apr  1 23:27:41 2020
 
 ###########################################################]

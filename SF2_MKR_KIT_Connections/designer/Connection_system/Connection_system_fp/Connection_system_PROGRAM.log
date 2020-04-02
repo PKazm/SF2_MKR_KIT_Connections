@@ -6,7 +6,7 @@ The 'open_project' command succeeded.
 Warning: Programming is already enabled for device 'M2S010'.
 The 'enable_device' command succeeded.
 PPD file 'E:/Github_Repos/SF2_MKR_KIT_Connections/SF2_MKR_KIT_Connections/designer/Connection_system/Connection_system.ppd' has been loaded successfully.
-DESIGN : Connection_system;  CHECKSUM : 3833;  PDB_VERSION : 1.0
+DESIGN : Connection_system;  CHECKSUM : D931;  PDB_VERSION : 1.0
 The 'set_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer 'E2001943SW' : Scan Chain...
@@ -19,14 +19,14 @@ programmer 'E2001943SW' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007c6
 programmer 'E2001943SW' : device 'M2S010' : EXPORT CRCERR[1] = 0
 programmer 'E2001943SW' : device 'M2S010' : EXPORT EDCERR[1] = 0
 programmer 'E2001943SW' : device 'M2S010' : Programming FPGA Array...
-programmer 'E2001943SW' : device 'M2S010' : EXPORT Fabric component digest[256] = cd91d056ca12a4ded213b438aa05531c0c45807c719ed34ee270812e0756394c
+programmer 'E2001943SW' : device 'M2S010' : EXPORT Fabric component digest[256] = 08782032290ca5142f19f1ff4c2a47dae9ba94bde07ef7af761d7dbeb67c387d
 programmer 'E2001943SW' : device 'M2S010' : ===================================================================================
 programmer 'E2001943SW' : device 'M2S010' : EXPORT DSN[128] = 820f3a77ad5c172418405befcc9be916
 programmer 'E2001943SW' : device 'M2S010' : ===================================================================================
-programmer 'E2001943SW' : device 'M2S010' : Finished: Sun Mar 29 03:52:48 2020 (Elapsed time 00:00:24)
+programmer 'E2001943SW' : device 'M2S010' : Finished: Wed Apr 01 23:31:30 2020 (Elapsed time 00:00:24)
 programmer 'E2001943SW' : device 'M2S010' : Executing action PROGRAM PASSED.
 programmer 'E2001943SW' : Chain programming PASSED.
-Chain Programming Finished: Sun Mar 29 03:52:48 2020 (Elapsed time 00:00:24)
+Chain Programming Finished: Wed Apr 01 23:31:30 2020 (Elapsed time 00:00:24)
 
                         o - o - o - o - o - o
 

@@ -32,6 +32,6 @@
 @P: Connection_system Part : m2s010tq144std
 @P: Connection_system Register bits  : 395 
 @P: Connection_system DSP Blocks  : 0
-@P: Connection_system I/O primitives : 61
+@P: Connection_system I/O primitives : 67
 @P: Connection_system RAM64x18 :  4
 @P:  CPU Time : 0h:00m:04s
