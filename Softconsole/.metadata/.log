@@ -2210,3 +2210,25 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -pluginCustomization p
 
 !ENTRY ilg.gnumcueclipse.debug.gdbjtag.openocd 4 1 2020-04-02 01:47:42.553
 !MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+!SESSION 2020-04-02 16:42:51.866 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -pluginCustomization plugin_customization.ini
+
+!ENTRY org.eclipse.egit.core 1 0 2020-04-02 16:43:00.676
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-02 16:43:07.977
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-02 16:43:07.988
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.openocd 4 1 2020-04-02 22:38:39.148
+!MESSAGE C:\Microsemi\SoftConsole_v6.2\eclipse\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 --command set DEVICE M2S010 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.openocd 4 1 2020-04-02 22:38:41.632
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
