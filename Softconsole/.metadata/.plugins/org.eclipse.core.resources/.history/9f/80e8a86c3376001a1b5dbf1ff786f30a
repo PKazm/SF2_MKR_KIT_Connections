@@ -1,46 +1,25 @@
-/*******************************************************************************
- * (c) Copyright 2011-2015 Microsemi SoC Products Group.  All rights reserved.
- *
- * Marvell's M88E1340 PHY interface driver implementation.
- *
- * SVN $Revision: 7574 $
- * SVN $Date: 2015-07-22 12:08:12 +0530 (Wed, 22 Jul 2015) $
- */
-#include "phy.h"
-#include "mss_ethernet_mac_types.h"
-#include "mss_ethernet_mac.h"
+#include "../firmware/drivers/mss_ethernet_mac/phy.h"
+#include "../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac_types.h"
+#include "../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.h"
 #include "../../CMSIS/m2sxxx.h"
 #include "../../CMSIS/mss_assert.h"
 #include "../../CMSIS/system_m2sxxx.h"
-#include "mss_ethernet_mac_regs.h"
+#include "../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac_regs.h"
+#include "VSC8541_01_phy_regs.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/***************************************************************************//**
- * M88E1340 PHY specific register offsets and bit definitions
- */
 
-#define M88E1340_EXT_ADDR_PAGE_CR           0x16
-#define PAGE_0                              0x00
-
-#define M88E1340_PHY_STATUS                 0x11
-#define M88E1340_PHY_STATUS_1000            0x8000
-#define M88E1340_PHY_STATUS_100             0x4000
-#define M88E1340_PHY_STATUS_SPD_MASK        0xc000
-#define M88E1340_PHY_STATUS_FULLDUPLEX      0x2000
-#define M88E1340_PHY_STATUS_RESOLVED        0x0800
-#define M88E1340_PHY_STATUS_LINK            0x0400
 
 /***************************************************************************//**
- * Preprocessor Macros
+ * VSC8541_01 PHY specific register offsets and bit definitions
  */
 
-#define BMSR_AUTO_NEGOTIATION_COMPLETE      0x0020u
+// see VSC8541_01_phy_regs.h
 
-#define ANEG_REQUESTED                      0x80000000u
-#define FORCED_CFG_REQUESTED                0x40000000u
+
 
 /***************************************************************************//**
  * Address of the PHY on the MII management interface.
@@ -66,6 +45,7 @@ void MSS_MAC_phy_init(uint8_t phy_addr)
     phy_reg &= ~BMCR_PDOWN;
     MSS_MAC_write_phy_reg(g_phy_addr, MII_BMCR, phy_reg);
 }
+
 
 /***************************************************************************//**
  * 
@@ -115,6 +95,7 @@ void MSS_MAC_phy_set_link_speed(uint32_t speed_duplex_select)
     MSS_MAC_write_phy_reg(g_phy_addr, MII_CTRL1000, phy_reg);
 }
 
+
 /***************************************************************************//**
  * 
  */
@@ -125,7 +106,7 @@ void MSS_MAC_phy_autonegotiate(void)
     volatile uint32_t copper_aneg_timeout = 1000000u;
     
     /* Enable auto-negotiation. */
-    MSS_MAC_write_phy_reg(g_phy_addr, M88E1340_EXT_ADDR_PAGE_CR, PAGE_0);
+    MSS_MAC_write_phy_reg(g_phy_addr, VSC8541_EXT_ADDR_PAGE_CR, PAGE_0);
     
     phy_reg = MSS_MAC_read_phy_reg(g_phy_addr, MII_BMCR);
     phy_reg |= (BMCR_ANENABLE | BMCR_ANRESTART);
@@ -134,11 +115,12 @@ void MSS_MAC_phy_autonegotiate(void)
     /* Wait for copper auto-negotiation to complete. */
     do {
         phy_reg = MSS_MAC_read_phy_reg(g_phy_addr, MII_BMSR);
-        autoneg_complete = phy_reg & BMSR_AUTO_NEGOTIATION_COMPLETE;
+        autoneg_complete = phy_reg & BMSR_ANEGCOMPLETE;
         --copper_aneg_timeout;
     } while((!autoneg_complete && (copper_aneg_timeout != 0u)) || (0xFFFF == phy_reg));
   
 }
+
 
 /***************************************************************************//**
  * 
@@ -154,7 +136,7 @@ uint8_t MSS_MAC_phy_get_link_status
     uint8_t link_status;
 
     /*
-     * Find out if link is up between Marvell PHY and remote device.
+     * Find out if link is up between VSC8541_01 PHY and remote device.
      */
     phy_reg = MSS_MAC_read_phy_reg(g_phy_addr, MII_BMSR);
     copper_link_up = phy_reg & BMSR_LSTATUS;
@@ -166,10 +148,13 @@ uint8_t MSS_MAC_phy_get_link_status
         
         /* Link is up. */
         link_status = MSS_MAC_LINK_UP;
-        
-        phy_reg = MSS_MAC_read_phy_reg(g_phy_addr, M88E1340_PHY_STATUS);
-        duplex = phy_reg & M88E1340_PHY_STATUS_FULLDUPLEX;
-        phy_speed = phy_reg & M88E1340_PHY_STATUS_SPD_MASK;
+
+
+        MSS_MAC_write_phy_reg(g_phy_addr, VSC8541_EXT_ADDR_PAGE_CR, PAGE_0);
+        /* check 10MBPS */
+        phy_reg = MSS_MAC_read_phy_reg(g_phy_addr, VSC8541_AUX_CTRL_STATUS);
+        duplex = phy_reg & AUX_CS_FDX_STATUS;
+        phy_speed = phy_reg & AUX_CS_SPEED_STATUS;
         
         if(MSS_MAC_HALF_DUPLEX == duplex)
         {
@@ -182,16 +167,19 @@ uint8_t MSS_MAC_phy_get_link_status
         
         switch(phy_speed) 
         {
-            case M88E1340_PHY_STATUS_1000:
+            case AUX_CS_SPEED_STATUS_1000:
                 *speed = MSS_MAC_1000MBPS;
                 break;
     
-            case M88E1340_PHY_STATUS_100:
+            case AUX_CS_SPEED_STATUS_100:
                 *speed = MSS_MAC_100MBPS;
                 break;
     
-            default:
+            case AUX_CS_SPEED_STATUS_10:
                 *speed = MSS_MAC_10MBPS;
+                break;
+            default:
+                *speed = INVALID_SPEED;
                 break;
         }
     }
@@ -207,11 +195,3 @@ uint8_t MSS_MAC_phy_get_link_status
 #ifdef __cplusplus
 }
 #endif
-
-/******************************** END OF FILE ******************************/
-
-
-
-
-
-

@@ -2,7 +2,7 @@
 <device>
   <name>Connection_system</name>
   <version>1.0</version>
-  <description>CMSIS description for Connection_system.  Created by Microsemi SmartDesign on Sun Mar 29 03:53:34 2020</description>
+  <description>CMSIS description for Connection_system.  Created by Microsemi SmartDesign on Fri Apr  3 04:15:22 2020</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

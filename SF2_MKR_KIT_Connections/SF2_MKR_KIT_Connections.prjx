@@ -436,7 +436,7 @@ PARENT="<project>\component\work\Connection_system_sb_MSS\Connection_system_sb_M
 ENDFILE
 VALUE "<project>\component\work\Connection_system\Connection_system.cxf,actgen_cxf"
 STATE="utd"
-TIME="1585807195"
+TIME="1585901726"
 SIZE="8163"
 ENDFILE
 VALUE "<project>\component\work\Connection_system\Connection_system.vhd,hdl"
@@ -546,7 +546,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1585468405"
+TIME="1585901720"
 SIZE="2501"
 ENDFILE
 VALUE "<project>\constraint\io\SF2_MKR_KIT_buttons.pdc,io_pdc"
@@ -929,7 +929,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Run PROGRAM Action:Connection_system_PROGRAM.log
+ReportsCurrentItem;Generate Memory Map:Connection_system_DataSheet.xml
 StartPage;StartPage;0
 SmartDesign;Connection_system;0
 Constraint Manager;Constraint Manager;0
@@ -967,18 +967,6 @@ SUBBLOCK "corepwm::corepwm_lib","component\Actel\DirectCore\corepwm\4.3.101\rtl\
 ENDLIST
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
 ENDLIST
-LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
-SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_Ethernet_MAC_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_I2C_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
-ENDLIST
 LIST "CoreResetP::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd","FALSE","FALSE"
 SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
 ENDLIST
@@ -1001,26 +989,6 @@ ENDLIST
 LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
 LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_Ethernet_MAC_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_I2C_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST

@@ -170,6 +170,12 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="firmware/drivers/mss_ethernet_mac/max24288_phy.c|firmware/drivers/mss_ethernet_mac/m88e1340_phy.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
                     				
                 </configuration>
                 			
@@ -326,6 +332,12 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="firmware/drivers/mss_ethernet_mac/max24288_phy.c|firmware/drivers/mss_ethernet_mac/m88e1340_phy.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
                     				
                 </configuration>
                 			

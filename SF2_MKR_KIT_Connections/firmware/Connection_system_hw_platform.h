@@ -2,7 +2,7 @@
 #define Connection_system_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Sun Mar 29 03:53:34 2020
+*Created by Microsemi SmartDesign  Fri Apr  3 04:15:22 2020
 *
 *Memory map specification for peripherals in Connection_system
 */

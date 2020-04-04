@@ -4,15 +4,12 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../firmware/drivers/mss_ethernet_mac/m88e1340_phy.c \
 ../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.c 
 
 OBJS += \
-./firmware/drivers/mss_ethernet_mac/m88e1340_phy.o \
 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o 
 
 C_DEPS += \
-./firmware/drivers/mss_ethernet_mac/m88e1340_phy.d \
 ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.d 
 
 
