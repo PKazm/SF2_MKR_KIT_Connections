@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: PHOENIX136DESKY
 
-# Wed Apr  1 23:27:32 2020
+# Mon Apr  6 00:30:33 2020
 
 #Implementation: synthesis
 
@@ -461,7 +461,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr  1 23:27:33 2020
+# Mon Apr  6 00:30:34 2020
 
 ###########################################################]
 
@@ -488,17 +488,17 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr  1 23:27:33 2020
+# Mon Apr  6 00:30:34 2020
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr  1 23:27:33 2020
+# Mon Apr  6 00:30:34 2020
 
 ###########################################################]
 
@@ -525,12 +525,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr  1 23:27:35 2020
+# Mon Apr  6 00:30:36 2020
 
 ###########################################################]
 Premap Report
 
-# Wed Apr  1 23:27:35 2020
+# Mon Apr  6 00:30:36 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -736,12 +736,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 53MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Apr  1 23:27:36 2020
+# Mon Apr  6 00:30:37 2020
 
 ###########################################################]
 Map & Optimize Report
 
-# Wed Apr  1 23:27:36 2020
+# Mon Apr  6 00:30:37 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -886,7 +886,7 @@ Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 148MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 148MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
@@ -905,8 +905,8 @@ Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    -1.71ns		 670 /       395
-   2		0h:00m:01s		    -1.70ns		 655 /       395
+   1		0h:00m:02s		    -1.71ns		 670 /       395
+   2		0h:00m:02s		    -1.70ns		 655 /       395
 
    3		0h:00m:02s		    -1.69ns		 656 /       395
    4		0h:00m:02s		    -0.38ns		 657 /       395
@@ -929,7 +929,7 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 153MB peak: 155MB)
 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 154MB peak: 155MB)
@@ -974,7 +974,7 @@ Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 149MB peak: 155MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 149MB peak: 155MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 150MB peak: 155MB)
@@ -988,7 +988,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Apr  1 23:27:41 2020
+# Timing Report written on Mon Apr  6 00:30:42 2020
 #
 
 
@@ -1361,6 +1361,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 155MB)
 
 Process took 0h:00m:05s realtime, 0h:00m:04s cputime
-# Wed Apr  1 23:27:41 2020
+# Mon Apr  6 00:30:42 2020
 
 ###########################################################]

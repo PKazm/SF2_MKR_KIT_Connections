@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/VSC8541_01_phy.c \
 ../src/fab_Nokia5110.c \
 ../src/flash_mem_thru_mss_spi.c \
 ../src/lcd_characters.c \
@@ -11,6 +12,7 @@ C_SRCS += \
 ../src/pixel_arrays.c 
 
 OBJS += \
+./src/VSC8541_01_phy.o \
 ./src/fab_Nokia5110.o \
 ./src/flash_mem_thru_mss_spi.o \
 ./src/lcd_characters.o \
@@ -18,6 +20,7 @@ OBJS += \
 ./src/pixel_arrays.o 
 
 C_DEPS += \
+./src/VSC8541_01_phy.d \
 ./src/fab_Nokia5110.d \
 ./src/flash_mem_thru_mss_spi.d \
 ./src/lcd_characters.d \

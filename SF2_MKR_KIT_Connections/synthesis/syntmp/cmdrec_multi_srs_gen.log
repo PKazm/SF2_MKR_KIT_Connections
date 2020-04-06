@@ -1,7 +1,7 @@
 C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.Connection_system  -multisrs  E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\synwork\Connection_system_comp.srs  -osyn  E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\synwork\Connection_system_mult.srs  -log  E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\synlog\Connection_system_multi_srs_gen.srr 
 relcom:C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.Connection_system -multisrs ..\synwork\Connection_system_comp.srs -osyn ..\synwork\Connection_system_mult.srs -log ..\synlog\Connection_system_multi_srs_gen.srr
-rc:0 success:1 runtime:1
-file:..\synwork\Connection_system_comp.srs|io:i|time:1585798053|size:104716|exec:0|csum:A18656713F9AE431BC09A239CBFFB034
-file:..\synwork\Connection_system_mult.srs|io:o|time:1585798055|size:9559|exec:0|csum:
-file:..\synlog\Connection_system_multi_srs_gen.srr|io:o|time:1585798055|size:1211|exec:0|csum:
+rc:0 success:1 runtime:0
+file:..\synwork\Connection_system_comp.srs|io:i|time:1586147434|size:104719|exec:0|csum:91A3447AC5AE36E5EDB7C7CED931FD22
+file:..\synwork\Connection_system_mult.srs|io:o|time:1586147436|size:9564|exec:0|csum:
+file:..\synlog\Connection_system_multi_srs_gen.srr|io:o|time:1586147436|size:1211|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

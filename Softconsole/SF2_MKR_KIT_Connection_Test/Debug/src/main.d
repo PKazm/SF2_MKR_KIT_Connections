@@ -13,7 +13,11 @@ src/main.o: ../src/main.c ../src/../firmware/drivers/mss_uart/mss_uart.h \
  ../src/../firmware/drivers/mss_spi/mss_spi.h \
  ../src/../firmware/drivers/mss_spi/../../CMSIS/m2sxxx.h \
  ../src/../firmware/CMSIS/system_m2sxxx.h \
- ../src/../firmware/Connection_Test_hw_platform.h ../src/fab_Nokia5110.h \
+ ../src/../firmware/Connection_Test_hw_platform.h \
+ ../src/../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac_types.h \
+ ../src/../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.h \
+ ../src/../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac_types.h \
+ ../src/../firmware/drivers/mss_ethernet_mac/phy.h ../src/fab_Nokia5110.h \
  ../src/Nokia5110_regs.h ../src/lcd_characters.h \
  E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal/hw_reg_access.h \
  ../src/../firmware/drivers/CorePWM/corepwm_regs.h
@@ -49,6 +53,14 @@ E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\
 ../src/../firmware/CMSIS/system_m2sxxx.h:
 
 ../src/../firmware/Connection_Test_hw_platform.h:
+
+../src/../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac_types.h:
+
+../src/../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.h:
+
+../src/../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac_types.h:
+
+../src/../firmware/drivers/mss_ethernet_mac/phy.h:
 
 ../src/fab_Nokia5110.h:
 

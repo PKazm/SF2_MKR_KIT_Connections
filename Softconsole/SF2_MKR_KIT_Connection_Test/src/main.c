@@ -22,6 +22,11 @@
 
 #include "../firmware/Connection_Test_hw_platform.h"
 
+#include "../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac_types.h"
+#include "../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.h"
+#include "../firmware/drivers/mss_ethernet_mac/phy.h"
+//#include "VSC8541_01_phy_regs.h"
+
 #include "fab_Nokia5110.h"
 #include "Nokia5110_regs.h"
 #include "lcd_characters.h"
@@ -35,20 +40,22 @@
  * main definitions
  */
 void periph_init(void);
-void mss_uart_init(uint32_t);
-void fab_pwm_init(void);
-void mss_gpio_init(void);
-void fab_nokia_init(void);
 void fab_nokia_test(void);
+void report_eth_stat_over_uart(void);
 
 void uart0_rx_int_handler(mss_uart_instance_t *);
 void uart_rx_to_nokia_raw(uint8_t *, size_t);
 void uart_rx_to_nokia_char(uint8_t *, size_t);
 void uart_rx_to_spi_mem(uint8_t *, size_t);
 
+void eth_tx_callback(void * caller_info);
+void eth_rx_callback(uint8_t * p_rx_packet, uint32_t pckt_length, void * p_user_data);
+char eth_check_address(uint8_t *);
+
 void GPIO8_IRQHandler(void);
 void GPIO9_IRQHandler(void);
 void GPIO10_IRQHandler(void);
+
 
 /*-------------------------------------------------------------------------*//**
  * main defines
@@ -66,23 +73,44 @@ void GPIO10_IRQHandler(void);
 #define NOKIA_BUSY_GPIO		MSS_GPIO_10
 #define NOKIA_BUSY_GPIO_MASK	MSS_GPIO_10_MASK
 
+#define ETH_PACKET_SIZE                  1514u
+
 /*-------------------------------------------------------------------------*//**
  * main globals
  */
 
 int sample_pos = 0;
 
+
 /*------------------------------------------------------------------------------
  * MSS UART instance for UART0
  */
 mss_uart_instance_t * const gp_my_uart = &g_mss_uart0;
 
+/*------------------------------------------------------------------------------
+ * Fab PWM core
+ */
 pwm_instance_t fab_corepwm_c0_0;
-pwm_id_t LCD_bklt;
-pwm_id_t LED_row;
+const pwm_id_t LED_row = PWM_1;
+const pwm_id_t LCD_bklt = PWM_2;
 
+/*------------------------------------------------------------------------------
+ * Fab Nokia 5110 core
+ */
 nokia_instance_t fab_Nokia5110_Driver_0;
 
+/*------------------------------------------------------------------------------
+ * MSS MAC, Ethernet
+ */
+mss_mac_cfg_t mac_config;
+const static uint8_t mac_address[6] = {0x22, 0x22, 0x22, 0x22, 0x22, 0x22};
+volatile uint32_t g_pckt_rcvd_len = 0;
+
+static uint8_t g_mac_tx_buffer[ETH_PACKET_SIZE] = \
+      {0x10,0x10,0x10,0x10,0x10,0x10, 0xDE,0xAD,0xBE,0xEF,0xAA,0xAA};
+static uint8_t g_mac_rx_buffer[ETH_PACKET_SIZE];
+
+static volatile uint32_t g_mac_tx_buffer_used = 1u;
 
 
 
@@ -106,7 +134,20 @@ void periph_init(void){
 	/*-------------------------------------------------------------------------*//**
 	* MSS_UART
 	*/
-	mss_uart_init(MSS_UART_921600_BAUD);//MSS_UART_115200_BAUD
+	MSS_UART_init(
+			gp_my_uart,
+	        MSS_UART_921600_BAUD,//MSS_UART_115200_BAUD
+	        MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
+		);
+	MSS_UART_enable_irq(
+			gp_my_uart,
+			MSS_UART_RBF_IRQ
+		);
+	MSS_UART_set_rx_handler(
+			gp_my_uart,
+			uart0_rx_int_handler,
+			MSS_UART_FIFO_SINGLE_BYTE
+		);
 	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"uart initialized!\n\r");
 
 	/*-------------------------------------------------------------------------*//**
@@ -118,7 +159,9 @@ void periph_init(void){
 	MSS_GPIO_enable_irq(BUTTON_0_GPIO);
 	MSS_GPIO_enable_irq(BUTTON_1_GPIO);
 	//MSS_GPIO_enable_irq(NOKIA_BUSY_GPIO);
-	mss_gpio_init();
+	MSS_GPIO_set_outputs(0x5F);
+
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"gpio initialized!\n\r");
 
 	/*-------------------------------------------------------------------------*//**
 	* FAB_PWM
@@ -130,14 +173,27 @@ void periph_init(void){
 			1000,
 			100
 		);
-	LED_row = PWM_1;
-	LCD_bklt = PWM_2;
-	fab_pwm_init();
+	PWM_set_duty_cycle(&fab_corepwm_c0_0, LED_row, 70);	// LED row is active low
+	PWM_set_duty_cycle(&fab_corepwm_c0_0, LCD_bklt, 40);
+	//PWM_enable(&fab_corepwm_c0_0, LCD_bklt);
+	//PWM_disable(&fab_corepwm_c0_0, LCD_bklt);
+
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"pwm initialized!\n\r");
 
 	/*-------------------------------------------------------------------------*//**
 	* FAB_Nokia5110
 	*/
-	fab_nokia_init();
+	fab_Nokia5110_Driver_0.address = NOKIA5110_DRIVER_0;
+
+	nokia_clear_disp(&fab_Nokia5110_Driver_0, 0x01);
+
+	nokia_set_driver_ctrl
+		(
+			&fab_Nokia5110_Driver_0,
+			0b00000011
+		);
+
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"nokia initialized!\n\r");
 
 	/*-------------------------------------------------------------------------*//**
 	* MSS_SPI
@@ -151,52 +207,28 @@ void periph_init(void){
 			MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
 		);
 
-}
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"spi initialized!\n\r");
 
-void mss_uart_init(uint32_t baudrate){
-	MSS_UART_init(
-			gp_my_uart,
-	        baudrate,
-	        MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
-		);
-	MSS_UART_enable_irq(
-			gp_my_uart,
-			MSS_UART_RBF_IRQ
-		);
-	MSS_UART_set_rx_handler(
-			gp_my_uart,
-			uart0_rx_int_handler,
-			MSS_UART_FIFO_SINGLE_BYTE
-		);
-}
-
-void fab_pwm_init(void){
-
-	PWM_set_duty_cycle(&fab_corepwm_c0_0, LED_row, 70);	// LED row is active low
-	PWM_set_duty_cycle(&fab_corepwm_c0_0, LCD_bklt, 40);
-	//PWM_enable(&fab_corepwm_c0_0, LCD_bklt);
-	//PWM_disable(&fab_corepwm_c0_0, LCD_bklt);
-}
-
-void mss_gpio_init(void){
-
-	MSS_GPIO_set_outputs(0x5F);
-}
-
-void fab_nokia_init(void){
+	/*-------------------------------------------------------------------------*//**
+	* MSS_MAC, VSC8541 PHY, Ethernet stuff
+	*/
+	MSS_MAC_cfg_struct_def_init(&mac_config);
+	mac_config.mac_addr[0] = mac_address[0];
+    mac_config.mac_addr[1] = mac_address[1];
+    mac_config.mac_addr[2] = mac_address[2];
+    mac_config.mac_addr[3] = mac_address[3];
+    mac_config.mac_addr[4] = mac_address[4];
+    mac_config.mac_addr[5] = mac_address[5];
+	mac_config.speed_duplex_select = MSS_MAC_ANEG_100M_FD;
+	mac_config.phy_addr = 0x00;
 
 
-	fab_Nokia5110_Driver_0.address = NOKIA5110_DRIVER_0;
+	MSS_MAC_init(&mac_config);
+    MSS_MAC_receive_pkt(g_mac_rx_buffer, 0);
+	MSS_MAC_set_tx_callback(eth_tx_callback);
+	MSS_MAC_set_rx_callback(eth_rx_callback);
 
-
-	nokia_clear_disp(&fab_Nokia5110_Driver_0, 0x01);
-
-	nokia_set_driver_ctrl
-		(
-			&fab_Nokia5110_Driver_0,
-			0b00000011
-		);
-
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"mac initialized!\n\r");
 
 }
 
@@ -361,6 +393,47 @@ void fab_nokia_test(void){
 	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"Nokia test finished!\n\r");
 }
 
+void report_eth_stat_over_uart(void){
+	uint8_t link_status;
+    mss_mac_speed_t speed;
+    uint8_t fullduplex;
+
+	link_status = MSS_MAC_phy_get_link_status(&speed, &fullduplex);
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"Link is: ");
+	if(link_status == MSS_MAC_LINK_UP){
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"UP!\r\n");
+		switch(speed)
+		{
+			case MSS_MAC_10MBPS:
+				MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t*)"    10Mbps ");
+			break;
+
+			case MSS_MAC_100MBPS:
+				MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t*)"    100Mbps ");
+			break;
+			case MSS_MAC_1000MBPS:
+				MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t*)"    1000Mbps ");
+			break;
+			default:
+				MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t*)"    nope ");
+			break;
+		}
+		if(1u == fullduplex)
+		{
+			MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t*)"Full Duplex\r\n");
+		}
+		else
+		{
+			MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t*)"Half Duplex\r\n");
+		}
+	}
+	else{
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"DOWN!\r\n");
+	}
+
+
+}
+
 void uart0_rx_int_handler(mss_uart_instance_t * this_uart){
 	uint8_t rx_buff[RX_BUFF_SIZE];
 	uint32_t rx_idx  = 0;
@@ -466,6 +539,53 @@ void uart_rx_to_spi_mem(uint8_t * rx_buff, size_t rx_size){
 	MSS_SPI_clear_slave_select( &g_mss_spi1, MSS_SPI_SLAVE_0 );
 }
 
+void eth_tx_callback(void * caller_info){
+	*((uint32_t *)caller_info) = 0;
+}
+
+void eth_rx_callback(
+	uint8_t * p_rx_packet,
+	uint32_t pckt_length,
+	void * p_user_data
+)
+{
+	if(1 == eth_check_address(p_rx_packet)){
+		
+		char buffer[128];
+		snprintf(buffer, sizeof(buffer), "\n\rRX pkt size = %d\r\n", (int)pckt_length);
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"========================\n\r");
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"Ethernet packet received\n\r");
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)buffer);
+
+		
+		//MSS_MAC_send_pkt(g_mac_tx_buffer, 64u, (void *)&g_mac_tx_buffer_used);
+		/*
+		for(int i = 0; i < pckt_length; i++){
+			snprintf(buffer, sizeof(buffer), "%i", p_rx_packet[i]);
+			MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)buffer);
+		}
+		*/
+		
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"\n\rDATA DONE\n\r");
+		MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"========================\n\r");
+
+		
+	}
+	MSS_MAC_receive_pkt(g_mac_rx_buffer, 0);
+
+}
+
+char eth_check_address(uint8_t * packet_data){
+	/* Check Destination address */
+	if(packet_data[30] == 169 && packet_data[31] == 254 && packet_data[32] == 255 && packet_data[33] == 255){
+		/* Check Destination port */
+		if(packet_data[36] == 0xBE && packet_data[37] == 0xEF){
+			return 1;
+		}
+	}
+	return 0;
+}
+
 /*-------------------------------------------------------------------------*//**
  * GPIO8_IRQHandler() clears the Nokia 5110 Screen
  * toggles between setting display all 0 or all 1
@@ -494,13 +614,14 @@ void GPIO8_IRQHandler(void){
 			);
 		MSS_SPI_clear_slave_select( &g_mss_spi1, MSS_SPI_SLAVE_0 );
 	}
+
+	report_eth_stat_over_uart();
 	MSS_GPIO_clear_irq(MSS_GPIO_8);
 }
 
 /*-------------------------------------------------------------------------*//**
- * GPIO9_IRQHandler() clears the Nokia 5110 Screen to all 1
- * until I find something more interesting
- * (send memory block to computer over UART?)
+ * GPIO9_IRQHandler()
+ * reads data out of SPI flash mem and transmits over uart
  */
 void GPIO9_IRQHandler(void){
 	uint32_t gpio_inputs;
