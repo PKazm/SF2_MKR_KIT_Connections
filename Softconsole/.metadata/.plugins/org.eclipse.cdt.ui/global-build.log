@@ -3901,3 +3901,738 @@ arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
   21632	    176	  43728	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
 Finished building: SF2_MKR_KIT_Connection_Test.siz
  
+20:08:55 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/ethernet_control.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/ethernet_control.d" -MT"src/ethernet_control.o" -c -o "src/ethernet_control.o" "../src/ethernet_control.c"
+../src/ethernet_control.c:2:10: fatal error: ethernet_control.h: No such file or directory
+ #include "ethernet_control.h"
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:38: src/ethernet_control.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:10:20 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/ethernet_control.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/ethernet_control.d" -MT"src/ethernet_control.o" -c -o "src/ethernet_control.o" "../src/ethernet_control.c"
+../src/ethernet_control.c: In function 'report_eth_stat_over_uart':
+../src/ethernet_control.c:14:2: warning: implicit declaration of function 'MSS_UART_polled_tx_string' [-Wimplicit-function-declaration]
+  MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"Link is: ");
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ethernet_control.c:14:28: error: 'gp_my_uart' undeclared (first use in this function)
+  MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"Link is: ");
+                            ^~~~~~~~~~
+../src/ethernet_control.c:14:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:38: src/ethernet_control.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:15:23 **** Clean-only build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make clean 
+rm -rf  ./src/VSC8541_01_phy.o ./src/ethernet_control.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o  SF2_MKR_KIT_Connection_Test.hex  SF2_MKR_KIT_Connection_Test.siz  ./firmware/hal/CortexM3/GNU/hal.d ./firmware/hal/CortexM3/GNU/hw_reg_access.d  ./firmware/CMSIS/startup_gcc/startup_m2sxxx.d  ./src/VSC8541_01_phy.d ./src/ethernet_control.d ./src/fab_Nokia5110.d ./src/flash_mem_thru_mss_spi.d ./src/lcd_characters.d ./src/main.d ./src/pixel_arrays.d  ./firmware/hal/CortexM3/cortex_nvic.d  ./firmware/drivers_config/sys_config/sys_config.d  ./firmware/drivers/mss_uart/mss_uart.d  ./firmware/drivers/mss_sys_services/mss_comblk.d ./firmware/drivers/mss_sys_services/mss_sys_services.d  ./firmware/drivers/mss_spi/mss_spi.d  ./firmware/drivers/mss_nvm/mss_nvm.d  ./firmware/drivers/mss_i2c/mss_i2c.d  ./firmware/drivers/mss_hpdma/mss_hpdma.d  ./firmware/drivers/mss_gpio/mss_gpio.d  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.d  ./firmware/drivers/CorePWM/core_pwm.d  ./firmware/CMSIS/startup_gcc/newlib_stubs.d  ./firmware/CMSIS/system_m2sxxx.d  SF2_MKR_KIT_Connection_Test.elf
+ 
+20:15:24 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/VSC8541_01_phy.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/VSC8541_01_phy.d" -MT"src/VSC8541_01_phy.o" -c -o "src/VSC8541_01_phy.o" "../src/VSC8541_01_phy.c"
+Finished building: ../src/VSC8541_01_phy.c
+ 
+Building file: ../src/fab_Nokia5110.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/fab_Nokia5110.d" -MT"src/fab_Nokia5110.o" -c -o "src/fab_Nokia5110.o" "../src/fab_Nokia5110.c"
+Finished building: ../src/fab_Nokia5110.c
+ 
+Building file: ../src/flash_mem_thru_mss_spi.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/flash_mem_thru_mss_spi.d" -MT"src/flash_mem_thru_mss_spi.o" -c -o "src/flash_mem_thru_mss_spi.o" "../src/flash_mem_thru_mss_spi.c"
+Finished building: ../src/flash_mem_thru_mss_spi.c
+ 
+Building file: ../src/lcd_characters.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/lcd_characters.d" -MT"src/lcd_characters.o" -c -o "src/lcd_characters.o" "../src/lcd_characters.c"
+../src/lcd_characters.c: In function 'ascii_3x5_get_alpha':
+../src/lcd_characters.c:108:12: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return ascii_3x5_alpha;
+            ^~~~~~~~~~~~~~~
+../src/lcd_characters.c: In function 'ascii_3x5_get_alpha_border':
+../src/lcd_characters.c:116:12: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return ascii_3x5_alpha_border;
+            ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/lcd_characters.c
+ 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pixel_arrays.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/pixel_arrays.d" -MT"src/pixel_arrays.o" -c -o "src/pixel_arrays.o" "../src/pixel_arrays.c"
+Finished building: ../src/pixel_arrays.c
+ 
+Building file: ../firmware/hal/CortexM3/GNU/hal.S
+Invoking: GNU ARM Cross Assembler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"firmware/hal/CortexM3/GNU/hal.d" -MT"firmware/hal/CortexM3/GNU/hal.o" -c -o "firmware/hal/CortexM3/GNU/hal.o" "../firmware/hal/CortexM3/GNU/hal.S"
+Finished building: ../firmware/hal/CortexM3/GNU/hal.S
+ 
+Building file: ../firmware/hal/CortexM3/GNU/hw_reg_access.S
+Invoking: GNU ARM Cross Assembler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"firmware/hal/CortexM3/GNU/hw_reg_access.d" -MT"firmware/hal/CortexM3/GNU/hw_reg_access.o" -c -o "firmware/hal/CortexM3/GNU/hw_reg_access.o" "../firmware/hal/CortexM3/GNU/hw_reg_access.S"
+Finished building: ../firmware/hal/CortexM3/GNU/hw_reg_access.S
+ 
+Building file: ../firmware/hal/CortexM3/cortex_nvic.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/hal/CortexM3/cortex_nvic.d" -MT"firmware/hal/CortexM3/cortex_nvic.o" -c -o "firmware/hal/CortexM3/cortex_nvic.o" "../firmware/hal/CortexM3/cortex_nvic.c"
+Finished building: ../firmware/hal/CortexM3/cortex_nvic.c
+ 
+Building file: ../firmware/drivers_config/sys_config/sys_config.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers_config/sys_config/sys_config.d" -MT"firmware/drivers_config/sys_config/sys_config.o" -c -o "firmware/drivers_config/sys_config/sys_config.o" "../firmware/drivers_config/sys_config/sys_config.c"
+Finished building: ../firmware/drivers_config/sys_config/sys_config.c
+ 
+Building file: ../firmware/drivers/mss_uart/mss_uart.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_uart/mss_uart.d" -MT"firmware/drivers/mss_uart/mss_uart.o" -c -o "firmware/drivers/mss_uart/mss_uart.o" "../firmware/drivers/mss_uart/mss_uart.c"
+Finished building: ../firmware/drivers/mss_uart/mss_uart.c
+ 
+Building file: ../firmware/drivers/mss_sys_services/mss_comblk.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_sys_services/mss_comblk.d" -MT"firmware/drivers/mss_sys_services/mss_comblk.o" -c -o "firmware/drivers/mss_sys_services/mss_comblk.o" "../firmware/drivers/mss_sys_services/mss_comblk.c"
+Finished building: ../firmware/drivers/mss_sys_services/mss_comblk.c
+ 
+Building file: ../firmware/drivers/mss_sys_services/mss_sys_services.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_sys_services/mss_sys_services.d" -MT"firmware/drivers/mss_sys_services/mss_sys_services.o" -c -o "firmware/drivers/mss_sys_services/mss_sys_services.o" "../firmware/drivers/mss_sys_services/mss_sys_services.c"
+Finished building: ../firmware/drivers/mss_sys_services/mss_sys_services.c
+ 
+Building file: ../firmware/drivers/mss_spi/mss_spi.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_spi/mss_spi.d" -MT"firmware/drivers/mss_spi/mss_spi.o" -c -o "firmware/drivers/mss_spi/mss_spi.o" "../firmware/drivers/mss_spi/mss_spi.c"
+Finished building: ../firmware/drivers/mss_spi/mss_spi.c
+ 
+Building file: ../firmware/drivers/mss_nvm/mss_nvm.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_nvm/mss_nvm.d" -MT"firmware/drivers/mss_nvm/mss_nvm.o" -c -o "firmware/drivers/mss_nvm/mss_nvm.o" "../firmware/drivers/mss_nvm/mss_nvm.c"
+Finished building: ../firmware/drivers/mss_nvm/mss_nvm.c
+ 
+Building file: ../firmware/drivers/mss_i2c/mss_i2c.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_i2c/mss_i2c.d" -MT"firmware/drivers/mss_i2c/mss_i2c.o" -c -o "firmware/drivers/mss_i2c/mss_i2c.o" "../firmware/drivers/mss_i2c/mss_i2c.c"
+Finished building: ../firmware/drivers/mss_i2c/mss_i2c.c
+ 
+Building file: ../firmware/drivers/mss_hpdma/mss_hpdma.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_hpdma/mss_hpdma.d" -MT"firmware/drivers/mss_hpdma/mss_hpdma.o" -c -o "firmware/drivers/mss_hpdma/mss_hpdma.o" "../firmware/drivers/mss_hpdma/mss_hpdma.c"
+Finished building: ../firmware/drivers/mss_hpdma/mss_hpdma.c
+ 
+Building file: ../firmware/drivers/mss_gpio/mss_gpio.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_gpio/mss_gpio.d" -MT"firmware/drivers/mss_gpio/mss_gpio.o" -c -o "firmware/drivers/mss_gpio/mss_gpio.o" "../firmware/drivers/mss_gpio/mss_gpio.c"
+Finished building: ../firmware/drivers/mss_gpio/mss_gpio.c
+ 
+Building file: ../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.d" -MT"firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o" -c -o "firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o" "../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.c"
+Finished building: ../firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.c
+ 
+Building file: ../firmware/drivers/CorePWM/core_pwm.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/drivers/CorePWM/core_pwm.d" -MT"firmware/drivers/CorePWM/core_pwm.o" -c -o "firmware/drivers/CorePWM/core_pwm.o" "../firmware/drivers/CorePWM/core_pwm.c"
+Finished building: ../firmware/drivers/CorePWM/core_pwm.c
+ 
+Building file: ../firmware/CMSIS/startup_gcc/newlib_stubs.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/CMSIS/startup_gcc/newlib_stubs.d" -MT"firmware/CMSIS/startup_gcc/newlib_stubs.o" -c -o "firmware/CMSIS/startup_gcc/newlib_stubs.o" "../firmware/CMSIS/startup_gcc/newlib_stubs.c"
+Finished building: ../firmware/CMSIS/startup_gcc/newlib_stubs.c
+ 
+Building file: ../firmware/CMSIS/startup_gcc/startup_m2sxxx.S
+Invoking: GNU ARM Cross Assembler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"firmware/CMSIS/startup_gcc/startup_m2sxxx.d" -MT"firmware/CMSIS/startup_gcc/startup_m2sxxx.o" -c -o "firmware/CMSIS/startup_gcc/startup_m2sxxx.o" "../firmware/CMSIS/startup_gcc/startup_m2sxxx.S"
+Finished building: ../firmware/CMSIS/startup_gcc/startup_m2sxxx.S
+ 
+Building file: ../firmware/CMSIS/system_m2sxxx.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"firmware/CMSIS/system_m2sxxx.d" -MT"firmware/CMSIS/system_m2sxxx.o" -c -o "firmware/CMSIS/system_m2sxxx.o" "../firmware/CMSIS/system_m2sxxx.c"
+Finished building: ../firmware/CMSIS/system_m2sxxx.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  21632	    176	  43728	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+01:59:07 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:108:32: error: 'PACKET_SIZE' undeclared here (not in a function); did you mean 'ETH_PACKET_SIZE'?
+ static uint8_t g_mac_tx_buffer[PACKET_SIZE] = \
+                                ^~~~~~~~~~~
+                                ETH_PACKET_SIZE
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:59:19 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24848	   1808	  38880	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:01:13 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24848	   1808	  38880	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:02:02 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24768	   1808	  38960	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:03:06 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25104	   1808	  38624	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:03:59 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25184	   1808	  38544	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:06:36 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25184	   1808	  38544	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:07:49 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25184	   1808	  38544	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+18:38:08 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25184	   1808	  38544	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+18:39:03 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1808	  38528	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+18:39:48 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1808	  38528	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+18:40:32 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1808	  38528	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+18:41:37 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1808	  38528	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+18:42:49 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1808	  38528	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+18:43:56 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1808	  38528	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+00:14:14 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1808	  38528	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+00:39:26 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25376	   1808	  38352	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+01:22:05 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25024	    272	  40240	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+01:28:43 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25024	    272	  40240	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+01:37:01 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'eth_rx_callback':
+../src/main.c:552:28: warning: passing argument 1 of 'eth_check_address' makes integer from pointer without a cast [-Wint-conversion]
+  if(1 == eth_check_address(p_rx_packet)){
+                            ^~~~~~~~~~~
+../src/main.c:53:29: note: expected 'char' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+ char eth_check_address(char a, char b, char c, char d);
+                        ~~~~~^
+../src/main.c:552:10: error: too few arguments to function 'eth_check_address'
+  if(1 == eth_check_address(p_rx_packet)){
+          ^~~~~~~~~~~~~~~~~
+../src/main.c:53:6: note: declared here
+ char eth_check_address(char a, char b, char c, char d);
+      ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:38:18 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25104	    272	  40160	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+01:45:23 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25104	    272	  40160	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+01:52:19 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25136	    272	  40128	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+01:58:35 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'eth_rx_callback':
+../src/main.c:552:39: warning: passing argument 1 of 'eth_check_address' makes pointer from integer without a cast [-Wint-conversion]
+  if(1 == eth_check_address(p_rx_packet[30], p_rx_packet[31], p_rx_packet[32], p_rx_packet[33])){
+                            ~~~~~~~~~~~^~~~
+../src/main.c:53:24: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+ char eth_check_address(uint8_t *);
+                        ^~~~~~~~~
+../src/main.c:552:10: error: too many arguments to function 'eth_check_address'
+  if(1 == eth_check_address(p_rx_packet[30], p_rx_packet[31], p_rx_packet[32], p_rx_packet[33])){
+          ^~~~~~~~~~~~~~~~~
+../src/main.c:53:6: note: declared here
+ char eth_check_address(uint8_t *);
+      ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:58:46 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25120	    272	  40144	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:05:42 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal\CortexM3\GNU" -I"E:\Github_Repos\SF2_MKR_KIT_Connections\Softconsole\SF2_MKR_KIT_Connection_Test\firmware\hal" -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SF2_MKR_KIT_Connection_Test.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../firmware/CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"SF2_MKR_KIT_Connection_Test.map" --specs=nano.specs -o "SF2_MKR_KIT_Connection_Test.elf"  ./src/VSC8541_01_phy.o ./src/fab_Nokia5110.o ./src/flash_mem_thru_mss_spi.o ./src/lcd_characters.o ./src/main.o ./src/pixel_arrays.o  ./firmware/hal/CortexM3/GNU/hal.o ./firmware/hal/CortexM3/GNU/hw_reg_access.o  ./firmware/hal/CortexM3/cortex_nvic.o  ./firmware/drivers_config/sys_config/sys_config.o  ./firmware/drivers/mss_uart/mss_uart.o  ./firmware/drivers/mss_sys_services/mss_comblk.o ./firmware/drivers/mss_sys_services/mss_sys_services.o  ./firmware/drivers/mss_spi/mss_spi.o  ./firmware/drivers/mss_nvm/mss_nvm.o  ./firmware/drivers/mss_i2c/mss_i2c.o  ./firmware/drivers/mss_hpdma/mss_hpdma.o  ./firmware/drivers/mss_gpio/mss_gpio.o  ./firmware/drivers/mss_ethernet_mac/mss_ethernet_mac.o  ./firmware/drivers/CorePWM/core_pwm.o  ./firmware/CMSIS/startup_gcc/newlib_stubs.o ./firmware/CMSIS/startup_gcc/startup_m2sxxx.o  ./firmware/CMSIS/system_m2sxxx.o   
+Finished building target: SF2_MKR_KIT_Connection_Test.elf
+ 
+Invoking: GNU ARM Cross Create Flash Image
+arm-none-eabi-objcopy -O ihex "SF2_MKR_KIT_Connection_Test.elf"  "SF2_MKR_KIT_Connection_Test.hex"
+Finished building: SF2_MKR_KIT_Connection_Test.hex
+ 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25120	    272	  40144	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 
+02:06:11 **** Incremental Build of configuration Debug for project SF2_MKR_KIT_Connection_Test ****
+make all 
+Invoking: GNU ARM Cross Print Size
+arm-none-eabi-size --format=berkeley "SF2_MKR_KIT_Connection_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  25120	    272	  40144	  65536	  10000	SF2_MKR_KIT_Connection_Test.elf
+Finished building: SF2_MKR_KIT_Connection_Test.siz
+ 

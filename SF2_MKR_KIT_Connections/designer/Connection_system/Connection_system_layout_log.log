@@ -28,7 +28,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 12.600.0 
-Design: Connection_system               Started: Wed Apr  1 23:27:51 2020
+Design: Connection_system               Started: Mon Apr  6 00:30:51 2020
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -44,35 +44,35 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: Connection_system               
-Finished: Wed Apr  1 23:27:56 2020
+Finished: Mon Apr  6 00:30:56 2020
 Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
 Total Memory Usage: 117.6 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Wed Apr  1 23:27:59 2020
+Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Mon Apr  6 00:30:59 2020
 
 
 Router completed successfully.
 
 Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system
-Finished: Wed Apr  1 23:28:04 2020
-Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:05
+Finished: Mon Apr  6 00:31:05 2020
+Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
 Total Memory Usage: 429.5 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Wed Apr  1 23:28:06 2020
+Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_systemStarted: Mon Apr  6 00:31:06 2020
 
 
 Router completed successfully.
 
 Design: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\Connection_system
-Finished: Wed Apr  1 23:28:12 2020
+Finished: Mon Apr  6 00:31:12 2020
 Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
-Total Memory Usage: 429.1 Mbytes
+Total Memory Usage: 429.6 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
