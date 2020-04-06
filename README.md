@@ -13,6 +13,7 @@ https://github.com/tstana/M2S010-MKR-KIT_FirstProj/wiki
 * FIC_0 -> fab_CorePWM -> Board_LEDs/Board_J8
 * FIC_0 -> fab_Nokia5110_Driver -> Board_J7
 * MSS_SPI <-> SPI Serial Flash Memory
+* MSS_MAC <-> PHY <-> USB Ethernet Dongle (Python)
 
 # Nokia5110_Driver
 
@@ -21,3 +22,9 @@ This custom FPGA fabric core drives an SPI connection to a Nokia 5110 LCD connec
 # CorePWM
 
 This is an official FPGA core provided by Microsemi. It provides a way to check APB connections with an official and presumably guaranteed to work core (spoiler, it does work) as well as provides brightness control for all the LEDs.
+
+# Ethernet and UART data transfer
+
+Both UART and Ethernet tests have their own Python script to stream data representing a SIN wave into the device. The Python scripts do not listen for return responses from the Smartfusion2 device. UART messages sent from the Smartfusion2 are read using PUTTY. Similarly, Ethernet messages sent from the Smartfusion2 are interpretted using Wireshark.
+
+Since both PUTTY and the Python script require exclusive access to the COM port each program was manually started and stopped depending on what I was attempting to look at. Good enough for proving the connections work.
