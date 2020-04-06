@@ -212,6 +212,12 @@ void periph_init(void){
 	/*-------------------------------------------------------------------------*//**
 	* MSS_MAC, VSC8541 PHY, Ethernet stuff
 	*/
+
+	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"i2c light sens initialized!\n\r");
+
+	/*-------------------------------------------------------------------------*//**
+	* MSS_MAC, VSC8541 PHY, Ethernet stuff
+	*/
 	MSS_MAC_cfg_struct_def_init(&mac_config);
 	mac_config.mac_addr[0] = mac_address[0];
     mac_config.mac_addr[1] = mac_address[1];
