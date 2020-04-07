@@ -14,6 +14,7 @@ https://github.com/tstana/M2S010-MKR-KIT_FirstProj/wiki
 * FIC_0 -> fab_Nokia5110_Driver -> Board_J7
 * MSS_SPI <-> SPI Serial Flash Memory
 * MSS_MAC <-> PHY <-> USB Ethernet Dongle (Python)
+* MSS_I2C <-> Light Sensor
 
 # Nokia5110_Driver
 
@@ -28,3 +29,5 @@ This is an official FPGA core provided by Microsemi. It provides a way to check 
 Both UART and Ethernet tests have their own Python script to stream data representing a SIN wave into the device. The Python scripts do not listen for return responses from the Smartfusion2 device. UART messages sent from the Smartfusion2 are read using PUTTY. Similarly, Ethernet messages sent from the Smartfusion2 are interpretted using Wireshark.
 
 Since both PUTTY and the Python script require exclusive access to the COM port each program was manually started and stopped depending on what I was attempting to look at. Good enough for proving the connections work.
+
+There's been instances when MAC initializing took a long time, several seconds, unsure as to the cause, it happened with the ethernet cable unplugged. I think all of the slow initializations occured after some aspect of my code required a hard reset though.
