@@ -62,4 +62,4 @@
 @W: MT420 |Found inferred clock timerZ1|timer_clock_out_sig_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.
 @W: MT420 |Found inferred clock Connection_system|GMII_RX_CLK with period 10.00ns. Please declare a user-defined clock on port GMII_RX_CLK.
 @W: MT420 |Found inferred clock Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Connection_system_sb_0.CCC_0.GL1_net.
-@W: MT420 |Found inferred clock Connection_system|BIBUF_1_Y_inferred_clock with period 10.00ns. Please declare a user-defined clock on net BIBUF_1_Y.
+@W: MT420 |Found inferred clock Connection_system|Board_J9_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Board_J9_c.

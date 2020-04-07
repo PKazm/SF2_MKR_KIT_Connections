@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Mon Apr  6 00:30:27 2020
+-- Created by SmartDesign Tue Apr  7 03:30:36 2020
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -211,8 +211,6 @@ end component;
 ----------------------------------------------------------------------
 -- Signal declarations
 ----------------------------------------------------------------------
-signal BIBUF_0_Y                                        : std_logic;
-signal BIBUF_1_Y                                        : std_logic;
 signal BIBUF_2_Y                                        : std_logic;
 signal Board_Buttons_slice_0                            : std_logic_vector(1 to 1);
 signal Board_Buttons_slice_1                            : std_logic_vector(0 to 0);
@@ -222,7 +220,9 @@ signal Board_J7_1                                       : std_logic;
 signal Board_J7_2                                       : std_logic;
 signal Board_J7_3                                       : std_logic;
 signal Board_J8_net_0                                   : std_logic_vector(1 to 1);
+signal Board_J9_net_0                                   : std_logic;
 signal Board_J10_net_0                                  : std_logic;
+signal Board_J10_0                                      : std_logic;
 signal Board_LEDs_net_0                                 : std_logic_vector(7 downto 0);
 signal Connection_system_sb_0_FIC_0_AMBA_MASTER_PADDR   : std_logic_vector(31 downto 0);
 signal Connection_system_sb_0_FIC_0_AMBA_MASTER_PENABLE : std_logic;
@@ -269,14 +269,13 @@ signal Nokia5110_Driver_0_driver_busy                   : std_logic;
 signal USB_UART_RXD_net_0                               : std_logic;
 signal Board_J8_net_1                                   : std_logic;
 signal GMII_GTX_CLK_net_1                               : std_logic;
-signal FLASH_MEM_SSO_net_1                              : std_logic;
-signal Board_J10_net_1                                  : std_logic;
+signal Board_J9_net_1                                   : std_logic;
+signal Board_J10_0_net_0                                : std_logic;
 signal FLASH_MEM_CLK_net_1                              : std_logic;
-signal FLASH_MEM_CLK_net_2                              : std_logic;
-signal Board_J10_net_2                                  : std_logic;
+signal Board_J10_net_1                                  : std_logic;
 signal USB_UART_RXD_net_1                               : std_logic;
 signal GMII_MDC_net_1                                   : std_logic;
-signal FLASH_MEM_SSO_net_2                              : std_logic;
+signal FLASH_MEM_SSO_net_1                              : std_logic;
 signal GMII_TX_ER_net_1                                 : std_logic;
 signal GMII_TX_EN_net_1                                 : std_logic;
 signal ETH_NRESET_net_1                                 : std_logic;
@@ -331,6 +330,7 @@ begin
  FLASH_MEM_WP_N         <= '1';
  FLASH_MEM_HOLD_N       <= '1';
  COMA_MODE              <= '0';
+ Board_J11              <= '0';
  REFCLK_SEL(1 downto 0) <= B"10";
  Board_MOD1(1)          <= '0';
  Board_MOD1(2)          <= '0';
@@ -344,22 +344,20 @@ begin
  Board_J8               <= Board_J8_net_1;
  GMII_GTX_CLK_net_1     <= GMII_GTX_CLK_net_0;
  GMII_GTX_CLK           <= GMII_GTX_CLK_net_1;
- FLASH_MEM_SSO_net_1    <= FLASH_MEM_SSO_net_0;
- Board_J9               <= FLASH_MEM_SSO_net_1;
- Board_J10_net_1        <= Board_J10_net_0;
- Board_J10              <= Board_J10_net_1;
+ Board_J9_net_1         <= Board_J9_net_0;
+ Board_J9               <= Board_J9_net_1;
+ Board_J10_0_net_0      <= Board_J10_0;
+ Board_J10              <= Board_J10_0_net_0;
  FLASH_MEM_CLK_net_1    <= FLASH_MEM_CLK_net_0;
- Board_J11              <= FLASH_MEM_CLK_net_1;
- FLASH_MEM_CLK_net_2    <= FLASH_MEM_CLK_net_0;
- FLASH_MEM_CLK          <= FLASH_MEM_CLK_net_2;
- Board_J10_net_2        <= Board_J10_net_0;
- FLASH_MEM_SDO          <= Board_J10_net_2;
+ FLASH_MEM_CLK          <= FLASH_MEM_CLK_net_1;
+ Board_J10_net_1        <= Board_J10_net_0;
+ FLASH_MEM_SDO          <= Board_J10_net_1;
  USB_UART_RXD_net_1     <= USB_UART_RXD_net_0;
  USB_UART_RXD           <= USB_UART_RXD_net_1;
  GMII_MDC_net_1         <= GMII_MDC_net_0;
  GMII_MDC               <= GMII_MDC_net_1;
- FLASH_MEM_SSO_net_2    <= FLASH_MEM_SSO_net_0;
- FLASH_MEM_SSO          <= FLASH_MEM_SSO_net_2;
+ FLASH_MEM_SSO_net_1    <= FLASH_MEM_SSO_net_0;
+ FLASH_MEM_SSO          <= FLASH_MEM_SSO_net_1;
  GMII_TX_ER_net_1       <= GMII_TX_ER_net_0;
  GMII_TX_ER             <= GMII_TX_ER_net_1;
  GMII_TX_EN_net_1       <= GMII_TX_EN_net_0;
@@ -419,7 +417,7 @@ BIBUF_0 : BIBUF
         D   => Connection_system_sb_0_I2C_0_SDA_M2F,
         E   => Connection_system_sb_0_I2C_0_SDA_M2F_OE,
         -- Outputs
-        Y   => BIBUF_0_Y,
+        Y   => Board_J10_0,
         -- Inouts
         PAD => Light_SDA 
         );
@@ -430,7 +428,7 @@ BIBUF_1 : BIBUF
         D   => Connection_system_sb_0_I2C_0_SCL_M2F,
         E   => Connection_system_sb_0_I2C_0_SCL_M2F_OE,
         -- Outputs
-        Y   => BIBUF_1_Y,
+        Y   => Board_J9_net_0,
         -- Inouts
         PAD => Light_SCL 
         );
@@ -457,8 +455,8 @@ Connection_system_sb_0 : Connection_system_sb
         SPI_1_CLK_F2M       => GND_net,
         SPI_1_SS0_F2M       => GND_net,
         MMUART_0_RXD_F2M    => USB_UART_TXD,
-        I2C_0_SDA_F2M       => BIBUF_0_Y,
-        I2C_0_SCL_F2M       => BIBUF_1_Y,
+        I2C_0_SDA_F2M       => Board_J10_0,
+        I2C_0_SCL_F2M       => Board_J9_net_0,
         GPIO_8_F2M          => Board_Buttons_slice_1(0),
         GPIO_9_F2M          => Board_Buttons_slice_0(1),
         GPIO_10_F2M         => Nokia5110_Driver_0_driver_busy,

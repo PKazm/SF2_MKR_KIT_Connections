@@ -27,7 +27,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>NA</data>
 </row>
 <row>
-<data>Connection_system|BIBUF_1_Y_inferred_clock</data>
+<data>Connection_system|Board_J9_inferred_clock</data>
 <data>100.0 MHz</data>
 <data>NA</data>
 <data>NA</data>

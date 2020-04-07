@@ -1,4 +1,4 @@
-# Mon Apr  6 00:30:37 2020
+# Tue Apr  7 03:31:06 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -162,12 +162,12 @@ Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    -1.71ns		 670 /       395
-   2		0h:00m:02s		    -1.70ns		 655 /       395
+   1		0h:00m:01s		    -1.71ns		 670 /       395
+   2		0h:00m:01s		    -1.70ns		 655 /       395
 
-   3		0h:00m:02s		    -1.69ns		 656 /       395
-   4		0h:00m:02s		    -0.38ns		 657 /       395
-   5		0h:00m:02s		    -0.24ns		 658 /       395
+   3		0h:00m:01s		    -1.69ns		 656 /       395
+   4		0h:00m:01s		    -0.38ns		 657 /       395
+   5		0h:00m:01s		    -0.24ns		 658 /       395
    6		0h:00m:02s		    -0.32ns		 658 /       395
 @N: FX271 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":131:17:131:65|Replicating instance corepwm_C0_0.corepwm_C0_0.xhdl58\.reg_if_inst.psh_prescale_reg_0_sqmuxa (in view: work.Connection_system(rtl)) with 32 loads 2 times to improve timing.
 @N: FX271 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":131:17:131:65|Replicating instance corepwm_C0_0.corepwm_C0_0.xhdl58\.reg_if_inst.psh_period_reg_1_sqmuxa (in view: work.Connection_system(rtl)) with 32 loads 2 times to improve timing.
@@ -186,10 +186,10 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 153MB peak: 155MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 155MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 154MB peak: 155MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 155MB)
 
 
 
@@ -221,7 +221,7 @@ Clock Tree ID     Driving Element                                      Drive Ele
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 123MB peak: 155MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 123MB peak: 155MB)
 
 Writing Analyst data base E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\synwork\Connection_system_m.srm
 
@@ -231,21 +231,21 @@ Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 149MB peak: 155MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 149MB peak: 155MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 150MB peak: 155MB)
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 155MB)
 
 @W: MT246 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\work\connection_system_sb\ccc_0\connection_system_sb_ccc_0_fccc.vhd":110:4:110:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Connection_system_sb_0.CCC_0.GL0_net.
 @W: MT420 |Found inferred clock timerZ1|timer_clock_out_sig_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.
 @W: MT420 |Found inferred clock Connection_system|GMII_RX_CLK with period 10.00ns. Please declare a user-defined clock on port GMII_RX_CLK.
 @W: MT420 |Found inferred clock Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Connection_system_sb_0.CCC_0.GL1_net.
-@W: MT420 |Found inferred clock Connection_system|BIBUF_1_Y_inferred_clock with period 10.00ns. Please declare a user-defined clock on net BIBUF_1_Y.
+@W: MT420 |Found inferred clock Connection_system|Board_J9_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Board_J9_c.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Apr  6 00:30:42 2020
+# Timing Report written on Tue Apr  7 03:31:10 2020
 #
 
 
@@ -272,7 +272,7 @@ Starting Clock                                             Frequency     Frequen
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_clock     100.0 MHz     103.5 MHz     10.000        9.664         0.337     inferred     Inferred_clkgroup_0
 Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_3
-Connection_system|BIBUF_1_Y_inferred_clock                 100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_4
+Connection_system|Board_J9_inferred_clock                  100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_4
 Connection_system|GMII_RX_CLK                              100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_2
 timerZ1|timer_clock_out_sig_inferred_clock                 100.0 MHz     290.7 MHz     10.000        3.440         6.560     inferred     Inferred_clkgroup_1
 System                                                     100.0 MHz     895.2 MHz     10.000        1.117         8.883     system       system_clkgroup    
@@ -559,10 +559,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 150MB peak: 155MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 155MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 150MB peak: 155MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 155MB)
 
 ---------------------------------------
 Resource Usage Report for Connection_system 
@@ -615,9 +615,9 @@ Total number of LUTs after P&R:  651 + 144 + 0 + 0 = 795;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 155MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 34MB peak: 155MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:04s cputime
-# Mon Apr  6 00:30:42 2020
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Tue Apr  7 03:31:11 2020
 
 ###########################################################]

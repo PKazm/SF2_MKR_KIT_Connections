@@ -1,4 +1,4 @@
-# Mon Apr  6 00:30:36 2020
+# Tue Apr  7 03:31:05 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -148,7 +148,7 @@ Level     Clock                                                      Frequency  
                                                                                                                                            
 0 -       Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_3     1    
                                                                                                                                            
-0 -       Connection_system|BIBUF_1_Y_inferred_clock                 100.0 MHz     10.000        inferred     Inferred_clkgroup_4     1    
+0 -       Connection_system|Board_J9_inferred_clock                  100.0 MHz     10.000        inferred     Inferred_clkgroup_4     1    
                                                                                                                                            
 0 -       Connection_system|GMII_RX_CLK                              100.0 MHz     10.000        inferred     Inferred_clkgroup_2     1    
 ===========================================================================================================================================
@@ -169,7 +169,7 @@ timerZ1|timer_clock_out_sig_inferred_clock                 31        Nokia5110_D
                                                                                                                                                                                                                                                                                                                      
 Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock     1         Connection_system_sb_0.CCC_0.CCC_INST.GL1(CCC)                   Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.GTX_CLKPF            -                                           Connection_system_sb_0.CCC_0.GL1_INST.I(BUFG)
                                                                                                                                                                                                                                                                                                                      
-Connection_system|BIBUF_1_Y_inferred_clock                 1         BIBUF_1.O(IOBUF)                                                 Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.I2C0_SCL_F2H_SCP     -                                           -                                            
+Connection_system|Board_J9_inferred_clock                  1         BIBUF_1.O(IOBUF)                                                 Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.I2C0_SCL_F2H_SCP     -                                           -                                            
                                                                                                                                                                                                                                                                                                                      
 Connection_system|GMII_RX_CLK                              1         GMII_RX_CLK(port)                                                Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.RX_CLKPF             -                                           -                                            
 =====================================================================================================================================================================================================================================================================================================================
@@ -178,7 +178,7 @@ Connection_system|GMII_RX_CLK                              1         GMII_RX_CLK
 @W: MT530 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\hdl\timer.vhd":48:12:48:13|Found inferred clock timerZ1|timer_clock_out_sig_inferred_clock which controls 31 sequential elements including Nokia5110_Driver_0.LCD_timer.counter[18:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\work\connection_system_sb_mss\connection_system_sb_mss.vhd":826:0:826:13|Found inferred clock Connection_system|GMII_RX_CLK which controls 1 sequential elements including Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\work\connection_system_sb_mss\connection_system_sb_mss.vhd":826:0:826:13|Found inferred clock Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock which controls 1 sequential elements including Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\work\connection_system_sb_mss\connection_system_sb_mss.vhd":826:0:826:13|Found inferred clock Connection_system|BIBUF_1_Y_inferred_clock which controls 1 sequential elements including Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"e:\github_repos\sf2_mkr_kit_connections\sf2_mkr_kit_connections\component\work\connection_system_sb_mss\connection_system_sb_mss.vhd":826:0:826:13|Found inferred clock Connection_system|Board_J9_inferred_clock which controls 1 sequential elements including Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
@@ -204,6 +204,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 53MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Apr  6 00:30:37 2020
+# Tue Apr  7 03:31:06 2020
 
 ###########################################################]

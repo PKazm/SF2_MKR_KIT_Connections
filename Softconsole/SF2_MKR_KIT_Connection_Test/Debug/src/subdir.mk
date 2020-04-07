@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/LTR_329ALS_01_optical_sensor_i2c.c \
 ../src/VSC8541_01_phy.c \
 ../src/fab_Nokia5110.c \
 ../src/flash_mem_thru_mss_spi.c \
@@ -12,6 +13,7 @@ C_SRCS += \
 ../src/pixel_arrays.c 
 
 OBJS += \
+./src/LTR_329ALS_01_optical_sensor_i2c.o \
 ./src/VSC8541_01_phy.o \
 ./src/fab_Nokia5110.o \
 ./src/flash_mem_thru_mss_spi.o \
@@ -20,6 +22,7 @@ OBJS += \
 ./src/pixel_arrays.o 
 
 C_DEPS += \
+./src/LTR_329ALS_01_optical_sensor_i2c.d \
 ./src/VSC8541_01_phy.d \
 ./src/fab_Nokia5110.d \
 ./src/flash_mem_thru_mss_spi.d \

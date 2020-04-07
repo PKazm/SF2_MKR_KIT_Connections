@@ -33,7 +33,7 @@
   must ensure that the MSS I2C peripherals are enabled and configured in the
   SmartFusion2 MSS configurator if you wish to use them. For more information on
   IOMUXs, refer to the IOMUX section of the SmartFusion2 Microcontroller
-  Subsystem (MSS) User’s Guide.
+  Subsystem (MSS) Userï¿½s Guide.
   
   The base address, register addresses and interrupt number assignment for the
   MSS I2C peripherals are defined as constants in the SmartFusion2 CMSIS HAL.
@@ -46,9 +46,9 @@
     - Initialization and configuration functions
     - Interrupt control
     - I2C slave address configuration
-    - I2C master operations – functions to handle write, read and write-read
+    - I2C master operations ï¿½ functions to handle write, read and write-read
                               transactions
-    - I2C slave operations – functions to handle write, read and write-read
+    - I2C slave operations ï¿½ functions to handle write, read and write-read
                              transactions
     - Mixed master and slave operations
     - SMBus interface configuration and control
@@ -164,7 +164,7 @@
     MSS_I2C_wait_complete() function or poll the status of the I2C transaction
     using the MSS_I2C_get_status() function until it returns a value different
     from MSS_I2C_IN_PROGRESS. The MSS_I2C_system_tick() function can be used to
-    set a time base for the MSS_I2C_wait_complete() function’s time out delay.
+    set a time base for the MSS_I2C_wait_complete() functionï¿½s time out delay.
 
   Slave Operations
     The configuration of the MSS I2C driver to operate as an I2C slave requires
@@ -263,7 +263,7 @@
       pended transaction.
 
   SMBus Interface Configuration and Control
-    The MSS I2C driver enables the MSS I2C peripheral’s SMBus functionality
+    The MSS I2C driver enables the MSS I2C peripheralï¿½s SMBus functionality
     using the MSS_I2C_smbus_init() function.
     
     The MSS_I2C_suspend_smbus_slave() function is used, with a master mode MSS
@@ -926,7 +926,7 @@ mss_i2c_status_t MSS_I2C_get_status
     Note: If you set the timeout_ms parameter to a value other than
           MSS_I2C_NO_TIMEOUT, you must call the MSS_I2C_system_tick() function
           from an implementation of the Cortex-M3 SysTick timer interrupt
-          service routine – SysTick_Handler() – in your application. Otherwise
+          service routine ï¿½ SysTick_Handler() ï¿½ in your application. Otherwise
           the time out will not take effect and the MSS_I2C_wait_complete()
           function will not time out.        
   ------------------------------------------------------------------------------
@@ -980,7 +980,7 @@ mss_i2c_status_t MSS_I2C_wait_complete
   called from the interrupt service routine of a periodic interrupt source such
   as the Cortex-M3 SysTick timer interrupt. It takes the period of the interrupt
   source as its ms_since_last_tick parameter and uses it as the time base for
-  the MSS_I2C_wait_complete() function’s time out delay.
+  the MSS_I2C_wait_complete() functionï¿½s time out delay.
   
   Note: This function does not need to be called if the MSS_I2C_wait_complete()
         function is called with a timeout_ms value of MSS_I2C_NO_TIMEOUT.
@@ -1118,7 +1118,7 @@ void MSS_I2C_set_slave_tx_buffer
     Note:   This buffer size indirectly specifies the maximum I2C write
             transaction length this MSS I2C instance can be the target of.
             This is because this MSS I2C instance responds to further received
-            bytes with a non-acknowledge bit (NACK) as soon as it’s receive
+            bytes with a non-acknowledge bit (NACK) as soon as itï¿½s receive
             buffer is full. This causes the write transaction to fail.
             
   @return none.  
@@ -1226,7 +1226,7 @@ void MSS_I2C_set_slave_mem_offset_length
         transmit buffer with the data that will be transmitted to the I2C master
         as part of the read phase of the write-read transaction. If a write
         handler is not registered, the write data of a write read transaction is
-        interpreted as an offset into the slave’s transmit buffer and handled by
+        interpreted as an offset into the slaveï¿½s transmit buffer and handled by
         the driver.
   ------------------------------------------------------------------------------
   @param this_i2c:
@@ -1392,7 +1392,7 @@ void MSS_I2C_clear_gca
 
 /*-------------------------------------------------------------------------*//**
   The MSS_I2C_smbus_init() function enables SMBus timeouts and status logic. Set
-  the frequency parameter to the MSS I2C’s PCLK frequency for 25ms SMBus
+  the frequency parameter to the MSS I2Cï¿½s PCLK frequency for 25ms SMBus
   timeouts, or to any frequency between 1 MHz and 255 MHz for to adjust the
   timeout.
   ------------------------------------------------------------------------------
@@ -1406,7 +1406,7 @@ void MSS_I2C_clear_gca
 
   @param frequency
     The frequency parameter specifies a frequency in MHz from 1 to 255. It can
-    be the MSS I2C’s PCLK frequency to specify 25ms SMBus timeouts, or a higher
+    be the MSS I2Cï¿½s PCLK frequency to specify 25ms SMBus timeouts, or a higher
     or lower frequency than the PCLK for increased or decreased timeouts.
 
   @return
@@ -1431,7 +1431,7 @@ void MSS_I2C_smbus_init
 );
 
 /*-------------------------------------------------------------------------*//**
-  The MSS_I2C_enable_smbus_irq() function is used to enable the MSS I2C’s SMBSUS
+  The MSS_I2C_enable_smbus_irq() function is used to enable the MSS I2Cï¿½s SMBSUS
   and SMBALERT SMBus interrupts.
 
   If this function is used to enable an MSS I2C SMBus interrupt source, the
@@ -1494,7 +1494,7 @@ void MSS_I2C_enable_smbus_irq
 );
 
 /*-------------------------------------------------------------------------*//**
-  The MSS_I2C_disable_smbus_irq() function is used to disable the MSS I2C’s 
+  The MSS_I2C_disable_smbus_irq() function is used to disable the MSS I2Cï¿½s 
   SMBSUS and SMBALERT SMBus interrupts.
   ------------------------------------------------------------------------------
   @param this_i2c:
@@ -1556,7 +1556,7 @@ void MSS_I2C_disable_smbus_irq
 /*-------------------------------------------------------------------------*//**
   The MSS_I2C_suspend_smbus_slave() function forces any SMBUS slave devices 
   connected to an MSS I2C peripheral into power down or suspend mode by
-  asserting the MSS I2C’s I2C_X_SMBSUS_NO output signal. The MSS I2C is the
+  asserting the MSS I2Cï¿½s I2C_X_SMBSUS_NO output signal. The MSS I2C is the
   SMBus master in this case.
   ------------------------------------------------------------------------------
   @param this_i2c:
@@ -1597,7 +1597,7 @@ void MSS_I2C_suspend_smbus_slave
 );
 
 /*-------------------------------------------------------------------------*//**
-  The MSS_I2C_resume_slave() function de-asserts the MSS I2C’s I2C_X_SMBSUS_NO
+  The MSS_I2C_resume_slave() function de-asserts the MSS I2Cï¿½s I2C_X_SMBSUS_NO
   output signal to take any connected slave devices out of suspend mode. The MSS
   I2C is the SMBus master in this case.
   ------------------------------------------------------------------------------
@@ -1718,7 +1718,7 @@ void MSS_I2C_set_smbus_alert
 );
 
 /*-------------------------------------------------------------------------*//**
-  The MSS_I2C_clear_smbus_alert() function is used de-assert the MSS I2C’s
+  The MSS_I2C_clear_smbus_alert() function is used de-assert the MSS I2Cï¿½s
   I2C_X_SMBALERT_NO signal once a slave device has had a response from the
   master. The MSS I2C is the SMBus slave in this case.
   ------------------------------------------------------------------------------

@@ -295,7 +295,7 @@ uint8_t* nokia_get_pixel_reg_block
 {
     uint8_t* pixel_regs;
     int n = 0;
-    pixel_regs = malloc(x_len * y_len);
+    pixel_regs = malloc(x_len * y_len); //mem leak?
 
 
     for(int k = y_top; k < y_top + y_len; k ++){

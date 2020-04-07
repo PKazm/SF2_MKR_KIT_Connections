@@ -13,7 +13,7 @@ Hostname: PHOENIX136DESKY
 
 Implementation : synthesis
 
-# Written on Mon Apr  6 00:30:37 2020
+# Written on Tue Apr  7 03:31:06 2020
 
 ##### DESIGN INFO #######################################################
 
@@ -57,7 +57,6 @@ p:Board_J7[2]
 p:Board_J7[3]
 p:Board_J7[4]
 p:Board_J8
-p:Board_J9
 p:Board_J10
 p:Board_J11
 p:Board_LEDs[0]

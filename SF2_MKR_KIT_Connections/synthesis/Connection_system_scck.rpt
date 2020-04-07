@@ -13,7 +13,7 @@ Hostname: PHOENIX136DESKY
 
 Implementation : synthesis
 
-# Written on Mon Apr  6 00:30:36 2020
+# Written on Tue Apr  7 03:31:05 2020
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\designer\Connection_system\synthesis.fdc"
@@ -41,7 +41,7 @@ Level     Clock                                                      Frequency  
                                                                                                                                            
 0 -       Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_3     1    
                                                                                                                                            
-0 -       Connection_system|BIBUF_1_Y_inferred_clock                 100.0 MHz     10.000        inferred     Inferred_clkgroup_4     1    
+0 -       Connection_system|Board_J9_inferred_clock                  100.0 MHz     10.000        inferred     Inferred_clkgroup_4     1    
                                                                                                                                            
 0 -       Connection_system|GMII_RX_CLK                              100.0 MHz     10.000        inferred     Inferred_clkgroup_2     1    
 ===========================================================================================================================================
@@ -61,7 +61,7 @@ timerZ1|timer_clock_out_sig_inferred_clock                 31        Nokia5110_D
                                                                                                                                                                                                                                                                                                                      
 Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock     1         Connection_system_sb_0.CCC_0.CCC_INST.GL1(CCC)                   Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.GTX_CLKPF            -                                           Connection_system_sb_0.CCC_0.GL1_INST.I(BUFG)
                                                                                                                                                                                                                                                                                                                      
-Connection_system|BIBUF_1_Y_inferred_clock                 1         BIBUF_1.O(IOBUF)                                                 Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.I2C0_SCL_F2H_SCP     -                                           -                                            
+Connection_system|Board_J9_inferred_clock                  1         BIBUF_1.O(IOBUF)                                                 Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.I2C0_SCL_F2H_SCP     -                                           -                                            
                                                                                                                                                                                                                                                                                                                      
 Connection_system|GMII_RX_CLK                              1         GMII_RX_CLK(port)                                                Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST.RX_CLKPF             -                                           -                                            
 =====================================================================================================================================================================================================================================================================================================================

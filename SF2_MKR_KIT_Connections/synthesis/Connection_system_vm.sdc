@@ -1,4 +1,4 @@
-# Written by Synplify Pro version mapact, Build 2461R. Synopsys Run ID: sid1586147437 
+# Written by Synplify Pro version mapact, Build 2461R. Synopsys Run ID: sid1586244666 
 # Top Level Design Parameters 
 
 # Clocks 
@@ -6,7 +6,7 @@ create_clock -period 10.000 -waveform {0.000 5.000} -name {Connection_system_sb_
 create_clock -period 10.000 -waveform {0.000 5.000} -name {timerZ1|timer_clock_out_sig_inferred_clock} [get_pins {Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig/Q}] 
 create_clock -period 10.000 -waveform {0.000 5.000} -name {Connection_system|GMII_RX_CLK} [get_ports {GMII_RX_CLK}] 
 create_clock -period 10.000 -waveform {0.000 5.000} -name {Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock} [get_pins {Connection_system_sb_0/CCC_0/CCC_INST/GL1}] 
-create_clock -period 10.000 -waveform {0.000 5.000} -name {Connection_system|BIBUF_1_Y_inferred_clock} [get_pins {BIBUF_1/Y}] 
+create_clock -period 10.000 -waveform {0.000 5.000} -name {Connection_system|Board_J9_inferred_clock} [get_pins {BIBUF_1/Y}] 
 
 # Virtual Clocks 
 
@@ -41,7 +41,7 @@ set Inferred_clkgroup_0 [list Connection_system_sb_CCC_0_FCCC|GL0_net_inferred_c
 set Inferred_clkgroup_1 [list timerZ1|timer_clock_out_sig_inferred_clock]
 set Inferred_clkgroup_2 [list Connection_system|GMII_RX_CLK]
 set Inferred_clkgroup_3 [list Connection_system_sb_CCC_0_FCCC|GL1_net_inferred_clock]
-set Inferred_clkgroup_4 [list Connection_system|BIBUF_1_Y_inferred_clock]
+set Inferred_clkgroup_4 [list Connection_system|Board_J9_inferred_clock]
 set_clock_groups -asynchronous -group $Inferred_clkgroup_0
 set_clock_groups -asynchronous -group $Inferred_clkgroup_1
 set_clock_groups -asynchronous -group $Inferred_clkgroup_2

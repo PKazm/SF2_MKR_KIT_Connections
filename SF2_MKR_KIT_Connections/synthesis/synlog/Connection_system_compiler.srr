@@ -447,12 +447,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: E:\Github_Repos\SF2_MKR_KIT_Connections\SF2_MKR_KIT_Connections\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Apr  6 00:30:34 2020
+# Tue Apr  7 03:31:03 2020
 
 ###########################################################]
 
@@ -479,16 +479,16 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Apr  6 00:30:34 2020
+# Tue Apr  7 03:31:03 2020
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Apr  6 00:30:34 2020
+# Tue Apr  7 03:31:03 2020
 
 ###########################################################]
