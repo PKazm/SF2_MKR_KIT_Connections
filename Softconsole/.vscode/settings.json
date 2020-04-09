@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "mss_spi.h": "c"
+    }
+}

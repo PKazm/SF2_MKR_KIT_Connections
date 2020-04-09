@@ -131,7 +131,17 @@ int main(void){
 	
 	fab_nokia_test();
 
-	while(1);
+	for(;;){
+		if(do_light_sensor == 1){
+			/* if you trace back to where do_light_sensor is set to 1
+			 * you might wonder why not call osense_report_channels() from inside the GPIO irq
+			 * or call it on the rising edge (button press). Well there seems to be a conflict
+			 * with interrupts that causes everything to break. Worth investigating for future
+			 * projects but I'm proving the I2C bus not interrupt priorities here
+			 */
+			osense_report_channels();
+		}
+	}
 }
 
 /*-------------------------------------------------------------------------*//**
@@ -273,18 +283,6 @@ void periph_init(void){
 	MSS_UART_polled_tx_string(gp_my_uart, (const uint8_t *)"== everything is set up! ==\n\r");
 
 
-
-	for(;;){
-		if(do_light_sensor == 1){
-			/* if you trace back to where do_light_sensor is set to 1
-			 * you might wonder why not call osense_report_channels() from inside the GPIO irq
-			 * or call it on the rising edge (button press). Well there seems to be a conflict
-			 * with interrupts that causes everything to break. Worth investigating for future
-			 * projects but I'm proving the I2C bus not interrupt priorities here
-			 */
-			osense_report_channels();
-		}
-	}
 
 }
 
