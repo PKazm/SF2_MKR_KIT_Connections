@@ -122,7 +122,7 @@
 #define EXT_CTRL_STAT_10BASE_DC_STATE       BIT7
 #define EXT_CTRL_STAT_EOF_ERR               BIT8
 #define EXT_CTRL_STAT_STICKY_RST_EN         BIT9
-#define EXT_CTRL_STAT_10BASE_SQLCH_CTRL     BIT11 | BIT10
+#define EXT_CTRL_STAT_10BASE_SQLCH_CTRL     (BIT11 | BIT10)
 #define EXT_CTRL_STAT_DSBL_SQE_MODE         BIT12
 #define EXT_CTRL_STAT_DSBL_10BASE_ECHO      BIT13
 #define EXT_CTRL_STAT_JBR_DTCT_DSBL         BIT14
@@ -133,9 +133,9 @@
 /*
  * VSC8541_AUX_CTRL_STATUS register bits
  */
-#define AUX_CS_MEDIA_MODE_STAT              BIT1 | BIT0
+#define AUX_CS_MEDIA_MODE_STAT              (BIT1 | BIT0)
 #define AUX_CS_APHY_LNK_STAT_TMOUT_0        BIT2
-#define AUX_CS_SPEED_STATUS                 BIT4 | BIT3
+#define AUX_CS_SPEED_STATUS                 (BIT4 | BIT3)
 #define AUX_CS_FDX_STATUS                   BIT5
 #define AUX_CS_APHY_MODE_EN                 BIT6
 #define AUX_CS_APHY_LNK_STAT_TMOUT_1        BIT7
