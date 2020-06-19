@@ -1,5 +1,0 @@
-CKID0001:@|S:Connection_system_sb_0.CCC_0.CCC_INST@|E:Connection_system_sb_0.CORERESETP_0.RESET_N_M2F_clk_base@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig@|E:Nokia5110_Driver_0.LCD_timer.timer_indic_sig@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
-CKID0003:@|S:Connection_system_sb_0.CCC_0.CCC_INST@|E:Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path1==CKID0003@|M:ClockId0003 
-CKID0004:@|S:GMII_RX_CLK@|E:Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
-CKID0005:@|S:BIBUF_1@|E:Connection_system_sb_0.Connection_system_sb_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path2==CKID0005@|M:ClockId0005 

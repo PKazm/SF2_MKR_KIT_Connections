@@ -1,1 +1,7 @@
 Random_Assets/
+SF2_MKR_KIT_Connections/*
+!/SF2_MKR_KIT_Connections/component
+!/SF2_MKR_KIT_Connections/constraint
+!/SF2_MKR_KIT_Connections/firmware
+!/SF2_MKR_KIT_Connections/hdl
+!/SF2_MKR_KIT_Connections/stimulus

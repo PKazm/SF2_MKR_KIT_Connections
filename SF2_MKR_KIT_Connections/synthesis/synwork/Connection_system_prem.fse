@@ -1,8 +1,0 @@
-
-fsm_encoding {3350285026} sequential
-
-fsm_state_encoding {3350285026} init {0}
-
-fsm_state_encoding {3350285026} data {1}
-
-fsm_registers {3350285026} {LCD_State[0]} 
