@@ -5,3 +5,7 @@ SF2_MKR_KIT_Connections/*
 !/SF2_MKR_KIT_Connections/firmware
 !/SF2_MKR_KIT_Connections/hdl
 !/SF2_MKR_KIT_Connections/stimulus
+
+Softconsole/*
+!/Softconsole/SF2_MKR_KIT_Connection_Test/firmware
+!/Softconsole/SF2_MKR_KIT_Connection_Test/src
